@@ -1,0 +1,497 @@
+<title>건설기계 데일리 브리프</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f6f5f1;
+    --surface: #fdfdfb;
+    --surface-2: #f0efe9;
+    --ink: #171612;
+    --ink-2: #55534c;
+    --muted: #8b887f;
+    --line: #e3e1d8;
+    --line-strong: #c9c7bc;
+    --accent: #b97d10;
+    --accent-ink: #8a5d0b;
+    --accent-wash: rgba(185, 125, 16, 0.10);
+    --up: #c53030;      /* 한국 금융 관례: 상승 = 빨강 */
+    --down: #2a78d6;    /* 하락 = 파랑 */
+    --spark: #55534c;
+    --spark-end: #b97d10;
+    --chip-1: #2a78d6; --chip-2: #eb6834; --chip-3: #1baf7a;
+    --chip-4: #eda100; --chip-5: #4a3aa7; --chip-6: #e87ba4;
+    --shadow: 0 1px 2px rgba(23, 22, 18, 0.05), 0 4px 14px rgba(23, 22, 18, 0.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121210;
+      --surface: #1b1b18;
+      --surface-2: #23231f;
+      --ink: #f2f1ea;
+      --ink-2: #c3c2b7;
+      --muted: #8f8d84;
+      --line: #2c2c2a;
+      --line-strong: #3d3d38;
+      --accent: #e0a532;
+      --accent-ink: #e8b756;
+      --accent-wash: rgba(224, 165, 50, 0.12);
+      --up: #e66767;
+      --down: #3987e5;
+      --spark: #c3c2b7;
+      --spark-end: #e0a532;
+      --chip-1: #3987e5; --chip-2: #d95926; --chip-3: #199e70;
+      --chip-4: #c98500; --chip-5: #9085e9; --chip-6: #d55181;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121210;
+    --surface: #1b1b18;
+    --surface-2: #23231f;
+    --ink: #f2f1ea;
+    --ink-2: #c3c2b7;
+    --muted: #8f8d84;
+    --line: #2c2c2a;
+    --line-strong: #3d3d38;
+    --accent: #e0a532;
+    --accent-ink: #e8b756;
+    --accent-wash: rgba(224, 165, 50, 0.12);
+    --up: #e66767;
+    --down: #3987e5;
+    --spark: #c3c2b7;
+    --spark-end: #e0a532;
+    --chip-1: #3987e5; --chip-2: #d95926; --chip-3: #199e70;
+    --chip-4: #c98500; --chip-5: #9085e9; --chip-6: #d55181;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  a { color: inherit; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 80px; }
+
+  /* ---------- header ---------- */
+  header {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px;
+    padding: 26px 0 14px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .brand-eyebrow {
+    width: 100%;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+    color: var(--accent-ink); text-transform: uppercase;
+  }
+  h1 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+  .head-meta {
+    margin-left: auto; display: flex; align-items: center; gap: 12px;
+    font-size: 12.5px; color: var(--ink-2);
+  }
+  .head-meta select {
+    font: inherit; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line-strong);
+    border-radius: 6px; padding: 4px 8px;
+  }
+  .head-meta select:focus-visible,
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+
+  .notice {
+    margin: 14px 0 0; padding: 9px 12px;
+    background: var(--accent-wash);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    font-size: 13px; color: var(--ink);
+  }
+
+  /* ---------- macro strip ---------- */
+  .macro { margin-top: 22px; }
+  .macro-group { margin-bottom: 14px; }
+  .macro-group-title {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+    color: var(--muted); text-transform: uppercase;
+    margin: 0 0 7px 2px;
+  }
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .tile {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 11px 13px 9px;
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .tile-label { font-size: 12px; color: var(--ink-2); }
+  .tile-row { display: flex; align-items: baseline; gap: 8px; }
+  .tile-value {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 21px; font-weight: 600; letter-spacing: -0.01em;
+  }
+  .tile-unit { font-size: 11.5px; color: var(--muted); }
+  .tile-delta {
+    margin-left: auto;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px; font-weight: 500;
+    padding: 1px 6px; border-radius: 99px;
+  }
+  .tile-delta.up   { color: var(--up);   background: color-mix(in srgb, var(--up) 12%, transparent); }
+  .tile-delta.down { color: var(--down); background: color-mix(in srgb, var(--down) 12%, transparent); }
+  .tile-delta.flat { color: var(--muted); background: var(--surface-2); }
+  .tile svg { width: 100%; height: 34px; margin-top: 5px; display: block; }
+  .tile-asof { font-size: 10.5px; color: var(--muted); margin-top: 2px; }
+
+  /* ---------- section nav ---------- */
+  .secnav {
+    position: sticky; top: 0; z-index: 5;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    display: flex; flex-wrap: wrap; gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    margin-top: 10px;
+  }
+  .secnav a {
+    text-decoration: none;
+    font-size: 12.5px; font-weight: 500;
+    color: var(--ink-2);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 99px;
+    padding: 4px 11px;
+    white-space: nowrap;
+  }
+  .secnav a:hover { border-color: var(--accent); color: var(--accent-ink); }
+  .secnav a .n {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px; color: var(--muted); margin-left: 4px;
+  }
+
+  /* ---------- news clusters ---------- */
+  .cluster-title {
+    display: flex; align-items: center; gap: 10px;
+    margin: 34px 0 4px;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.1em;
+    color: var(--accent-ink); text-transform: uppercase;
+  }
+  .cluster-title::after { content: ""; flex: 1; height: 1px; background: var(--line-strong); }
+
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+  }
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    scroll-margin-top: 64px;
+  }
+  .section-head {
+    display: flex; align-items: baseline; gap: 8px;
+    padding: 11px 14px 9px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface-2);
+  }
+  .section-head h2 { margin: 0; font-size: 14.5px; font-weight: 600; }
+  .section-head .count {
+    margin-left: auto;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px; color: var(--muted);
+  }
+  .section ul { list-style: none; margin: 0; padding: 0; }
+  .section li { padding: 11px 14px; border-bottom: 1px solid var(--line); }
+  .section li:last-child { border-bottom: none; }
+
+  .item-top { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+  .cat {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.02em;
+    color: var(--ink-2);
+    background: var(--surface-2);
+    border-radius: 4px; padding: 1.5px 7px;
+  }
+  .cat::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--dot, var(--muted));
+  }
+  .rel {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px; font-weight: 600;
+    color: var(--muted);
+    margin-left: auto;
+  }
+  .rel.hi { color: var(--accent-ink); }
+  .item-title { margin: 4px 0 0; font-size: 14px; font-weight: 600; line-height: 1.4; }
+  .item-title a { text-decoration: none; }
+  .item-title a:hover { color: var(--accent-ink); text-decoration: underline; }
+  .item-orig {
+    margin: 1px 0 0; font-size: 12px; color: var(--muted);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .item-summary { margin: 5px 0 0; font-size: 13px; color: var(--ink-2); }
+  .item-meta {
+    margin-top: 5px;
+    font-size: 11.5px; color: var(--muted);
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .empty { padding: 18px 14px; font-size: 13px; color: var(--muted); }
+
+  footer {
+    margin-top: 44px; padding-top: 14px;
+    border-top: 1px solid var(--line);
+    font-size: 12px; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+  }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 21px; }
+    .head-meta { margin-left: 0; }
+    .sections { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .tile, .section { transition: border-color 0.15s ease; }
+    .tile:hover, .section:hover { border-color: var(--line-strong); }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand-eyebrow">Global Construction Equipment · Daily</div>
+    <h1>건설기계 데일리 브리프</h1>
+    <div class="head-meta">
+      <label for="dateSel">기준일</label>
+      <select id="dateSel" aria-label="기준일 선택"></select>
+      <span id="genTime" class="mono"></span>
+    </div>
+  </header>
+
+  <div id="notice" class="notice" hidden></div>
+
+  <div id="macro" class="macro" aria-label="매크로 지표"></div>
+
+  <nav id="secnav" class="secnav" aria-label="섹션 바로가기"></nav>
+
+  <main id="clusters"></main>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+"use strict";
+
+/* 섹션 → 클러스터 배치. 수집기(construction_news.py)의 SECTION_ORDER와 키가 일치해야 한다 */
+const CLUSTERS = [
+  { title: "기업 · 경쟁", keys: ["kr_company", "global_peer", "cn_company", "strategy"] },
+  { title: "시장 · 수요", keys: ["us", "europe", "china", "resource", "emerging"] },
+  { title: "정책 · 통상", keys: ["policy"] },
+];
+const CATEGORY_DOTS = {
+  "수주/계약": "var(--chip-1)", "신제품": "var(--chip-2)", "딜러/유통": "var(--chip-3)",
+  "실적": "var(--chip-4)", "생산/공장": "var(--chip-5)", "M&A/투자": "var(--chip-6)",
+  "정책/금리": "var(--chip-1)", "시장지표": "var(--chip-4)", "광산/자원": "var(--chip-2)",
+  "부동산/주택": "var(--chip-3)", "기타": "var(--muted)",
+};
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => (
+  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+));
+
+function fmtNum(v) {
+  if (v == null || isNaN(v)) return "—";
+  return Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 3 });
+}
+
+function sparkline(values) {
+  if (!values || values.length < 2) return "";
+  const w = 180, h = 34, pad = 3;
+  const min = Math.min(...values), max = Math.max(...values);
+  const span = max - min || 1;
+  const x = (i) => pad + (i / (values.length - 1)) * (w - pad * 2);
+  const y = (v) => h - pad - ((v - min) / span) * (h - pad * 2);
+  const pts = values.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`);
+  const lastX = x(values.length - 1).toFixed(1);
+  const lastY = y(values[values.length - 1]).toFixed(1);
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="최근 30일 추이">
+    <polyline points="${pts.join(" ")} ${lastX},${h - pad} ${x(0).toFixed(1)},${h - pad}"
+      fill="var(--accent-wash)" stroke="none"></polyline>
+    <polyline points="${pts.join(" ")}" fill="none" stroke="var(--spark)"
+      stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"
+      vector-effect="non-scaling-stroke"></polyline>
+    <circle cx="${lastX}" cy="${lastY}" r="2.6" fill="var(--spark-end)"></circle>
+  </svg>`;
+}
+
+function renderMacro(groups) {
+  const host = $("macro");
+  if (!groups || !groups.length) {
+    host.innerHTML = `<div class="empty">매크로 지표가 아직 수집되지 않았습니다.</div>`;
+    return;
+  }
+  host.innerHTML = groups.map((g) => `
+    <div class="macro-group">
+      <p class="macro-group-title">${esc(g.title)}</p>
+      <div class="tiles">
+        ${g.indicators.map((m) => {
+          const chg = m.change ?? 0;
+          /* 반올림으로 change가 0이어도 %가 살아있으면 방향은 %로 판정 */
+          const dir = chg !== 0 ? chg : (m.change_pct ?? 0);
+          const cls = dir > 0 ? "up" : dir < 0 ? "down" : "flat";
+          const arrow = dir > 0 ? "▲" : dir < 0 ? "▼" : "·";
+          const pct = m.change_pct == null ? "" : ` (${m.change_pct > 0 ? "+" : ""}${m.change_pct}%)`;
+          return `
+          <div class="tile">
+            <span class="tile-label">${esc(m.label)}</span>
+            <div class="tile-row">
+              <span class="tile-value">${fmtNum(m.value)}</span>
+              <span class="tile-unit">${esc(m.unit)}</span>
+              <span class="tile-delta ${cls}" title="전일(전기) 대비">${arrow} ${fmtNum(Math.abs(chg))}${pct}</span>
+            </div>
+            ${sparkline(m.spark)}
+            <span class="tile-asof mono">${esc(m.asof)}</span>
+          </div>`;
+        }).join("")}
+      </div>
+    </div>`).join("");
+}
+
+function itemHtml(it) {
+  const title = it.translated_title || it.title;
+  const showOrig = it.translated_title && it.lang !== "ko";
+  const dot = CATEGORY_DOTS[it.category] || "var(--muted)";
+  const rel = it.relevance == null ? "" :
+    `<span class="rel ${it.relevance >= 8 ? "hi" : ""}" title="관련성 점수">${it.relevance}/10</span>`;
+  const when = it.published ? it.published.slice(5, 16).replace("T", " ") : "";
+  return `<li>
+    <div class="item-top">
+      <span class="cat" style="--dot:${dot}">${esc(it.category || "기타")}</span>
+      ${rel}
+    </div>
+    <p class="item-title"><a href="${esc(it.link)}" target="_blank" rel="noopener">${esc(title)}</a></p>
+    ${showOrig ? `<p class="item-orig" title="${esc(it.title)}">${esc(it.title)}</p>` : ""}
+    ${it.summary_ko ? `<p class="item-summary">${esc(it.summary_ko)}</p>` : ""}
+    <div class="item-meta">
+      <span>${esc(it.source)}</span>
+      ${when ? `<span class="mono">${esc(when)} KST</span>` : ""}
+    </div>
+  </li>`;
+}
+
+function renderSections(sections) {
+  const byKey = Object.fromEntries((sections || []).map((s) => [s.key, s]));
+  $("clusters").innerHTML = CLUSTERS.map((cluster) => {
+    const cards = cluster.keys.map((key) => {
+      const sec = byKey[key];
+      if (!sec) return "";
+      const body = sec.items.length
+        ? `<ul>${sec.items.map(itemHtml).join("")}</ul>`
+        : `<div class="empty">최근 수집 창(기본 36시간) 내 기사 없음</div>`;
+      return `<article class="section" id="sec-${esc(key)}">
+        <div class="section-head"><h2>${esc(sec.title)}</h2>
+          <span class="count">${sec.items.length}건</span></div>
+        ${body}
+      </article>`;
+    }).join("");
+    return `<div class="cluster-title">${esc(cluster.title)}</div>
+      <div class="sections">${cards}</div>`;
+  }).join("");
+
+  $("secnav").innerHTML = (sections || [])
+    .map((s) => `<a href="#sec-${esc(s.key)}">${esc(s.title)}<span class="n">${s.items.length}</span></a>`)
+    .join("");
+}
+
+function renderFoot(data) {
+  const st = data.stats || {};
+  const bits = [
+    `수집 후보 ${fmtNum(st.candidates)}건`,
+    `신규 채점 ${fmtNum(st.new_scored)}건`,
+    `관련성 컷 미달 ${fmtNum(st.dropped_low_relevance)}건`,
+    `노이즈 제외 ${fmtNum(st.noise)}건`,
+    st.ai_active === false ? "⚠ AI 채점 미가동 (GEMINI_API_KEY 확인)" : "Gemini 채점 가동",
+    `표시 창 ${data.window_hours ?? 36}시간 · 관련성 4점 이상`,
+  ];
+  $("foot").innerHTML = bits.map((b) => `<span>${esc(b)}</span>`).join("");
+}
+
+function render(data) {
+  $("genTime").textContent = data.generated_at ? data.generated_at.slice(0, 16).replace("T", " ") : "";
+  const notice = $("notice");
+  if (data.sample) {
+    notice.hidden = false;
+    notice.textContent = "샘플 데이터 미리보기입니다 — 실제 뉴스가 아니라 레이아웃 확인용 예시이며, GitHub Actions 첫 실행 후 실데이터로 대체됩니다.";
+  } else if (data.stats && data.stats.ai_active === false) {
+    notice.hidden = false;
+    notice.textContent = "이번 수집은 AI 채점 없이 저장되었습니다. 리포지토리 시크릿 GEMINI_API_KEY를 설정하면 한국어 번역·요약·관련성 필터가 켜집니다.";
+  } else {
+    notice.hidden = true;
+  }
+  renderMacro(data.macro_groups);
+  renderSections(data.sections);
+  renderFoot(data);
+}
+
+async function loadDates() {
+  try {
+    const res = await fetch("data/archive/index.json", { cache: "no-store" });
+    if (!res.ok) return [];
+    return (await res.json()).dates || [];
+  } catch { return []; }
+}
+
+async function loadData(date) {
+  const url = date ? `data/archive/${date}.json` : "data/latest.json";
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+async function init() {
+  const sel = $("dateSel");
+  /* 아티팩트 미리보기 등 인라인 데이터 모드: fetch 없이 즉시 렌더 */
+  if (window.__INLINE_DATA__) {
+    sel.disabled = true;
+    const d = window.__INLINE_DATA__;
+    sel.innerHTML = `<option>${d.date_kst || "미리보기"}</option>`;
+    render(d);
+    return;
+  }
+  try {
+    const dates = await loadDates();
+    sel.innerHTML = dates.length
+      ? dates.map((d, i) => `<option value="${esc(d)}" ${i === 0 ? "selected" : ""}>${esc(d)}</option>`).join("")
+      : `<option value="">최신</option>`;
+    sel.addEventListener("change", async () => {
+      try { render(await loadData(sel.value)); }
+      catch (e) { $("notice").hidden = false; $("notice").textContent = `데이터 로드 실패: ${e.message}`; }
+    });
+    render(await loadData(dates[0] || ""));
+  } catch (e) {
+    $("notice").hidden = false;
+    $("notice").textContent =
+      "데이터가 아직 없습니다. GitHub Actions의 Daily Construction Equipment Brief 워크플로를 한 번 실행하면 이 페이지가 채워집니다.";
+  }
+}
+init();
+</script>
