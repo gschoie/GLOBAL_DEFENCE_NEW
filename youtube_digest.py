@@ -713,9 +713,8 @@ def main() -> int:
     written = write_outputs(groups, since, now)
     log(f"파일 기록: docs/youtube/{written['links']}, docs/youtube/{written['markdown']}")
 
-    pages_base = os.getenv(
-        "PAGES_BASE_URL", "https://gschoie.github.io/GLOBAL_DEFENCE_NEW"
-    ).rstrip("/")
+    # Pages를 켜 두지 않았으면 죽은 링크가 되므로 기본값 없이 opt-in으로 둔다.
+    pages_base = os.getenv("PAGES_BASE_URL", "").rstrip("/")
     pages_url = f"{pages_base}/youtube/{written['links']}" if pages_base else None
     if not args.no_telegram:
         maybe_send_telegram(groups, since, now, pages_url)

@@ -98,9 +98,10 @@ python -m http.server -d docs 8000   # http://localhost:8000
 | `docs/youtube/latest-links.txt`, `latest.md` | 항상 최신본 |
 | `docs/youtube/index.json` | 지난 모음 목록 |
 
-Pages가 켜져 있으면 텔레그램 메시지에
-`https://gschoie.github.io/GLOBAL_DEFENCE_NEW/youtube/<날짜>-links.txt` 링크가
-같이 갑니다. 폰에서 그 주소를 열어 전체 복사 → NotebookLM에 붙여넣으면 끝입니다.
+텔레그램 메시지에는 링크 목록이 통째로 들어가므로 그대로 복사해도 됩니다.
+`PAGES_BASE_URL` 환경변수를 채우면 `-links.txt` 파일 주소도 같이 붙습니다 —
+**이 리포는 아직 GitHub Pages가 꺼져 있어** 기본값을 비워 뒀습니다(죽은 링크 방지).
+Pages를 켜면 `PAGES_BASE_URL=https://<계정>.github.io/<리포>` 형태로 채우세요.
 
 ## 채널 등록
 
