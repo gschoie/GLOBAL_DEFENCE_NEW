@@ -38,7 +38,7 @@ const WATCH_CHANNELS = [
 
 // === 설정 ===
 
-function secret(name) {
+function secret_(name) {
   const value = PROPS.getProperty(name);
   if (!value) {
     throw new Error('스크립트 속성 ' + name + ' 이 비어 있습니다. '
@@ -53,7 +53,7 @@ function checkSetup() {
     const value = PROPS.getProperty(name);
     Logger.log(name + ': ' + (value ? '✅ 설정됨 (' + value.length + '자)' : '❌ 비어 있음'));
   });
-  const buffered = digestKeys().length;
+  const buffered = digestKeys_().length;
   Logger.log('3일 모음 버퍼: ' + buffered + '건');
 }
 
@@ -150,7 +150,7 @@ function checkNewVideos() {
           // 제미나이 AI 요약 생성
           let aiSummary = '';
           if (description.trim().length > 10) {
-            aiSummary = askGeminiSummary(videoTitle, description);
+            aiSummary = askGeminiSummary_(videoTitle, description);
           } else {
             aiSummary = '영상 설명이 비어있습니다.';
           }
@@ -158,11 +158,11 @@ function checkNewVideos() {
           // 3일 모음 버퍼에 적립 — 발송 전에 넣어 둔다.
           // 텔레그램 전송이 실패해도 링크는 남아 다음 모음에 실린다.
           const publishedAt = new Date(entry.getChildText('published', atom)).getTime();
-          bufferForDigest(channel.name, videoId, videoTitle, videoUrl, publishedAt);
+          bufferForDigest_(channel.name, videoId, videoTitle, videoUrl, publishedAt);
 
           // HTML 특수문자 충돌 방지를 위한 안전치환 (< 와 > 부품 보호)
-          const safeTitle = escapeHtml(videoTitle);
-          const safeSummary = escapeHtml(aiSummary);
+          const safeTitle = escapeHtml_(videoTitle);
+          const safeSummary = escapeHtml_(aiSummary);
 
           // 텔레그램 메시지 조립
           const message =
@@ -173,7 +173,7 @@ function checkNewVideos() {
             `🔗 <b>바로가기:</b> ${videoUrl}`;
 
           // 텔레그램 전송
-          sendTelegramMessage(message);
+          sendTelegramMessage_(message);
           Logger.log(`알림 발송 완료 (${channel.name}): ${videoTitle}`);
         });
 
@@ -194,14 +194,14 @@ function checkNewVideos() {
 // 낱개 알림을 보낼 때마다 여기 한 건씩 쌓인다. 속성 하나에 영상 하나씩 넣는 이유는
 // 스크립트 속성이 값 하나당 9KB 제한이 있어서다 — JSON 배열 하나로 모으면 언젠가 터진다.
 
-function digestKeys() {
+function digestKeys_() {
   const all = PROPS.getProperties();
   return Object.keys(all)
     .filter(function (key) { return key.indexOf(DIGEST_PREFIX) === 0; })
     .sort();  // 키 앞머리가 시각이라 정렬하면 올라온 순서가 된다
 }
 
-function bufferForDigest(channelName, videoId, title, url, whenMillis) {
+function bufferForDigest_(channelName, videoId, title, url, whenMillis) {
   // 키 앞머리를 '올라온 시각'으로 두면 정렬만으로 업로드 순서가 나온다.
   // 같은 밀리초에 두 건이 들어와도 videoId 가 붙어 있어 덮어쓰이지 않는다.
   const when = whenMillis ? whenMillis : Date.now();
@@ -209,9 +209,9 @@ function bufferForDigest(channelName, videoId, title, url, whenMillis) {
   PROPS.setProperty(key, JSON.stringify({ ch: channelName, t: title, u: url }));
 }
 
-function isBuffered(videoId) {
+function isBuffered_(videoId) {
   const suffix = '_' + videoId;
-  return digestKeys().some(function (key) {
+  return digestKeys_().some(function (key) {
     return key.length > suffix.length
       && key.indexOf(suffix, key.length - suffix.length) !== -1;
   });
@@ -237,11 +237,11 @@ function fillBufferFromFeeds(days) {
         if (!published || published < since) return;
 
         const videoId = entry.getChildText('id', atom).replace('yt:video:', '');
-        if (isBuffered(videoId)) return;
+        if (isBuffered_(videoId)) return;
 
         const title = entry.getChildText('title', atom);
         const link = entry.getChild('link', atom).getAttribute('href').getValue();
-        bufferForDigest(channel.name, videoId, title, link, published);
+        bufferForDigest_(channel.name, videoId, title, link, published);
         added++;
       });
     } catch (error) {
@@ -253,7 +253,7 @@ function fillBufferFromFeeds(days) {
 }
 
 function sendThreeDayDigest() {
-  const keys = digestKeys();
+  const keys = digestKeys_();
   if (keys.length === 0) {
     Logger.log('3일 모음: 쌓인 영상이 없어 보내지 않습니다.');
     return;
@@ -297,14 +297,14 @@ function sendThreeDayDigest() {
     ''
   ];
   names.forEach(function (name) {
-    lines.push('<b>' + escapeHtml(name) + '</b>');
+    lines.push('<b>' + escapeHtml_(name) + '</b>');
     byChannel[name].forEach(function (row) {
-      lines.push('• ' + escapeHtml(row.t || ''));
+      lines.push('• ' + escapeHtml_(row.t || ''));
     });
     lines.push('');
   });
   lines.push('↓ 아래 메시지를 통째로 복사해 NotebookLM 소스에 붙여넣으세요');
-  sendChunked(lines, false);
+  sendChunked_(lines, false);
 
   // 2) 붙여넣는 판 — 주소만. 다른 글자가 섞이면 복사가 번거로워진다.
   const urls = [];
@@ -313,7 +313,7 @@ function sendThreeDayDigest() {
       if (row.u) urls.push(row.u);
     });
   });
-  sendChunked(urls, true);
+  sendChunked_(urls, true);
 
   // 보낸 뒤에만 비운다. 위에서 예외가 나면 버퍼가 남아 다음 회차에 다시 실린다.
   keys.forEach(function (key) { PROPS.deleteProperty(key); });
@@ -321,12 +321,12 @@ function sendThreeDayDigest() {
 }
 
 // 텔레그램 한 통 4096자 제한 — 줄 단위로 끊어 보낸다.
-function sendChunked(lines, plain) {
+function sendChunked_(lines, plain) {
   let buffer = [];
   let size = 0;
   lines.forEach(function (line) {
     if (buffer.length > 0 && size + line.length + 1 > 3500) {
-      sendTelegramMessage(buffer.join('\n'), { plain: plain, noPreview: true });
+      sendTelegramMessage_(buffer.join('\n'), { plain: plain, noPreview: true });
       Utilities.sleep(1100);
       buffer = [];
       size = 0;
@@ -335,17 +335,17 @@ function sendChunked(lines, plain) {
     size += line.length + 1;
   });
   if (buffer.length > 0) {
-    sendTelegramMessage(buffer.join('\n'), { plain: plain, noPreview: true });
+    sendTelegramMessage_(buffer.join('\n'), { plain: plain, noPreview: true });
   }
 }
 
 
 // === 제미나이 API 호출 및 요약 함수 ===
 
-function askGeminiSummary(title, text) {
+function askGeminiSummary_(title, text) {
   try {
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/'
-      + 'gemini-2.5-flash:generateContent?key=' + secret('GEMINI_API_KEY');
+      + 'gemini-2.5-flash:generateContent?key=' + secret_('GEMINI_API_KEY');
 
     const prompt = `너는 밀리터리, 방위산업 전문 뉴스 요약가야. 유튜브 영상의 제목과 상세 설명을 바탕으로 핵심 내용을 요약해줘.\n\n` +
                    `[영상 제목]: ${title}\n` +
@@ -384,11 +384,11 @@ function askGeminiSummary(title, text) {
 // opts.plain    : true 면 HTML 파싱을 끈다 (주소만 보낼 때 — 태그로 오해받을 일이 없다)
 // opts.noPreview: true 면 링크 미리보기 카드를 안 만든다 (모음 메시지가 길어지는 걸 막는다)
 
-function sendTelegramMessage(text, opts) {
+function sendTelegramMessage_(text, opts) {
   opts = opts || {};
-  const url = `https://api.telegram.org/bot${secret('TELEGRAM_TOKEN')}/sendMessage`;
+  const url = `https://api.telegram.org/bot${secret_('TELEGRAM_TOKEN')}/sendMessage`;
   const payload = {
-    'chat_id': secret('TELEGRAM_CHAT_ID'),
+    'chat_id': secret_('TELEGRAM_CHAT_ID'),
     'text': text,
     'disable_web_page_preview': opts.noPreview === true
   };
@@ -408,7 +408,7 @@ function sendTelegramMessage(text, opts) {
 
 // === HTML 특수문자 무력화 안전 함수 ===
 
-function escapeHtml(text) {
+function escapeHtml_(text) {
   return String(text)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
