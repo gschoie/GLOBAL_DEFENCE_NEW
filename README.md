@@ -75,3 +75,76 @@ python -m http.server -d docs 8000   # http://localhost:8000
 `TELEGRAM_BOT_TOKEN`·`TELEGRAM_CHAT_ID` 시크릿을 추가하고 워크플로의
 `ENABLE_TELEGRAM`을 `true`로 바꾸면, 실행마다 신규 고관련성 기사를
 다이제스트로 발송합니다.
+
+---
+
+# 유튜브 3일 모음 (NotebookLM 오디오용)
+
+구독 채널의 최근 영상 **링크만** 3일에 한 번 모아 텔레그램(@gs_analyst_bot)으로
+보내고, 같은 목록을 파일로도 남깁니다. NotebookLM에 소스로 넣어 오디오 개요로
+듣는 용도입니다.
+
+- 수집기: `youtube_digest.py` (표준 라이브러리만 사용)
+- 채널 목록: `youtube_channels.json` ← **여기만 고치면 대상이 바뀝니다**
+- 상태: `youtube_state.json` (채널 ID 캐시 + 이미 보낸 영상 ID + 마지막 발송 시각)
+- 스케줄: `.github/workflows/youtube-digest.yml`
+
+## 산출물
+
+| 파일 | 쓰임 |
+|---|---|
+| `docs/youtube/<날짜>-links.txt` | **주소만 한 줄씩** — NotebookLM 소스 창에 통째로 붙여넣기 |
+| `docs/youtube/<날짜>.md` | 채널·제목·시각이 붙은 읽는 판 |
+| `docs/youtube/latest-links.txt`, `latest.md` | 항상 최신본 |
+| `docs/youtube/index.json` | 지난 모음 목록 |
+
+Pages가 켜져 있으면 텔레그램 메시지에
+`https://gschoie.github.io/GLOBAL_DEFENCE_NEW/youtube/<날짜>-links.txt` 링크가
+같이 갑니다. 폰에서 그 주소를 열어 전체 복사 → NotebookLM에 붙여넣으면 끝입니다.
+
+## 채널 등록
+
+`youtube_channels.json`의 각 항목은 아래 중 하나로 채널을 가리킵니다.
+
+```json
+{ "name": "샤를의 군사연구소", "channel_id": "UC..." }   // 가장 확실
+{ "name": "kkam", "handle": "@kkam" }                    // 핸들로 찾아서 캐시
+{ "name": "까치살모", "url": "https://www.youtube.com/@..." }
+```
+
+`handle`/`url`만 준 채널은 첫 실행 때 채널 페이지에서 ID를 찾아
+`youtube_state.json`에 캐시합니다. 못 찾으면 로그에 `채널 해결 실패`로 찍히니
+유튜브에서 채널 주소를 복사해 `url`에 넣어 주면 됩니다.
+
+선택 키: `match`(제목 정규식에 걸리는 것만), `exclude`(걸리면 버림),
+`enabled: false`(잠시 끄기).
+
+## 3일 주기를 지키는 법
+
+크론의 `*/3`은 달이 바뀔 때 간격이 어긋나므로, 워크플로는 **매일** 돌고
+실제 발송 여부는 `youtube_state.json`의 마지막 발송 시각으로 판단합니다.
+러너가 하루 죽어도 다음 날 그 구간까지 같이 담아 따라잡습니다
+(최대 소급 14일). 이미 보낸 영상은 ID로 걸러 다시 담지 않습니다.
+
+## 설정 (1회)
+
+1. `@gs_analyst_bot`과 대화를 시작한 뒤 봇 토큰과 chat_id를 확인합니다.
+2. Settings → Secrets → Actions 에 `YT_TELEGRAM_BOT_TOKEN`,
+   `YT_TELEGRAM_CHAT_ID` 추가. (없으면 `TELEGRAM_*` 로 폴백합니다.)
+3. Actions 탭에서 `YouTube 3-Day Digest`를 `force: true`로 한 번 수동 실행해
+   채널이 제대로 잡히는지 로그로 확인합니다.
+
+## 로컬 실행
+
+```bash
+python youtube_digest.py --dry-run          # 파일·상태·텔레그램 안 건드리고 출력만
+python youtube_digest.py --force --days 7   # 7일치를 지금 바로
+python -m unittest discover -s tests        # 24개 검산 테스트
+```
+
+## NotebookLM 쪽 주의
+
+- NotebookLM의 유튜브 소스는 **공개 영상 + 자막이 있는 것**만 읽습니다.
+  자막 없는 영상은 소스 추가 단계에서 거절됩니다.
+- 소스 개수 상한(무료 50개)이 있으니, 3일치가 많으면 `YT_MAX_PER_CHANNEL`을
+  줄이거나 채널별 `match`로 좁히세요.

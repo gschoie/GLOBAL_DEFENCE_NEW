@@ -1,0 +1,563 @@
+# 유튜브 구독 채널 3일치 영상 링크 모음 — NotebookLM 오디오 소스용
+#
+# youtube_channels.json에 적어 둔 채널들의 최근 영상 링크만 모아
+#   1) docs/youtube/<날짜>-links.txt  — 주소만 한 줄씩. NotebookLM 소스 창에 통째로 붙여넣는 용도
+#   2) docs/youtube/<날짜>.md         — 채널·제목·날짜가 붙은 읽는 판
+#   3) 텔레그램(@gs_analyst_bot)      — 같은 목록을 메시지로
+# 로 내보낸다. 3일에 한 번만 나가면 되므로 워크플로는 매일 돌리되 상태 파일의
+# 마지막 발송 시각을 보고 간격이 안 찼으면 아무것도 하지 않는다(--force로 무시).
+#
+# 건설기계 브리프(construction_news.py)와 같은 원칙: 표준 라이브러리만 쓴다.
+
+import argparse
+import html
+import json
+import os
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+KST = timezone(timedelta(hours=9), name="KST")
+ROOT = Path(__file__).resolve().parent
+CONFIG_PATH = ROOT / "youtube_channels.json"
+STATE_PATH = ROOT / "youtube_state.json"
+OUT_DIR = ROOT / "docs" / "youtube"
+
+FEED_URL = "https://www.youtube.com/feeds/videos.xml"
+ATOM = "{http://www.w3.org/2005/Atom}"
+YT = "{http://www.youtube.com/xml/schemas/2015}"
+MEDIA = "{http://search.yahoo.com/mrss/}"
+
+# 채널 ID는 22자 base64url. 페이지 HTML/피드 어디서 긁어도 이 모양이다.
+CHANNEL_ID_RE = re.compile(r"(UC[A-Za-z0-9_-]{22})")
+# 발송 이력은 무한정 쌓을 필요가 없다 — 이 기간이 지난 영상 ID는 버린다.
+SEEN_RETENTION_DAYS = 120
+# 러너가 며칠 죽어 있었어도 창을 무한정 늘리지는 않는다.
+MAX_LOOKBACK_DAYS = 14
+
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
+
+
+# ---------------------------------------------------------------------------
+# 공통
+# ---------------------------------------------------------------------------
+
+def log(message: str) -> None:
+    print(message, flush=True)
+
+
+def load_dotenv(dotenv_path: Path) -> None:
+    if not dotenv_path.exists():
+        return
+    for raw_line in dotenv_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def http_get(url: str, timeout: int = 30, retries: int = 3) -> bytes:
+    """유튜브는 러너 IP를 간헐적으로 막는다 — 429/5xx는 쉬었다 다시 친다."""
+    last_error: Exception | None = None
+    for attempt in range(retries):
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in (429, 500, 502, 503, 504):
+                raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+        if attempt < retries - 1:
+            time.sleep(3 * (attempt + 1))
+    raise last_error if last_error else RuntimeError(f"GET 실패: {url}")
+
+
+def load_json(path: Path, default: dict) -> dict:
+    if not path.exists():
+        return dict(default)
+    try:
+        loaded = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"{path.name} 을 읽을 수 없습니다: {exc}") from exc
+    return loaded if isinstance(loaded, dict) else dict(default)
+
+
+def save_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+# ---------------------------------------------------------------------------
+# 채널 해결 — handle/url → 채널 ID
+# ---------------------------------------------------------------------------
+
+def candidate_urls(entry: dict) -> list[str]:
+    """설정 한 줄에서 채널 ID를 찾아볼 주소 후보를 만든다."""
+    urls: list[str] = []
+    raw_url = (entry.get("url") or "").strip()
+    if raw_url:
+        urls.append(raw_url)
+
+    handle = (entry.get("handle") or "").strip()
+    if not handle and not raw_url:
+        handle = (entry.get("name") or "").strip()
+    if handle:
+        bare = handle.lstrip("@")
+        quoted = urllib.parse.quote(bare, safe="")
+        # @핸들이 정석이고, 옛 채널은 /c/ 나 /user/ 에만 남아 있기도 하다.
+        urls.append(f"https://www.youtube.com/@{quoted}")
+        urls.append(f"https://www.youtube.com/c/{quoted}")
+        urls.append(f"https://www.youtube.com/user/{quoted}")
+
+    seen: set[str] = set()
+    return [u for u in urls if not (u in seen or seen.add(u))]
+
+
+def extract_channel_id(page: str) -> str | None:
+    for pattern in (
+        r'"externalId"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',
+        r'"channelId"\s*:\s*"(UC[A-Za-z0-9_-]{22})"',
+        r'channel_id=(UC[A-Za-z0-9_-]{22})',
+        r'youtube\.com/channel/(UC[A-Za-z0-9_-]{22})',
+    ):
+        found = re.search(pattern, page)
+        if found:
+            return found.group(1)
+    return None
+
+
+def resolve_channel_id(entry: dict, state: dict) -> str | None:
+    """설정 → 채널 ID. 한 번 찾으면 상태 파일에 캐시해 두고 다시 안 찾는다."""
+    explicit = (entry.get("channel_id") or "").strip()
+    if explicit:
+        found = CHANNEL_ID_RE.search(explicit)
+        if found:
+            return found.group(1)
+        log(f"  ! channel_id 형식이 이상합니다: {explicit}")
+
+    cache = state.setdefault("resolved", {})
+    key = (
+        (entry.get("handle") or entry.get("url") or entry.get("name") or "")
+        .strip()
+        .lower()
+    )
+    cached = cache.get(key)
+    if isinstance(cached, dict) and cached.get("channel_id"):
+        return cached["channel_id"]
+
+    for url in candidate_urls(entry):
+        try:
+            page = http_get(url, timeout=20, retries=2).decode("utf-8", "replace")
+        except Exception as exc:  # 404·차단 모두 여기로 — 다음 후보로 넘어간다
+            log(f"  · {url} → {exc}")
+            continue
+        channel_id = extract_channel_id(page)
+        if channel_id:
+            cache[key] = {
+                "channel_id": channel_id,
+                "source_url": url,
+                "resolved_at": datetime.now(timezone.utc).isoformat(),
+            }
+            log(f"  · 채널 ID 확인: {channel_id} ({url})")
+            return channel_id
+    return None
+
+
+# ---------------------------------------------------------------------------
+# 피드 수집
+# ---------------------------------------------------------------------------
+
+def parse_feed(raw: bytes) -> tuple[str, list[dict]]:
+    """유튜브 채널 Atom 피드 → (채널명, 영상 목록). 최근 15개까지만 들어 있다."""
+    root = ET.fromstring(raw)
+    channel_title = (root.findtext(f"{ATOM}title") or "").strip()
+
+    videos: list[dict] = []
+    for item in root.findall(f"{ATOM}entry"):
+        video_id = (item.findtext(f"{YT}videoId") or "").strip()
+        if not video_id:
+            continue
+        published_raw = (item.findtext(f"{ATOM}published") or "").strip()
+        try:
+            published = datetime.fromisoformat(published_raw)
+        except ValueError:
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+
+        group = item.find(f"{MEDIA}group")
+        description = ""
+        if group is not None:
+            description = (group.findtext(f"{MEDIA}description") or "").strip()
+
+        videos.append(
+            {
+                "video_id": video_id,
+                "title": (item.findtext(f"{ATOM}title") or "").strip(),
+                "published": published,
+                "url": f"https://www.youtube.com/watch?v={video_id}",
+                "description": description,
+            }
+        )
+    videos.sort(key=lambda v: v["published"], reverse=True)
+    return channel_title, videos
+
+
+def fetch_channel_videos(channel_id: str) -> tuple[str, list[dict]]:
+    url = f"{FEED_URL}?{urllib.parse.urlencode({'channel_id': channel_id})}"
+    return parse_feed(http_get(url))
+
+
+def title_passes(title: str, entry: dict) -> bool:
+    match = entry.get("match")
+    if match and not re.search(match, title, re.IGNORECASE):
+        return False
+    exclude = entry.get("exclude")
+    if exclude and re.search(exclude, title, re.IGNORECASE):
+        return False
+    return True
+
+
+def select_videos(
+    videos: list[dict], entry: dict, since: datetime, seen: dict, limit: int
+) -> list[dict]:
+    picked = []
+    for video in videos:
+        if video["published"] < since:
+            continue
+        if video["video_id"] in seen:
+            continue
+        if not title_passes(video["title"], entry):
+            continue
+        picked.append(video)
+        if len(picked) >= limit:
+            break
+    return picked
+
+
+# ---------------------------------------------------------------------------
+# 출력
+# ---------------------------------------------------------------------------
+
+def render_links(groups: list[dict]) -> str:
+    """NotebookLM 소스 창에 통째로 붙여넣는 용도 — 주소만 한 줄씩."""
+    return "\n".join(v["url"] for group in groups for v in group["videos"]) + "\n"
+
+
+def render_markdown(groups: list[dict], since: datetime, until: datetime) -> str:
+    total = sum(len(g["videos"]) for g in groups)
+    lines = [
+        f"# 유튜브 구독 채널 모음 {until.astimezone(KST):%Y-%m-%d}",
+        "",
+        f"- 대상 구간: {since.astimezone(KST):%Y-%m-%d %H:%M} ~ "
+        f"{until.astimezone(KST):%Y-%m-%d %H:%M} (KST)",
+        f"- 채널 {len(groups)}개 · 영상 {total}건",
+        "- NotebookLM 소스로 넣을 때는 같은 날짜의 `-links.txt`를 열어 주소만 복사하세요.",
+        "",
+    ]
+    for group in groups:
+        lines.append(f"## {group['name']}")
+        lines.append("")
+        for video in group["videos"]:
+            stamp = video["published"].astimezone(KST).strftime("%m-%d %H:%M")
+            lines.append(f"- [{video['title']}]({video['url']}) · {stamp}")
+        lines.append("")
+
+    lines.append("## 주소만 (복사용)")
+    lines.append("")
+    lines.append("```")
+    lines.append(render_links(groups).rstrip("\n"))
+    lines.append("```")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_outputs(groups: list[dict], since: datetime, until: datetime) -> dict:
+    stamp = until.astimezone(KST).strftime("%Y-%m-%d")
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    markdown = render_markdown(groups, since, until)
+    links = render_links(groups)
+    for name, body in (
+        (f"{stamp}.md", markdown),
+        (f"{stamp}-links.txt", links),
+        ("latest.md", markdown),
+        ("latest-links.txt", links),
+    ):
+        (OUT_DIR / name).write_text(body, encoding="utf-8")
+
+    index_path = OUT_DIR / "index.json"
+    index = load_json(index_path, {"digests": []})
+    digests = [d for d in index.get("digests", []) if d.get("date") != stamp]
+    digests.insert(
+        0,
+        {
+            "date": stamp,
+            "from": since.astimezone(KST).isoformat(),
+            "to": until.astimezone(KST).isoformat(),
+            "channels": len(groups),
+            "videos": sum(len(g["videos"]) for g in groups),
+            "markdown": f"{stamp}.md",
+            "links": f"{stamp}-links.txt",
+        },
+    )
+    save_json(index_path, {"digests": digests[:120]})
+    return {"date": stamp, "markdown": f"{stamp}.md", "links": f"{stamp}-links.txt"}
+
+
+# ---------------------------------------------------------------------------
+# 텔레그램
+# ---------------------------------------------------------------------------
+
+def telegram_credentials() -> tuple[str, str] | None:
+    """@gs_analyst_bot 전용 값이 있으면 그걸, 없으면 리포 공용 값을 쓴다."""
+    token = os.getenv("YT_TELEGRAM_BOT_TOKEN") or os.getenv("TELEGRAM_BOT_TOKEN") or ""
+    chat_id = os.getenv("YT_TELEGRAM_CHAT_ID") or os.getenv("TELEGRAM_CHAT_ID") or ""
+    if not token or not chat_id:
+        return None
+    return token, chat_id
+
+
+def send_telegram_message(token: str, chat_id: str, text: str) -> None:
+    payload = urllib.parse.urlencode(
+        {
+            "chat_id": chat_id,
+            "text": text,
+            "disable_web_page_preview": "true",
+            "parse_mode": "HTML",
+        }
+    ).encode("utf-8")
+    request = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        data=payload,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        response.read()
+
+
+def chunk_lines(lines: list[str], limit: int = 3500) -> list[str]:
+    """텔레그램 한 통 4096자 제한 — 줄 단위로 끊어 담는다."""
+    chunks: list[str] = []
+    current: list[str] = []
+    size = 0
+    for line in lines:
+        if current and size + len(line) + 1 > limit:
+            chunks.append("\n".join(current))
+            current, size = [], 0
+        current.append(line)
+        size += len(line) + 1
+    if current:
+        chunks.append("\n".join(current))
+    return chunks
+
+
+def build_telegram_lines(
+    groups: list[dict], since: datetime, until: datetime, pages_url: str | None
+) -> list[str]:
+    total = sum(len(g["videos"]) for g in groups)
+    lines = [
+        "<b>📺 유튜브 구독 채널 3일 모음</b>",
+        f"{since.astimezone(KST):%m-%d} ~ {until.astimezone(KST):%m-%d} (KST) · "
+        f"채널 {len(groups)}개 · 영상 {total}건",
+    ]
+    if pages_url:
+        lines.append(f'<a href="{html.escape(pages_url)}">주소만 모은 파일 (NotebookLM 붙여넣기용)</a>')
+    lines.append("")
+    for group in groups:
+        lines.append(f"<b>{html.escape(group['name'])}</b>")
+        for video in group["videos"]:
+            stamp = video["published"].astimezone(KST).strftime("%m-%d")
+            lines.append(f"{stamp} {html.escape(video['title'])}")
+            lines.append(video["url"])
+        lines.append("")
+    return lines
+
+
+def maybe_send_telegram(
+    groups: list[dict], since: datetime, until: datetime, pages_url: str | None
+) -> None:
+    if os.getenv("ENABLE_YT_TELEGRAM", "true").lower() != "true":
+        log("텔레그램 발송 꺼짐 (ENABLE_YT_TELEGRAM)")
+        return
+    credentials = telegram_credentials()
+    if not credentials:
+        log("텔레그램 토큰·챗 ID가 없어 발송을 건너뜁니다 "
+            "(YT_TELEGRAM_BOT_TOKEN / YT_TELEGRAM_CHAT_ID)")
+        return
+    token, chat_id = credentials
+    for chunk in chunk_lines(build_telegram_lines(groups, since, until, pages_url)):
+        send_telegram_message(token, chat_id, chunk)
+        time.sleep(1.1)
+    log("텔레그램 발송 완료")
+
+
+# ---------------------------------------------------------------------------
+# 상태
+# ---------------------------------------------------------------------------
+
+def prune_seen(seen: dict, now: datetime) -> dict:
+    cutoff = now - timedelta(days=SEEN_RETENTION_DAYS)
+    kept = {}
+    for video_id, stamp in seen.items():
+        try:
+            when = datetime.fromisoformat(stamp)
+        except (TypeError, ValueError):
+            continue
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=timezone.utc)
+        if when >= cutoff:
+            kept[video_id] = stamp
+    return kept
+
+
+def window_start(state: dict, now: datetime, interval_days: int) -> datetime:
+    """마지막 발송 이후를 창으로 잡되, 최소 간격·최대 소급은 지킨다."""
+    last_raw = state.get("last_digest_at")
+    if last_raw:
+        try:
+            last = datetime.fromisoformat(last_raw)
+            if last.tzinfo is None:
+                last = last.replace(tzinfo=timezone.utc)
+            floor = now - timedelta(days=MAX_LOOKBACK_DAYS)
+            return max(min(last, now - timedelta(days=interval_days)), floor)
+        except ValueError:
+            pass
+    return now - timedelta(days=interval_days)
+
+
+def due(state: dict, now: datetime, interval_days: int) -> bool:
+    last_raw = state.get("last_digest_at")
+    if not last_raw:
+        return True
+    try:
+        last = datetime.fromisoformat(last_raw)
+    except ValueError:
+        return True
+    if last.tzinfo is None:
+        last = last.replace(tzinfo=timezone.utc)
+    # 몇 시간 일찍 도는 것까지 막으면 러너 시각이 밀릴 때 하루를 통째로 건너뛴다.
+    return now - last >= timedelta(days=interval_days) - timedelta(hours=6)
+
+
+# ---------------------------------------------------------------------------
+# 메인
+# ---------------------------------------------------------------------------
+
+def collect(config: dict, state: dict, since: datetime, limit: int) -> list[dict]:
+    seen = state.setdefault("seen", {})
+    groups: list[dict] = []
+    for entry in config.get("channels", []):
+        if not isinstance(entry, dict) or entry.get("enabled") is False:
+            continue
+        name = entry.get("name") or entry.get("handle") or entry.get("url") or "(이름 없음)"
+        log(f"- {name}")
+        channel_id = resolve_channel_id(entry, state)
+        if not channel_id:
+            log("  ! 채널 해결 실패 — youtube_channels.json의 handle/url을 확인하세요")
+            continue
+        try:
+            feed_title, videos = fetch_channel_videos(channel_id)
+        except Exception as exc:
+            log(f"  ! 피드 실패: {exc}")
+            continue
+        picked = select_videos(videos, entry, since, seen, limit)
+        log(f"  · 새 영상 {len(picked)}건 (피드 {len(videos)}건)")
+        if picked:
+            groups.append(
+                {"name": entry.get("name") or feed_title or name, "videos": picked}
+            )
+    return groups
+
+
+def main() -> int:
+    load_dotenv(ROOT / ".env")
+    cli = argparse.ArgumentParser(
+        description="유튜브 구독 채널 3일치 영상 링크를 모아 텔레그램·파일로 낸다"
+    )
+    cli.add_argument("--force", action="store_true", help="간격이 안 찼어도 실행")
+    cli.add_argument("--days", type=int, help="창 길이를 직접 지정 (기본 3일)")
+    cli.add_argument("--dry-run", action="store_true",
+                     help="출력만 보고 파일·상태·텔레그램은 건드리지 않음")
+    cli.add_argument("--no-telegram", action="store_true", help="텔레그램만 건너뜀")
+    args = cli.parse_args()
+
+    interval_days = args.days or int(os.getenv("YT_DIGEST_INTERVAL_DAYS", "3"))
+    limit = int(os.getenv("YT_MAX_PER_CHANNEL", "20"))
+    now = datetime.now(timezone.utc)
+
+    config = load_json(CONFIG_PATH, {"channels": []})
+    if not config.get("channels"):
+        log("youtube_channels.json에 채널이 없습니다.")
+        return 1
+    state = load_json(STATE_PATH, {"resolved": {}, "seen": {}, "last_digest_at": None})
+
+    if not args.force and not due(state, now, interval_days):
+        log(f"아직 {interval_days}일이 안 됐습니다 (마지막 {state.get('last_digest_at')}) — 넘어감")
+        return 0
+
+    since = now - timedelta(days=interval_days) if args.days else window_start(
+        state, now, interval_days
+    )
+    log(f"수집 구간: {since.astimezone(KST):%Y-%m-%d %H:%M} ~ "
+        f"{now.astimezone(KST):%Y-%m-%d %H:%M} (KST)")
+
+    groups = collect(config, state, since, limit)
+    total = sum(len(g["videos"]) for g in groups)
+    if not total:
+        log("새 영상이 없습니다 — 발송하지 않습니다.")
+        if not args.dry_run:
+            # 채널 ID 캐시는 남기되, 발송 시각은 손대지 않는다(다음 실행 때 다시 본다).
+            save_json(STATE_PATH, state)
+        return 0
+
+    if args.dry_run:
+        print()
+        print(render_markdown(groups, since, now))
+        return 0
+
+    written = write_outputs(groups, since, now)
+    log(f"파일 기록: docs/youtube/{written['links']}, docs/youtube/{written['markdown']}")
+
+    pages_base = os.getenv(
+        "PAGES_BASE_URL", "https://gschoie.github.io/GLOBAL_DEFENCE_NEW"
+    ).rstrip("/")
+    pages_url = f"{pages_base}/youtube/{written['links']}" if pages_base else None
+    if not args.no_telegram:
+        maybe_send_telegram(groups, since, now, pages_url)
+
+    stamp = now.isoformat()
+    for group in groups:
+        for video in group["videos"]:
+            state["seen"][video["video_id"]] = stamp
+    state["seen"] = prune_seen(state["seen"], now)
+    state["last_digest_at"] = stamp
+    save_json(STATE_PATH, state)
+    log(f"완료 — 채널 {len(groups)}개 · 영상 {total}건")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

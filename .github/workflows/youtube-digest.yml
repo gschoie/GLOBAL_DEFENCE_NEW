@@ -1,0 +1,67 @@
+name: YouTube 3-Day Digest
+
+# 3일에 한 번 나가면 되지만, 크론의 */3 은 달이 바뀔 때 간격이 어긋난다.
+# 그래서 매일 돌리고 실제 발송 여부는 youtube_state.json의 마지막 발송 시각으로
+# 판단한다(youtube_digest.py의 due()). 러너가 하루 죽어도 다음 날 알아서 따라잡는다.
+on:
+  schedule:
+    # 매일 KST 07:10 (UTC 22:10) — 건설기계 브리프(UTC 21:00)와 겹치지 않게
+    - cron: "10 22 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "간격이 안 찼어도 지금 보낸다"
+        type: boolean
+        default: false
+      days:
+        description: "창 길이(일). 비우면 기본 3일"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests
+
+      - name: Collect digest
+        env:
+          # @gs_analyst_bot 전용 시크릿. 없으면 TELEGRAM_* 로 폴백한다.
+          YT_TELEGRAM_BOT_TOKEN: ${{ secrets.YT_TELEGRAM_BOT_TOKEN }}
+          YT_TELEGRAM_CHAT_ID: ${{ secrets.YT_TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YT_DIGEST_INTERVAL_DAYS: "3"
+        run: |
+          args=""
+          if [ "${{ inputs.force }}" = "true" ]; then args="$args --force"; fi
+          if [ -n "${{ inputs.days }}" ]; then args="$args --days ${{ inputs.days }}"; fi
+          python youtube_digest.py $args
+
+      - name: Commit digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/youtube youtube_state.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "data: youtube digest $(TZ=Asia/Seoul date +%F)"
+          # 같은 브랜치에 데일리 브리프도 커밋한다 — 밀렸으면 얹어서 올린다.
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
