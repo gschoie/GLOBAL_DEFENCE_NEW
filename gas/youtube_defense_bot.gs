@@ -4,6 +4,11 @@
 //   checkNewVideos()      — 새 영상 감지 → 제미나이 요약 → 텔레그램 낱개 발송 (자주)
 //   sendThreeDayDigest()  — 3일치 링크를 모아 한 번에 발송 (NotebookLM 소스용)
 //
+// 손으로 한 번씩 돌리는 것들
+//   checkSetup()          — 스크립트 속성이 제대로 들어갔는지 확인
+//   installDigestTrigger()— 3일 트리거 걸기
+//   fillBufferFromFeeds(3)— 지난 3일치를 버퍼에 채워 넣기 (지금 바로 시험해 볼 때)
+//
 // 낱개 발송 때 링크를 스크립트 속성에 같이 쌓아 두고, 3일마다 그걸 비워 내보낸다.
 // 유튜브를 다시 긁지 않으므로 봇에 실제로 나간 것과 100% 일치한다.
 //
@@ -152,7 +157,8 @@ function checkNewVideos() {
 
           // 3일 모음 버퍼에 적립 — 발송 전에 넣어 둔다.
           // 텔레그램 전송이 실패해도 링크는 남아 다음 모음에 실린다.
-          bufferForDigest(channel.name, videoId, videoTitle, videoUrl);
+          const publishedAt = new Date(entry.getChildText('published', atom)).getTime();
+          bufferForDigest(channel.name, videoId, videoTitle, videoUrl, publishedAt);
 
           // HTML 특수문자 충돌 방지를 위한 안전치환 (< 와 > 부품 보호)
           const safeTitle = escapeHtml(videoTitle);
@@ -195,10 +201,55 @@ function digestKeys() {
     .sort();  // 키 앞머리가 시각이라 정렬하면 올라온 순서가 된다
 }
 
-function bufferForDigest(channelName, videoId, title, url) {
+function bufferForDigest(channelName, videoId, title, url, whenMillis) {
+  // 키 앞머리를 '올라온 시각'으로 두면 정렬만으로 업로드 순서가 나온다.
   // 같은 밀리초에 두 건이 들어와도 videoId 가 붙어 있어 덮어쓰이지 않는다.
-  const key = DIGEST_PREFIX + Date.now() + '_' + videoId;
+  const when = whenMillis ? whenMillis : Date.now();
+  const key = DIGEST_PREFIX + when + '_' + videoId;
   PROPS.setProperty(key, JSON.stringify({ ch: channelName, t: title, u: url }));
+}
+
+function isBuffered(videoId) {
+  const suffix = '_' + videoId;
+  return digestKeys().some(function (key) {
+    return key.length > suffix.length
+      && key.indexOf(suffix, key.length - suffix.length) !== -1;
+  });
+}
+
+// 지금 당장 모음을 확인하고 싶을 때. 각 채널 피드에서 최근 days일치를 버퍼에 담는다.
+// 낱개 알림은 보내지 않고 LAST_VIDEO_ 기록도 건드리지 않으므로, 평소 동작에 영향이 없다.
+// 처음 켤 때 지난 3일치를 채워 넣는 용도로도 쓴다.
+function fillBufferFromFeeds(days) {
+  const span = (days ? days : 3) * 24 * 60 * 60 * 1000;
+  const since = Date.now() - span;
+  let added = 0;
+
+  WATCH_CHANNELS.forEach(function (channel) {
+    try {
+      const url = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + channel.id;
+      const xml = XmlService.parse(UrlFetchApp.fetch(url).getContentText());
+      const atom = XmlService.getNamespace('http://www.w3.org/2005/Atom');
+      const entries = xml.getRootElement().getChildren('entry', atom);
+
+      entries.forEach(function (entry) {
+        const published = new Date(entry.getChildText('published', atom)).getTime();
+        if (!published || published < since) return;
+
+        const videoId = entry.getChildText('id', atom).replace('yt:video:', '');
+        if (isBuffered(videoId)) return;
+
+        const title = entry.getChildText('title', atom);
+        const link = entry.getChild('link', atom).getAttribute('href').getValue();
+        bufferForDigest(channel.name, videoId, title, link, published);
+        added++;
+      });
+    } catch (error) {
+      Logger.log('버퍼 채우기 실패 (' + channel.name + '): ' + error.toString());
+    }
+  });
+
+  Logger.log(added + '건을 버퍼에 담았습니다. 이제 sendThreeDayDigest() 를 돌려 보세요.');
 }
 
 function sendThreeDayDigest() {
