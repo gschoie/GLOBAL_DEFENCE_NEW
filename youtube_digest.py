@@ -523,6 +523,7 @@ def buffer_videos(state: dict, groups: list[dict], now: datetime) -> int:
                 continue
             pending[video["video_id"]] = {
                 "channel": group["name"],
+                "order": group.get("order", 9999),
                 "title": video["title"],
                 "url": video["url"],
                 "published": video["published"].isoformat(),
@@ -536,6 +537,7 @@ def groups_from_buffer(state: dict, config: dict) -> list[dict]:
     """버퍼를 채널별로 묶는다. 채널 순서는 설정 파일 순서를 따른다."""
     pending = state.get("pending", {})
     by_channel: dict[str, list[dict]] = {}
+    channel_order: dict[str, int] = {}
     for video_id, row in pending.items():
         try:
             published = datetime.fromisoformat(row["published"])
@@ -543,7 +545,8 @@ def groups_from_buffer(state: dict, config: dict) -> list[dict]:
             continue
         if published.tzinfo is None:
             published = published.replace(tzinfo=timezone.utc)
-        by_channel.setdefault(row.get("channel") or "(채널 미상)", []).append(
+        channel = row.get("channel") or "(채널 미상)"
+        by_channel.setdefault(channel, []).append(
             {
                 "video_id": video_id,
                 "title": row.get("title", ""),
@@ -551,18 +554,55 @@ def groups_from_buffer(state: dict, config: dict) -> list[dict]:
                 "published": published,
             }
         )
+        order = row.get("order", 9999)
+        channel_order[channel] = min(channel_order.get(channel, order), order)
 
     order = [
         e.get("name")
-        for e in config.get("channels", [])
+        for e in (config or {}).get("channels", [])
         if isinstance(e, dict) and e.get("name")
     ]
     rank = {name: i for i, name in enumerate(order)}
+    # 버퍼에 실어 둔 설정 순서가 1순위. 설정에 name을 적어 뒀으면 그 순서가 2순위
+    # (옛 버퍼에는 order가 없다).
+    def sort_key(n: str) -> tuple:
+        return (channel_order.get(n, 9999), rank.get(n, len(rank)), n)
+
     groups = []
-    for name in sorted(by_channel, key=lambda n: (rank.get(n, len(rank)), n)):
+    for name in sorted(by_channel, key=sort_key):
         videos = sorted(by_channel[name], key=lambda v: v["published"], reverse=True)
         groups.append({"name": name, "videos": videos})
     return groups
+
+
+# ---------------------------------------------------------------------------
+# 점검 모드
+# ---------------------------------------------------------------------------
+
+def check_channels(config: dict, state: dict) -> int:
+    """채널이 잡히는지, 피드에 뭐가 들어 있는지만 보고 끝낸다. 아무것도 쓰지 않는다."""
+    failed = 0
+    for entry in config.get("channels", []):
+        if not isinstance(entry, dict) or entry.get("enabled") is False:
+            continue
+        label = entry.get("name") or entry.get("url") or entry.get("handle") or "?"
+        channel_id = resolve_channel_id(entry, state)
+        if not channel_id:
+            log(f"❌ {label} — 채널을 못 찾았습니다")
+            failed += 1
+            continue
+        try:
+            title, videos = fetch_channel_videos(channel_id)
+        except Exception as exc:
+            log(f"❌ {label} — 피드 실패: {exc}")
+            failed += 1
+            continue
+        newest = videos[0]["published"].astimezone(KST) if videos else None
+        log(f"✅ {title or label} ({channel_id}) — 피드 {len(videos)}건"
+            + (f" · 최신 {newest:%Y-%m-%d %H:%M}" if newest else ""))
+    if failed:
+        log(f"\n{failed}개 채널이 안 잡혔습니다 — youtube_channels.json의 url을 확인하세요.")
+    return 1 if failed else 0
 
 
 # ---------------------------------------------------------------------------
@@ -573,7 +613,7 @@ def collect(
     config: dict, state: dict, since: datetime, limit: int, blocked: set
 ) -> list[dict]:
     groups: list[dict] = []
-    for entry in config.get("channels", []):
+    for order, entry in enumerate(config.get("channels", [])):
         if not isinstance(entry, dict) or entry.get("enabled") is False:
             continue
         name = entry.get("name") or entry.get("handle") or entry.get("url") or "(이름 없음)"
@@ -590,8 +630,13 @@ def collect(
         picked = select_videos(videos, entry, since, blocked, limit)
         log(f"  · 새 영상 {len(picked)}건 (피드 {len(videos)}건)")
         if picked:
+            # name을 안 적었으면 유튜브가 주는 실제 채널명을 쓴다.
             groups.append(
-                {"name": entry.get("name") or feed_title or name, "videos": picked}
+                {
+                    "name": entry.get("name") or feed_title or name,
+                    "order": order,
+                    "videos": picked,
+                }
             )
     return groups
 
@@ -606,6 +651,8 @@ def main() -> int:
     cli.add_argument("--dry-run", action="store_true",
                      help="출력만 보고 파일·상태·텔레그램은 건드리지 않음")
     cli.add_argument("--no-telegram", action="store_true", help="텔레그램만 건너뜀")
+    cli.add_argument("--check", action="store_true",
+                     help="채널이 제대로 잡히는지만 확인하고 끝낸다(아무것도 안 씀)")
     args = cli.parse_args()
 
     interval_days = args.days or int(os.getenv("YT_DIGEST_INTERVAL_DAYS", "3"))
@@ -622,6 +669,9 @@ def main() -> int:
     )
     state.setdefault("seen", {})
     state.setdefault("pending", {})
+
+    if args.check:
+        return check_channels(config, state)
 
     since = (
         now - timedelta(days=interval_days)

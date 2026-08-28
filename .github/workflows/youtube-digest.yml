@@ -18,6 +18,10 @@ on:
         description: "창 길이(일). 비우면 기본 3일"
         type: string
         default: ""
+      check:
+        description: "채널이 제대로 잡히는지만 확인(발송·커밋 안 함)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,11 +50,14 @@ jobs:
           YT_DIGEST_INTERVAL_DAYS: "3"
         run: |
           args=""
-          if [ "${{ inputs.force }}" = "true" ]; then args="$args --force"; fi
-          if [ -n "${{ inputs.days }}" ]; then args="$args --days ${{ inputs.days }}"; fi
+          if [ "${{ inputs.check }}" = "true" ]; then args="--check"; else
+            if [ "${{ inputs.force }}" = "true" ]; then args="$args --force"; fi
+            if [ -n "${{ inputs.days }}" ]; then args="$args --days ${{ inputs.days }}"; fi
+          fi
           python youtube_digest.py $args
 
       - name: Commit digest
+        if: ${{ inputs.check != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

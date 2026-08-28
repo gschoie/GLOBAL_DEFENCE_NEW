@@ -104,17 +104,18 @@ Pages가 켜져 있으면 텔레그램 메시지에
 
 ## 채널 등록
 
-가장 쉬운 방법은 **유튜브에서 채널 주소를 복사해 `url`에 그대로 붙여넣는 것**입니다.
+**유튜브에서 채널 주소를 복사해 `url`에 그대로 붙여넣으면 끝입니다.**
 
 ```json
-{ "name": "샤를의 군사연구소", "url": "https://www.youtube.com/channel/UC..." }
-{ "name": "kkam", "url": "https://www.youtube.com/@kkam" }
-{ "name": "까치살모", "channel_id": "UC..." }
+{ "url": "https://www.youtube.com/@user-charlesmililab" }
+{ "url": "https://www.youtube.com/channel/UC..." }
 ```
 
 `.../channel/UC…` 꼴이면 그 안의 ID를 바로 읽어 요청 없이 잡습니다.
-`@핸들`만 있으면 첫 실행 때 채널 페이지에서 ID를 찾아 `youtube_state.json`에
-캐시합니다. 못 찾으면 로그에 `채널 해결 실패`로 찍히니 그때 `url`을 채워 주면 됩니다.
+`@핸들`이면 첫 실행 때 채널 페이지에서 ID를 찾아 `youtube_state.json`에 캐시합니다.
+
+`name`은 생략해도 됩니다 — **유튜브가 주는 실제 채널명**을 씁니다. 묶음 순서는
+이름과 무관하게 이 목록 순서를 따릅니다. 잡히는지 확인은 아래 `--check`로 합니다.
 
 선택 키: `match`(제목 정규식에 걸리는 것만), `exclude`(걸리면 버림),
 `enabled: false`(잠시 끄기).
@@ -146,15 +147,20 @@ Pages가 켜져 있으면 텔레그램 메시지에
 1. `@gs_analyst_bot`과 대화를 시작한 뒤 봇 토큰과 chat_id를 확인합니다.
 2. Settings → Secrets → Actions 에 `YT_TELEGRAM_BOT_TOKEN`,
    `YT_TELEGRAM_CHAT_ID` 추가. (없으면 `TELEGRAM_*` 로 폴백합니다.)
-3. Actions 탭에서 `YouTube 3-Day Digest`를 `force: true`로 한 번 수동 실행해
-   채널이 제대로 잡히는지 로그로 확인합니다.
+3. **이 브랜치를 기본 브랜치에 합칩니다.** GitHub Actions의 `schedule`과
+   `workflow_dispatch`는 **기본 브랜치의 워크플로만** 봅니다. 합치기 전에는
+   크론도 안 돌고 Actions 탭에 수동 실행 버튼도 안 생깁니다.
+4. Actions 탭 → `YouTube 3-Day Digest` → `check: true`로 한 번 돌려
+   채널 6개가 다 잡히는지 확인합니다(발송·커밋 안 함).
+5. 확인되면 `force: true`로 첫 모음을 받아 봅니다.
 
 ## 로컬 실행
 
 ```bash
+python youtube_digest.py --check            # 채널이 잡히는지만 확인 (아무것도 안 씀)
 python youtube_digest.py --dry-run          # 파일·상태·텔레그램 안 건드리고 출력만
 python youtube_digest.py --force --days 7   # 7일치를 지금 바로
-python -m unittest discover -s tests        # 24개 검산 테스트
+python -m unittest discover -s tests        # 39개 검산 테스트
 ```
 
 ## NotebookLM 쪽 주의

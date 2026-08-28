@@ -348,5 +348,58 @@ class BufferTest(unittest.TestCase):
         self.assertEqual(yd.groups_from_buffer({"pending": {}}, {}), [])
 
 
+class ChannelNamingTest(unittest.TestCase):
+    """설정에 name을 안 적으면 유튜브가 주는 실제 채널명을 쓰고, 순서는 설정을 따른다."""
+
+    def setUp(self):
+        self.original = yd.http_get
+        self.addCleanup(setattr, yd, "http_get", self.original)
+        self.now = datetime(2026, 8, 28, 22, 0, tzinfo=UTC)
+        self.since = datetime(2026, 8, 25, 0, 0, tzinfo=UTC)
+
+        titles = {"UC" + "1" * 22: "KKMD 케이케이엠디", "UC" + "2" * 22: "까치살모 TV"}
+
+        def fake(url, timeout=30, retries=3):
+            for channel_id, title in titles.items():
+                tail = channel_id[2:]
+                if tail in url:
+                    body = FEED.replace(
+                        "<title>샤를의 군사연구소</title>", f"<title>{title}</title>"
+                    )
+                    # 채널마다 영상 ID를 달리 준다 (같은 영상이 두 채널에 있을 수는 없다)
+                    return body.replace("aaaaaaaaaaa", f"{tail[0]}aaaaaaaaaa").replace(
+                        "bbbbbbbbbbb", f"{tail[0]}bbbbbbbbbb"
+                    ).encode("utf-8")
+            raise RuntimeError("HTTP Error 404: Not Found")
+
+        yd.http_get = fake
+        self.config = {
+            "channels": [
+                {"channel_id": "UC" + "1" * 22},
+                {"channel_id": "UC" + "2" * 22},
+            ]
+        }
+
+    def test_feed_title_is_used_when_name_omitted(self):
+        groups = yd.collect(self.config, {}, self.since, 20, set())
+        self.assertEqual([g["name"] for g in groups],
+                         ["KKMD 케이케이엠디", "까치살모 TV"])
+
+    def test_config_order_survives_the_buffer_without_names(self):
+        state = {}
+        groups = yd.collect(self.config, state, self.since, 20, set())
+        yd.buffer_videos(state, groups, self.now)
+        # 이름 순으로는 '까치살모 TV'가 앞이지만, 설정 순서가 이겨야 한다.
+        rebuilt = yd.groups_from_buffer(state, self.config)
+        self.assertEqual([g["name"] for g in rebuilt],
+                         ["KKMD 케이케이엠디", "까치살모 TV"])
+
+    def test_buffer_without_order_still_groups(self):
+        state = {"pending": {"v1": {"channel": "옛 버퍼", "title": "t",
+                                    "url": "u", "published": self.now.isoformat()}}}
+        groups = yd.groups_from_buffer(state, {"channels": []})
+        self.assertEqual([g["name"] for g in groups], ["옛 버퍼"])
+
+
 if __name__ == "__main__":
     unittest.main()
