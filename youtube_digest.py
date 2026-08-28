@@ -4,8 +4,12 @@
 #   1) docs/youtube/<날짜>-links.txt  — 주소만 한 줄씩. NotebookLM 소스 창에 통째로 붙여넣는 용도
 #   2) docs/youtube/<날짜>.md         — 채널·제목·날짜가 붙은 읽는 판
 #   3) 텔레그램(@gs_analyst_bot)      — 같은 목록을 메시지로
-# 로 내보낸다. 3일에 한 번만 나가면 되므로 워크플로는 매일 돌리되 상태 파일의
-# 마지막 발송 시각을 보고 간격이 안 찼으면 아무것도 하지 않는다(--force로 무시).
+# 로 내보낸다.
+#
+# 수집은 매일, 발송은 3일에 한 번이다. 유튜브 피드는 최근 15개만 들고 있어서
+# 3일에 한 번만 긁으면 그 사이에 많이 올라온 채널은 앞부분이 잘려 나간다.
+# 그래서 매일 돌며 새 영상을 상태 파일의 pending 버퍼에 쌓아 두고, 간격이 차면
+# 버퍼를 통째로 비워 내보낸다(--force로 지금 비우기).
 #
 # 건설기계 브리프(construction_news.py)와 같은 원칙: 표준 라이브러리만 쓴다.
 
@@ -30,6 +34,10 @@ STATE_PATH = ROOT / "youtube_state.json"
 OUT_DIR = ROOT / "docs" / "youtube"
 
 FEED_URL = "https://www.youtube.com/feeds/videos.xml"
+# 채널 피드(channel_id=UC…)는 쇼츠를 빼고 주는 때가 있다. 업로드 재생목록
+# (playlist_id=UU… — 채널 ID의 UC를 UU로 바꾼 것)은 쇼츠까지 담아 준다.
+# 어느 쪽이 뭘 빠뜨리든 둘 다 긁어 합치면 놓치지 않는다.
+FEED_PARAMS = ("channel_id", "playlist_id")
 ATOM = "{http://www.w3.org/2005/Atom}"
 YT = "{http://www.youtube.com/xml/schemas/2015}"
 MEDIA = "{http://search.yahoo.com/mrss/}"
@@ -224,9 +232,41 @@ def parse_feed(raw: bytes) -> tuple[str, list[dict]]:
     return channel_title, videos
 
 
+def uploads_playlist_id(channel_id: str) -> str:
+    """UCxxxx → UUxxxx. 그 채널의 '업로드' 재생목록 ID다."""
+    return "UU" + channel_id[2:]
+
+
+def merge_videos(*batches: list[dict]) -> list[dict]:
+    merged: dict[str, dict] = {}
+    for batch in batches:
+        for video in batch:
+            merged.setdefault(video["video_id"], video)
+    return sorted(merged.values(), key=lambda v: v["published"], reverse=True)
+
+
 def fetch_channel_videos(channel_id: str) -> tuple[str, list[dict]]:
-    url = f"{FEED_URL}?{urllib.parse.urlencode({'channel_id': channel_id})}"
-    return parse_feed(http_get(url))
+    """채널 피드 + 업로드 재생목록 피드를 합쳐 쇼츠까지 훑는다."""
+    channel_title = ""
+    batches: list[list[dict]] = []
+    errors: list[str] = []
+    for param in FEED_PARAMS:
+        value = (
+            channel_id if param == "channel_id" else uploads_playlist_id(channel_id)
+        )
+        url = f"{FEED_URL}?{urllib.parse.urlencode({param: value})}"
+        try:
+            title, videos = parse_feed(http_get(url))
+        except Exception as exc:
+            errors.append(f"{param}={value}: {exc}")
+            continue
+        channel_title = channel_title or title
+        batches.append(videos)
+    if not batches:
+        raise RuntimeError(" / ".join(errors))
+    for message in errors:  # 한쪽만 실패하면 나머지로 계속 간다
+        log(f"  · 피드 한쪽 실패 (계속 진행): {message}")
+    return channel_title, merge_videos(*batches)
 
 
 def title_passes(title: str, entry: dict) -> bool:
@@ -463,11 +503,70 @@ def due(state: dict, now: datetime, interval_days: int) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# pending 버퍼 — 매일 모아 두고 3일마다 비운다
+#
+# 유튜브 피드는 채널당 최근 15개만 준다. 3일에 한 번만 긁으면 그 사이에 15개를
+# 넘겨 올린 채널은 앞부분이 잘린다. 매일 긁어 여기 쌓아 두면 그 일이 없다.
+# ---------------------------------------------------------------------------
+
+def buffer_videos(state: dict, groups: list[dict], now: datetime) -> int:
+    pending = state.setdefault("pending", {})
+    added = 0
+    for group in groups:
+        for video in group["videos"]:
+            if video["video_id"] in pending:
+                continue
+            pending[video["video_id"]] = {
+                "channel": group["name"],
+                "title": video["title"],
+                "url": video["url"],
+                "published": video["published"].isoformat(),
+                "buffered_at": now.isoformat(),
+            }
+            added += 1
+    return added
+
+
+def groups_from_buffer(state: dict, config: dict) -> list[dict]:
+    """버퍼를 채널별로 묶는다. 채널 순서는 설정 파일 순서를 따른다."""
+    pending = state.get("pending", {})
+    by_channel: dict[str, list[dict]] = {}
+    for video_id, row in pending.items():
+        try:
+            published = datetime.fromisoformat(row["published"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        by_channel.setdefault(row.get("channel") or "(채널 미상)", []).append(
+            {
+                "video_id": video_id,
+                "title": row.get("title", ""),
+                "url": row.get("url", ""),
+                "published": published,
+            }
+        )
+
+    order = [
+        e.get("name")
+        for e in config.get("channels", [])
+        if isinstance(e, dict) and e.get("name")
+    ]
+    rank = {name: i for i, name in enumerate(order)}
+    groups = []
+    for name in sorted(by_channel, key=lambda n: (rank.get(n, len(rank)), n)):
+        videos = sorted(by_channel[name], key=lambda v: v["published"], reverse=True)
+        groups.append({"name": name, "videos": videos})
+    return groups
+
+
+# ---------------------------------------------------------------------------
 # 메인
 # ---------------------------------------------------------------------------
 
-def collect(config: dict, state: dict, since: datetime, limit: int) -> list[dict]:
-    seen = state.setdefault("seen", {})
+def collect(
+    config: dict, state: dict, since: datetime, limit: int, blocked: set
+) -> list[dict]:
     groups: list[dict] = []
     for entry in config.get("channels", []):
         if not isinstance(entry, dict) or entry.get("enabled") is False:
@@ -483,7 +582,7 @@ def collect(config: dict, state: dict, since: datetime, limit: int) -> list[dict
         except Exception as exc:
             log(f"  ! 피드 실패: {exc}")
             continue
-        picked = select_videos(videos, entry, since, seen, limit)
+        picked = select_videos(videos, entry, since, blocked, limit)
         log(f"  · 새 영상 {len(picked)}건 (피드 {len(videos)}건)")
         if picked:
             groups.append(
@@ -512,30 +611,48 @@ def main() -> int:
     if not config.get("channels"):
         log("youtube_channels.json에 채널이 없습니다.")
         return 1
-    state = load_json(STATE_PATH, {"resolved": {}, "seen": {}, "last_digest_at": None})
+    state = load_json(
+        STATE_PATH,
+        {"resolved": {}, "seen": {}, "pending": {}, "last_digest_at": None},
+    )
+    state.setdefault("seen", {})
+    state.setdefault("pending", {})
 
-    if not args.force and not due(state, now, interval_days):
-        log(f"아직 {interval_days}일이 안 됐습니다 (마지막 {state.get('last_digest_at')}) — 넘어감")
-        return 0
-
-    since = now - timedelta(days=interval_days) if args.days else window_start(
-        state, now, interval_days
+    since = (
+        now - timedelta(days=interval_days)
+        if args.days
+        else window_start(state, now, interval_days)
     )
     log(f"수집 구간: {since.astimezone(KST):%Y-%m-%d %H:%M} ~ "
         f"{now.astimezone(KST):%Y-%m-%d %H:%M} (KST)")
 
-    groups = collect(config, state, since, limit)
-    total = sum(len(g["videos"]) for g in groups)
-    if not total:
-        log("새 영상이 없습니다 — 발송하지 않습니다.")
-        if not args.dry_run:
-            # 채널 ID 캐시는 남기되, 발송 시각은 손대지 않는다(다음 실행 때 다시 본다).
-            save_json(STATE_PATH, state)
-        return 0
+    # 수집은 매일 — 이미 보낸 것과 버퍼에 든 것은 다시 담지 않는다.
+    blocked = set(state["seen"]) | set(state["pending"])
+    fresh = collect(config, state, since, limit, blocked)
+    added = buffer_videos(state, fresh, now)
+    log(f"버퍼에 새로 담은 것 {added}건 · 버퍼 총 {len(state['pending'])}건")
 
     if args.dry_run:
-        print()
-        print(render_markdown(groups, since, now))
+        groups = groups_from_buffer(state, config)
+        if groups:
+            print()
+            print(render_markdown(groups, since, now))
+        else:
+            log("버퍼가 비어 있습니다.")
+        return 0
+
+    # 발송은 3일에 한 번 — 간격이 안 찼으면 버퍼만 남기고 끝낸다.
+    if not args.force and not due(state, now, interval_days):
+        save_json(STATE_PATH, state)
+        log(f"아직 {interval_days}일이 안 됐습니다 "
+            f"(마지막 {state.get('last_digest_at')}) — 버퍼만 저장하고 넘어감")
+        return 0
+
+    groups = groups_from_buffer(state, config)
+    total = sum(len(g["videos"]) for g in groups)
+    if not total:
+        save_json(STATE_PATH, state)
+        log("보낼 영상이 없습니다 — 발송하지 않습니다.")
         return 0
 
     written = write_outputs(groups, since, now)
@@ -549,9 +666,9 @@ def main() -> int:
         maybe_send_telegram(groups, since, now, pages_url)
 
     stamp = now.isoformat()
-    for group in groups:
-        for video in group["videos"]:
-            state["seen"][video["video_id"]] = stamp
+    for video_id in state["pending"]:
+        state["seen"][video_id] = stamp
+    state["pending"] = {}
     state["seen"] = prune_seen(state["seen"], now)
     state["last_digest_at"] = stamp
     save_json(STATE_PATH, state)

@@ -222,5 +222,123 @@ class WriteOutputsTest(unittest.TestCase):
         self.assertEqual(index["digests"][0]["videos"], 2)
 
 
+SHORTS_FEED = """<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+      xmlns:media="http://search.yahoo.com/mrss/"
+      xmlns="http://www.w3.org/2005/Atom">
+  <title>샤를의 군사연구소 - Videos</title>
+  <entry>
+    <yt:videoId>aaaaaaaaaaa</yt:videoId>
+    <title>[긴급] 오늘 나온 영상</title>
+    <published>2026-08-27T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <yt:videoId>4i20qy1FyOU</yt:videoId>
+    <title>한국형 상륙돌격장갑차 II</title>
+    <published>2026-08-27T12:00:00+00:00</published>
+  </entry>
+</feed>
+"""
+
+
+class FeedMergeTest(unittest.TestCase):
+    """채널 피드가 쇼츠를 빼고 주더라도 업로드 재생목록 쪽에서 잡아 온다."""
+
+    def setUp(self):
+        self.original = yd.http_get
+        self.addCleanup(setattr, yd, "http_get", self.original)
+
+    def test_uploads_playlist_id(self):
+        self.assertEqual(yd.uploads_playlist_id("UC" + "x" * 22), "UU" + "x" * 22)
+
+    def test_merge_dedupes_and_sorts_newest_first(self):
+        _, channel_videos = yd.parse_feed(FEED.encode("utf-8"))
+        _, shorts_videos = yd.parse_feed(SHORTS_FEED.encode("utf-8"))
+        merged = yd.merge_videos(channel_videos, shorts_videos)
+        ids = [v["video_id"] for v in merged]
+        self.assertEqual(ids[0], "4i20qy1FyOU")          # 가장 최신
+        self.assertEqual(ids.count("aaaaaaaaaaa"), 1)    # 양쪽에 있어도 한 번
+        self.assertEqual(len(ids), 4)
+
+    def test_fetch_hits_both_feeds_and_merges(self):
+        asked = []
+
+        def fake(url, timeout=30, retries=3):
+            asked.append(url)
+            if "playlist_id=UU" in url:
+                return SHORTS_FEED.encode("utf-8")
+            return FEED.encode("utf-8")
+
+        yd.http_get = fake
+        title, videos = yd.fetch_channel_videos("UC" + "z" * 22)
+        self.assertEqual(title, "샤를의 군사연구소")
+        self.assertEqual(len(asked), 2)
+        self.assertIn("4i20qy1FyOU", [v["video_id"] for v in videos])
+
+    def test_one_feed_failing_does_not_lose_the_other(self):
+        def fake(url, timeout=30, retries=3):
+            if "playlist_id=UU" in url:
+                raise RuntimeError("HTTP Error 404: Not Found")
+            return FEED.encode("utf-8")
+
+        yd.http_get = fake
+        _, videos = yd.fetch_channel_videos("UC" + "z" * 22)
+        self.assertEqual(len(videos), 3)
+
+    def test_both_feeds_failing_raises(self):
+        def fake(url, timeout=30, retries=3):
+            raise RuntimeError("blocked")
+
+        yd.http_get = fake
+        with self.assertRaises(RuntimeError):
+            yd.fetch_channel_videos("UC" + "z" * 22)
+
+
+class BufferTest(unittest.TestCase):
+    """수집은 매일, 발송은 3일에 한 번 — 그 사이 버퍼가 새는지 본다."""
+
+    def setUp(self):
+        _, self.videos = yd.parse_feed(FEED.encode("utf-8"))
+        self.now = datetime(2026, 8, 28, 22, 0, tzinfo=UTC)
+        self.groups = [{"name": "샤를의 군사연구소", "videos": self.videos[:2]}]
+
+    def test_buffering_is_idempotent(self):
+        state = {}
+        self.assertEqual(yd.buffer_videos(state, self.groups, self.now), 2)
+        self.assertEqual(yd.buffer_videos(state, self.groups, self.now), 0)
+        self.assertEqual(len(state["pending"]), 2)
+
+    def test_buffer_accumulates_across_days(self):
+        state = {}
+        yd.buffer_videos(state, [{"name": "A", "videos": self.videos[:1]}], self.now)
+        yd.buffer_videos(
+            state,
+            [{"name": "A", "videos": self.videos[1:2]}],
+            self.now + timedelta(days=1),
+        )
+        self.assertEqual(len(state["pending"]), 2)
+
+    def test_groups_from_buffer_follows_config_order(self):
+        state = {}
+        yd.buffer_videos(state, [{"name": "kkam", "videos": self.videos[:1]}], self.now)
+        yd.buffer_videos(
+            state, [{"name": "샤를의 군사연구소", "videos": self.videos[1:]}], self.now
+        )
+        config = {"channels": [{"name": "샤를의 군사연구소"}, {"name": "kkam"}]}
+        groups = yd.groups_from_buffer(state, config)
+        self.assertEqual([g["name"] for g in groups], ["샤를의 군사연구소", "kkam"])
+        self.assertEqual(len(groups[0]["videos"]), 2)
+
+    def test_groups_from_buffer_sorts_videos_newest_first(self):
+        state = {}
+        yd.buffer_videos(state, self.groups, self.now)
+        groups = yd.groups_from_buffer(state, {"channels": []})
+        published = [v["published"] for v in groups[0]["videos"]]
+        self.assertEqual(published, sorted(published, reverse=True))
+
+    def test_empty_buffer_makes_no_groups(self):
+        self.assertEqual(yd.groups_from_buffer({"pending": {}}, {}), [])
+
+
 if __name__ == "__main__":
     unittest.main()
