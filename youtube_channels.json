@@ -2,33 +2,37 @@
   "_comment": [
     "3일치 영상 링크를 모을 유튜브 채널 목록. 이 파일만 고치면 대상이 바뀐다.",
     "",
+    "가장 쉬운 등록법: 유튜브에서 채널 주소를 복사해 url에 그대로 붙여넣는다.",
+    "  https://www.youtube.com/channel/UC…  ← 이 꼴이면 요청 없이 바로 잡힌다",
+    "  https://www.youtube.com/@핸들        ← 첫 실행 때 채널 ID를 찾아 캐시한다",
+    "",
     "각 항목 키",
     "  name        : 표시 이름 (필수)",
+    "  url         : 채널 주소 통째로",
     "  channel_id  : UC로 시작하는 채널 ID. 알면 이게 제일 확실하다",
-    "  handle      : @핸들 (예: @user-charlesmililab). channel_id가 없으면 이걸로 찾는다",
-    "  url         : 채널 주소 통째로. handle 대신 넣어도 된다",
+    "  handle      : @핸들만 아는 경우",
     "  match       : 제목에 걸 정규식. 이게 있으면 걸리는 영상만 담는다 (선택)",
     "  exclude     : 제목에 걸리면 버릴 정규식 (선택)",
     "  enabled     : false면 건너뜀 (기본 true)",
     "",
-    "handle/url만 준 채널은 첫 실행 때 채널 ID를 찾아 youtube_state.json에 캐시한다.",
-    "못 찾으면 로그에 '해결 실패'로 찍히니 그때 주소를 확인해서 고치면 된다."
+    "handle만 준 채널은 첫 실행 때 채널 페이지에서 ID를 찾아 youtube_state.json에",
+    "캐시한다. 못 찾으면 로그에 '채널 해결 실패'로 찍히니, 그때 url을 채워 주면 된다."
   ],
   "channels": [
     {
       "name": "샤를의 군사연구소",
       "handle": "@user-charlesmililab",
-      "note": "샤를세환"
+      "note": "샤를세환. 봇 카드의 채널 주소는 https://www.youtube.com/channel/UCVNAlg66t3Jhkz… 였음 — 뒷자리까지 있는 전체 주소를 url에 넣으면 더 확실하다"
     },
     {
       "name": "kkam",
       "handle": "@kkam",
-      "note": "핸들 미확인 — 채널 주소 확인해서 handle 또는 channel_id로 교체할 것"
+      "note": "핸들 추정 — 유튜브에서 채널 주소 복사해 url로 교체할 것"
     },
     {
       "name": "까치살모",
       "handle": "@까치살모",
-      "note": "핸들 미확인 — 채널 주소 확인해서 handle 또는 channel_id로 교체할 것"
+      "note": "핸들 추정 — 유튜브에서 채널 주소 복사해 url로 교체할 것"
     }
   ]
 }

@@ -157,12 +157,17 @@ def extract_channel_id(page: str) -> str | None:
 
 def resolve_channel_id(entry: dict, state: dict) -> str | None:
     """설정 → 채널 ID. 한 번 찾으면 상태 파일에 캐시해 두고 다시 안 찾는다."""
-    explicit = (entry.get("channel_id") or "").strip()
-    if explicit:
-        found = CHANNEL_ID_RE.search(explicit)
+    # channel_id를 줬거나, url이 이미 .../channel/UC… 꼴이면 요청 없이 끝난다.
+    # (유튜브 카드에서 복사한 주소가 대개 이 꼴이다)
+    for raw in (entry.get("channel_id"), entry.get("url")):
+        text = (raw or "").strip()
+        if not text:
+            continue
+        found = CHANNEL_ID_RE.search(text)
         if found:
             return found.group(1)
-        log(f"  ! channel_id 형식이 이상합니다: {explicit}")
+    if (entry.get("channel_id") or "").strip():
+        log(f"  ! channel_id 형식이 이상합니다: {entry['channel_id']}")
 
     cache = state.setdefault("resolved", {})
     key = (

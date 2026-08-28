@@ -104,17 +104,17 @@ Pages가 켜져 있으면 텔레그램 메시지에
 
 ## 채널 등록
 
-`youtube_channels.json`의 각 항목은 아래 중 하나로 채널을 가리킵니다.
+가장 쉬운 방법은 **유튜브에서 채널 주소를 복사해 `url`에 그대로 붙여넣는 것**입니다.
 
 ```json
-{ "name": "샤를의 군사연구소", "channel_id": "UC..." }   // 가장 확실
-{ "name": "kkam", "handle": "@kkam" }                    // 핸들로 찾아서 캐시
-{ "name": "까치살모", "url": "https://www.youtube.com/@..." }
+{ "name": "샤를의 군사연구소", "url": "https://www.youtube.com/channel/UC..." }
+{ "name": "kkam", "url": "https://www.youtube.com/@kkam" }
+{ "name": "까치살모", "channel_id": "UC..." }
 ```
 
-`handle`/`url`만 준 채널은 첫 실행 때 채널 페이지에서 ID를 찾아
-`youtube_state.json`에 캐시합니다. 못 찾으면 로그에 `채널 해결 실패`로 찍히니
-유튜브에서 채널 주소를 복사해 `url`에 넣어 주면 됩니다.
+`.../channel/UC…` 꼴이면 그 안의 ID를 바로 읽어 요청 없이 잡습니다.
+`@핸들`만 있으면 첫 실행 때 채널 페이지에서 ID를 찾아 `youtube_state.json`에
+캐시합니다. 못 찾으면 로그에 `채널 해결 실패`로 찍히니 그때 `url`을 채워 주면 됩니다.
 
 선택 키: `match`(제목 정규식에 걸리는 것만), `exclude`(걸리면 버림),
 `enabled: false`(잠시 끄기).

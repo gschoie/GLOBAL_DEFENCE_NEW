@@ -97,6 +97,14 @@ class ResolveTest(unittest.TestCase):
         entry = {"channel_id": "UC" + "a" * 22, "handle": "@x"}
         self.assertEqual(yd.resolve_channel_id(entry, {}), "UC" + "a" * 22)
 
+    def test_channel_url_with_id_needs_no_network(self):
+        entry = {"url": "https://www.youtube.com/channel/UC" + "d" * 22}
+        self.assertEqual(yd.resolve_channel_id(entry, {}), "UC" + "d" * 22)
+
+    def test_channel_url_with_query_tail_still_parses(self):
+        entry = {"url": "https://www.youtube.com/channel/UC" + "e" * 22 + "?si=abc"}
+        self.assertEqual(yd.resolve_channel_id(entry, {}), "UC" + "e" * 22)
+
     def test_cached_handle_is_reused_without_network(self):
         state = {"resolved": {"@kkam": {"channel_id": "UC" + "b" * 22}}}
         self.assertEqual(
