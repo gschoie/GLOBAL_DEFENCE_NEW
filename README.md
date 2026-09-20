@@ -75,3 +75,25 @@ python -m http.server -d docs 8000   # http://localhost:8000
 `TELEGRAM_BOT_TOKEN`·`TELEGRAM_CHAT_ID` 시크릿을 추가하고 워크플로의
 `ENABLE_TELEGRAM`을 `true`로 바꾸면, 실행마다 신규 고관련성 기사를
 다이제스트로 발송합니다.
+
+## LNG 수출·액화터미널 프로젝트 트래커
+
+데일리 브리핑과 별도로, 글로벌 **pre-FID(FEED·Proposed) LNG 액화 프로젝트**를
+표로 추적합니다. 대시보드 맨 위의 링크로 연결됩니다.
+
+- 페이지: `docs/lng_tracker.html` (대시보드 상단 링크)
+- 데이터: `docs/data/lng_projects.json` — 프로젝트별
+  `fid_rumor`(FID 설/목표 보도), `fid_date`(FID 확정일), `startup`(완공 계획),
+  `capacity_mtpa`, `spa`(장기공급계약), `doe`/`ferc`(미국 인허가), `note`, `log`
+- 프로젝트명 텍스트 목록: `docs/data/lng_project_names.txt` (뉴스 매칭 키워드용)
+- 초기 리스트: `Listing_202609200444.xlsx`(Future Liquefaction Terminals)에서
+  STATUS=FEED/Proposed 135건 (2026-09-20 기준)
+
+### 매일 쌓는 방법
+
+데일리 브리핑에서 LNG 수출/액화터미널 보도가 확인되면 `lng_projects.json`에서:
+
+1. 해당 프로젝트의 `fid_rumor`/`fid_date`/`spa`/`doe`/`ferc`/`note`를 갱신
+2. `log` 배열에 `{"date": "YYYY-MM-DD", "text": "…", "link": "…"}` 추가
+3. `meta.updated` 갱신 — FID 확정 시 `status`를 `"FID"`로 변경
+4. 리스트에 없는 신규 프로젝트는 `projects`에 새 항목으로 추가
