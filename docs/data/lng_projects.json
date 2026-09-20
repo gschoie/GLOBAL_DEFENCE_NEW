@@ -48,11 +48,17 @@
    "watch": true,
    "fid_rumor": "FID 2026 연내 목표 — 2026.01 BC Hydro 전력 MOU, 2026.06 독일 국영계열 20년 오프테이크 체결로 '사실상 디리스크' 평가",
    "fid_date": "",
-   "spa": "Uniper·SEFE 등 20년 오프테이크 — 12 MTPA 중 25% 확보(2026.06), 추가 협상 진행",
+   "spa": "Uniper·SEFE(독일) 20년 오프테이크 + Santos(호주) 1 MTPA·20년 HOA(2026.09.14) — 12 MTPA 중 25%+ 확보, 추가 협상 진행",
    "doe": "",
    "ferc": "",
    "note": "Nisga'a 원주민정부 + Rockies LNG + Western LNG. FLNG 방식",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-14",
+     "text": "[SPA] Santos(호주)와 1 MTPA·20년 HOA 체결 — Uniper·SEFE에 이은 올해 3번째 국제 오프테이크. 연내 FID 목표 유지",
+     "link": "https://www.canada.ca/en/natural-resources-canada/news/2026/09/canadian-lng-project-signs-third-international-offtake-deal.html"
+    }
+   ]
   },
   {
    "id": "yoho-flng",
@@ -112,7 +118,13 @@
    "doe": "",
    "ferc": "",
    "note": "Elk-Antelope 가스전, 5.6 MTPA. 10년 이상 지연 끝 FID 초읽기",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-07",
+     "text": "[FID설] TotalEnergies, ExxonMobil에 운영권 이전 합의 — capex $4B 절감(≈$14B), FID 4Q(12월 중순) 목표",
+     "link": "https://www.offshore-mag.com/field-development/news/55403348/papua-lng-edges-toward-fid-as-totalenergies-hands-operatorship-to-exxonmobil"
+    }
+   ]
   },
   {
    "id": "sakhalin-ii-lng-expansion",
@@ -232,7 +244,13 @@
    "doe": "",
    "ferc": "",
    "note": "14→28 MTPA 더블링(트레인 2기 증설). Shell 40% 최대주주",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-18",
+     "text": "[FID설] '이르면 10월 초 FID 가능' 로이터 보도 — JV 파트너 승인 절차 막바지",
+     "link": "https://www.inkl.com/news/shell-led-lng-canada-partners-may-take-phase-2-fid-as-early-as-october"
+    }
+   ]
   },
   {
    "id": "abadi-lng",
@@ -628,11 +646,17 @@
    "watch": true,
    "fid_rumor": "2026 2Q FERC·DOE 신청과 함께 'FID 2027년 초 목표' 공식화, 첫 생산 2028년 말 목표",
    "fid_date": "",
-   "spa": "",
+   "spa": "VG 포트폴리오 SPA 누적 중 — China Gas 0.5 MTPA·20년 추가(2026.09.14, 누적 2.5 MTPA)",
    "doe": "확장분 non-FTA 2026.07.07 신청(620.5 Bcf/y, 심사 중)",
    "ferc": "확장분 2026.05.26 신청(심사 중). 본체 CP2는 2025.05 최종승인",
    "note": "본체 CP2: 1단계 FID 2025, 2단계 FID 2026.03.13($86억 PF 클로징). 이 행은 브라운필드 확장 +10 MTPA(6블록 증설)",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-14",
+     "text": "[SPA] Venture Global–China Gas 0.5 MTPA·20년 SPA(2030년 공급 개시, 포트폴리오 공급) — China Gas 누적 2.5 MTPA. Plaquemines·CP2 확장 추진과 병행",
+     "link": "https://www.businesswire.com/news/home/20260914377822/en/Venture-Global-and-China-Gas-Announce-New-Long-Term-LNG-Agreement"
+    }
+   ]
   },
   {
    "id": "salina-cruz-lng-fsu",
@@ -1372,7 +1396,13 @@
    "doe": "",
    "ferc": "",
    "note": "트레인 5기 +7.75 MTPA → 합계 17.25 MTPA, 2030년대 초 가동 목표",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-16",
+     "text": "[FID설] Caturus·Mubadala, 트레인 5기 +7.75 MTPA 확장 공식 발표 — 합계 17.25 MTPA, 2030년대 초 가동 목표",
+     "link": "https://www.rigzone.com/news/kimmeridge_mubadala_to_nearly_double_commonwealth_lng_capacity-16-sep-2026-184634-article/"
+    }
+   ]
   },
   {
    "id": "eddystone-lng",
