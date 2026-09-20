@@ -1,0 +1,44 @@
+name: Deploy Pages
+
+# docs/ 를 GitHub Pages로 배포한다.
+# 봇(GITHUB_TOKEN) 커밋은 on:push를 트리거하지 않으므로,
+# 데일리 브리프 워크플로 완료 이벤트(workflow_run)로 배포를 잇는다.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/construction-equipment-news-dashboard-1ig6u1"]
+  workflow_run:
+    workflows: ["Daily Construction Equipment Brief"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Pages가 꺼져 있으면 자동으로 켠다
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
