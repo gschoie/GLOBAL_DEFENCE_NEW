@@ -89,11 +89,22 @@ python -m http.server -d docs 8000   # http://localhost:8000
 - 초기 리스트: `Listing_202609200444.xlsx`(Future Liquefaction Terminals)에서
   STATUS=FEED/Proposed 135건 (2026-09-20 기준)
 
-### 매일 쌓는 방법
+### 매일 쌓는 방법 — 자동
 
-데일리 브리핑에서 LNG 수출/액화터미널 보도가 확인되면 `lng_projects.json`에서:
+데일리 워크플로가 `lng_news.py`를 함께 실행합니다. Google News RSS에서
+LNG FID/SPA/DOE·FERC/EPC 관련 보도를 모아 프로젝트명과 매칭하고, Gemini가
+프로젝트 확정·이벤트 분류(`FID확정/FID설/SPA/DOE/FERC/EPC/완공`)·한국어
+한 줄 요약을 만들어 해당 프로젝트의 `log`에 자동 누적합니다.
+FID 확정 보도는 로그에 `⚑`로 표시만 하고, **구조화 필드
+(`fid_date`/`spa`/`doe`/`ferc`/`status`)는 자동으로 바꾸지 않습니다** —
+로그를 보고 사람이(또는 Claude 세션이) 확인 후 갱신합니다.
+
+수동 보완이 필요할 때 `lng_projects.json`에서:
 
 1. 해당 프로젝트의 `fid_rumor`/`fid_date`/`spa`/`doe`/`ferc`/`note`를 갱신
 2. `log` 배열에 `{"date": "YYYY-MM-DD", "text": "…", "link": "…"}` 추가
 3. `meta.updated` 갱신 — FID 확정 시 `status`를 `"FID"`로 변경
 4. 리스트에 없는 신규 프로젝트는 `projects`에 새 항목으로 추가
+
+관련 환경변수: `LNG_MIN_RELEVANCE`(기본 5), `LNG_MAX_ITEMS_TO_SCORE`(기본 25),
+`GOOGLE_NEWS_LOOKBACK`(공용, 기본 2d)
