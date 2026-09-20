@@ -118,6 +118,17 @@
     font-size: 13px; color: var(--ink);
   }
 
+  .toplink {
+    display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline;
+    margin: 12px 0 0; padding: 9px 12px;
+    background: var(--surface); border: 1px solid var(--line-strong);
+    border-left: 3px solid var(--accent); border-radius: 8px;
+    font-size: 13px; box-shadow: var(--shadow);
+  }
+  .toplink a { color: var(--accent-ink); font-weight: 700; text-decoration: none; }
+  .toplink a:hover { text-decoration: underline; }
+  .toplink .desc { color: var(--ink-2); font-size: 12px; }
+
   /* ---------- macro strip ---------- */
   .macro { margin-top: 22px; }
   .macro-group { margin-bottom: 14px; }
@@ -285,6 +296,11 @@
       <span id="genTime" class="mono"></span>
     </div>
   </header>
+
+  <div class="toplink">
+    <a href="lng_tracker.html">📌 LNG 수출·액화터미널 프로젝트 트래커 →</a>
+    <span class="desc">pre-FID(FEED·Proposed) 135개 프로젝트 — FID 설/확정, 완공계획, MTPA, SPA, DOE·FERC 승인 추적</span>
+  </div>
 
   <div id="notice" class="notice" hidden></div>
 
