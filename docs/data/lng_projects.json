@@ -2,7 +2,7 @@
  "meta": {
   "title": "LNG 수출·액화터미널 프로젝트 트래커 (pre-FID)",
   "created": "2026-09-20",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "source": "Listing_202609200444.xlsx — Future Liquefaction Terminals (STATUS = FEED / Proposed만 수록)",
   "howto": [
    "데일리 브리핑에서 LNG 수출/액화터미널 관련 보도가 나오면 이 파일에 쌓는다.",
@@ -13,53 +13,63 @@
   ],
   "columns_note": "fid_rumor=FID 설(목표/임박 보도) 시점, fid_date=FID 확정일, spa=장기공급계약, doe/ferc=미국 인허가(FLNG 심해항은 MARAD 관할), startup=완공(가동) 계획",
   "seen": [
-   "ec8648be285bea81",
-   "a212a452a581c985",
-   "90fdb9d16037d15a",
-   "f8ca4cae342b13af",
-   "3311fe2bdd45f7e7",
-   "10801e48744653a7",
+   "d84d4814bf90d21e",
    "97a707b7831930ea",
+   "1351ebf109860ccd",
+   "2c20d33f6a070585",
+   "a283f14d6e98e42c",
+   "08780f60ab97b7b7",
    "14d2ed9b0847a80d",
+   "7eb5e72a5af111c1",
+   "e561d87bc92ee876",
+   "ec8648be285bea81",
+   "90fdb9d16037d15a",
+   "7ea12f443e490905",
+   "aba8a393e062ddf8",
+   "d6a5784d87d8989a",
+   "26dca5417a6cabd7",
+   "0b81a03e8e56839a",
+   "de1db3c3b38094e7",
+   "c3918ce760135315",
+   "f1871b9200aff17a",
    "cc34fb221aa18419",
    "df82cd21d9d025cc",
-   "ce774455f3c8fc22",
-   "08780f60ab97b7b7",
-   "78eb1dd4d3c45fa3",
-   "dbe696e2a3bcd100",
-   "2f85d6a44dd50969",
-   "d6a5784d87d8989a",
-   "503301204d636094",
-   "c2e8a1e244c4a52d",
-   "05570d2e85c220f9",
-   "0e1fde0a8033a998",
-   "f20535ef15ae0895",
-   "1351ebf109860ccd",
-   "b7123935510bf87f",
-   "3012ee700b91c474",
-   "a05526aeaab501e7",
-   "9fd45faa57cff315",
-   "7eb5e72a5af111c1",
-   "d84d4814bf90d21e",
-   "140867bfab1054ff",
-   "566d323f9e4f485f",
-   "36bb201d48a32b7a",
-   "1b51a0a659f84c57",
-   "1cb2f395d4f81a6c",
    "039033dbcdcffd33",
-   "74f594cb3d4a9681",
-   "de1db3c3b38094e7",
-   "1d61ffe1583343d8",
-   "aa0cc5dd1243cfc4",
-   "d9aacaba8e49c1fb",
+   "3311fe2bdd45f7e7",
+   "05570d2e85c220f9",
+   "798fe43443bb7712",
+   "a212a452a581c985",
+   "36bb201d48a32b7a",
+   "566d323f9e4f485f",
+   "ce774455f3c8fc22",
+   "1cb2f395d4f81a6c",
+   "b7123935510bf87f",
+   "10801e48744653a7",
+   "78eb1dd4d3c45fa3",
+   "a05526aeaab501e7",
    "1993388001729aea",
-   "2c20d33f6a070585",
+   "dbe696e2a3bcd100",
+   "3012ee700b91c474",
    "8be75d768e98e2af",
    "b89267a867a73cad",
+   "74f594cb3d4a9681",
+   "9fd45faa57cff315",
    "4a07a4d3d0a71f15",
-   "c3918ce760135315",
-   "a283f14d6e98e42c",
-   "b2279e312a3732ed"
+   "aa0cc5dd1243cfc4",
+   "0e1fde0a8033a998",
+   "1b51a0a659f84c57",
+   "1d61ffe1583343d8",
+   "f8ca4cae342b13af",
+   "d9aacaba8e49c1fb",
+   "43a66d1f4380a240",
+   "f20535ef15ae0895",
+   "2f85d6a44dd50969",
+   "503301204d636094",
+   "c2e8a1e244c4a52d",
+   "140867bfab1054ff",
+   "f8d3f7a91be4934f",
+   "b2279e312a3732ed",
+   "0fe93a479be33495"
   ]
  },
  "projects": [
@@ -374,6 +384,16 @@
      "date": "2026-09-21",
      "text": "[FID설] 캐나다 자원장관이 연말까지 LNG 캐나다 2단계 확장에 대한 최종 투자 결정을 내릴 것이라고 밝혔다. (EnergyNow)",
      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSXF6NHh0eUZHSUY4cng0bThZcFhKRzlsUDY5Um1NVXR4dW5YME41ekZiU0ZEdUhuSmVHNFVqeWJtQzNKaTRBdFMwdVI2NWF0SEQ0cl9jUkJ0eWFrcmpoZE9GRFo0SlN2clIzUEJrX0g0eTc3X0tGR3RkY292blRzaXF2X3Jpbk1iUVQ4eC1KbHp5SXl3dGJ0LVdheWJoRlNIaEIxSlBnZ0xqaDFDTzJZVjVvOGx2blQ4ZWhBaEZOWHBSQQ?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[EPC/건설] 쉘이 글로벌 공급을 늘리기 위해 LNG 캐나다 페이즈 2 확장을 검토하고 있다. (Yahoo Finance)",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV0JKTEtXUUwtRk5SWlVua2pPRXlSWkxtdGhHLUhXYXUzUXFrajVfbllNNUstaXVJclp5QjNQZUFYSVBOSnlJM3htc01Makt6eXdMU0tXeklzenNjZ0k5MEFNMzhrX29YOTVQTklvUEVDR2JMSGlHeXNURXZjN21WX2RmSFdfYlVVckNmbw?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[FERC] LNG 캐나다 페이즈 2 확장이 10월에 승인을 받을 수 있다. (intellinews.com)",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMkVBMVZOTU9paE9lN1RKLUpXeGd6TW0wVnp2dWo3SGdRWDlnOUhfb1gwOTMycW1tWFAyYU5pdHNpcThibWRmYjRDTWIza3FvQ0hrb1dMbWV6MTJCamVHcElEblpuZFFJWXNFeFZMTVFHOEdJNmlGOTJOeF8wWW9hNmdqU29WNFU4cnRPY2F0LWY3ODl2dlE?oc=5"
     }
    ]
   },
@@ -400,6 +420,26 @@
      "date": "2026-09-20",
      "text": "[EPC/건설] 월리가 마세라 블록의 아바디 LNG 및 CCS 인프라에 대한 FEED를 완료했다. (IndexBox)",
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQUstYkdYbHVKdHNWRzcyd3NUR2VUX0NoekVESGRQLVJOZEF6SE5lemZCalY5NVUyMUVFRmZDdFFpMlFIVDR6Y1drSVFGTUNXMlRiejBBTkZDa1hYQWwyejdMaC1INWN3MjZqQXJYaGpfalBWZGRRc2doOGVtaHVJZXAxTzJGZlZJdmlOR0xmajEwY3hHdlBCYlNBUDFjQVlrRXBiVVZuOUViaWFjQXY1V2IxZThTUQ?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[FID설] 아바디 LNG 프로젝트의 최종투자결정(FID)이 2027년 중반으로 예상된다. (TradingView)",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUmhVLW50emxPQzRHN0g3aXMyWm5hdGJ1NE91SDluOVhxMEszQ0J6SE1ReS1JdUhzT1lJYlk1a0N3R2RUSTN4UWtWWlVNRnAwUU5rWURnUVFTcTc0QkJZaURFenhfd0ZkOURKMk83cjJINFo4bEhIV3J2SFZham5fajFJbHdyN1Bub28xTHVhRmNsZmhvVTJCOHpFUUNxUEJYMUhRa19xbWowSkpkZk1odHJsb2JvZGdYYjFaaw?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[EPC/건설] 월리가 210억 달러 규모의 아바디 LNG 프로젝트에 대한 기본설계(FEED) 연구를 완료했다. (Inspenet)",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcGxVd1lKWjJjZFU1aVpLVU83ZXpURjFTTW93bzV6eFVWSXpQRXhpcEJMd3F1U1Z6M2NEdU1RZmdqZlQ5c1ZCRFBjZlRheG4yNjhiMGVseDVTVlk2Q3ZpYUlLNVpFMDhsMkItQURqRVdzOGVycUVhTjVHOGwtQlI2WU9XS0dqSHpGRmZEZ3M3dVdIWVBPRnRCcS1BZ1c?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[EPC/건설] 월리가 인도네시아 아바디 LNG 허브를 위한 해저 및 CCS 파이프라인 기본설계(FEED)를 완료했다. (Carbon Herald)",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNN3BaUlp1NEM3NkpmVlN1WGpsRlZUTVExaEVnTTRSZ3V2N19aczBMMDJCN1VJOGJDaTVCOUxWOFVCaDB6MFdvZVRWeG9zaU82cmFLOU11cUliLXp4NmVaNTBIMDJZb2tUWExSOHNfU3A0WnI3Ulo2RnRVdXVKbTcwdE1Kdk5GSW5mVEEyYUxYcTdTMWE2NWE3VHk0VXF1NHho?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[EPC/건설] 인펙스의 아바디 LNG 프로젝트를 위해 월리가 두 개의 해상 패키지 기본설계(FEED)를 납품했다. (Oil & Gas Middle East)",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZEVFWnprQkxTMld3V0JIelljMTZqdjdXN3dzbDJlWDE1SVJ6a1R2WGZXVjhabmxFUkNOMHczVmthRWszbkRiUHV6ei15MmhJVGRMZHdjYWlicHE0M2ZxcUpCTWI3U1E2OVVPVnF6MGZOZkliMzV6UC15eXRCb0pHNHJVVlpHcmw3dzFvTUlxN0lPMW9tUDhwZ3hXU0d1OTNmcmsydlNjQXBjU2ZMY3RUMWd2cGpqWjdzNXlJTG9wQWcxR3RJQXlTMA?oc=5"
     }
    ]
   },
@@ -1543,6 +1583,11 @@
      "date": "2026-09-16",
      "text": "[FID설] Caturus·Mubadala, 트레인 5기 +7.75 MTPA 확장 공식 발표 — 합계 17.25 MTPA, 2030년대 초 가동 목표",
      "link": "https://www.rigzone.com/news/kimmeridge_mubadala_to_nearly_double_commonwealth_lng_capacity-16-sep-2026-184634-article/"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[EPC/건설] 카투루스가 루이지애나주의 커먼웰스 LNG 플랜트에서 연간 7.75백만톤 규모의 확장을 추진한다. (Inspenet)",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX1VFRHVlRFphNUU4UGxHMUJvVWFGNVZwU3ZNVk5PUDFpVnRmcFlmWjFIYnVrU05meVBORmRTWGhGSXFYRTFkSkhDWHU2a0NCNjBzMklSWkw4SnU4UGRBdGgxUmVWRzhiQ3dVa0VZTlNMdTlwN3VDa0J1VEF0dVpJMDNaemlBSUtONjJ5a3RCMkE0aGVLWllla0RHaVpiaS1SMVlJZjRscXM?oc=5"
     }
    ]
   },
@@ -2244,7 +2289,13 @@
    "doe": "",
    "ferc": "",
    "note": "Equinor·Shell — 정부와 HGA 협상 장기화",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-22",
+     "text": "[FID설] 메이저 석유회사들의 420억 달러 규모 탄자니아 LNG 프로젝트가 몇 주 내로 최종투자결정(FID)에 임박했다. (Businessfront)",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE44MHROa0V2dm9idF9TWmw0NVNSVFVXQk8zTWtCa2J0VGNpNXlobzRmXzVGdmFvalBnOTdqTE1JWXpoaXh2bGlYM085M1M4S29BRzF3Y2FTN05MMlZPWFB1bE9TZG9ybUt3OW8wZmhsRmwwMWlaS3dJVkQ1TEhkUQ?oc=5"
+    }
+   ]
   },
   {
    "id": "ok-lng-1-2",
@@ -2749,6 +2800,11 @@
      "date": "2026-09-20",
      "text": "[FID설] 알래스카 LNG 프로젝트 CEO는 최종투자결정 전에 더 많은 오프테이크 계약이 필요하다고 언급했다. (EnergyNow)",
      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMVZGX0pCTjVYVjlRb1ltSHBlSFljSGMzRlZvczd2emotV0FJUWUySlRTd3lFRVpzN05VN2l0aWVWb01iUGZkd3NSNE1Rc2xzTHdXOVBiZnZUQ2VCM1FxY212endEdEJqNnBwclMzUVVxVEtfemJRNVZvVk9jejE4MTlhOUlER3JPNXMycWdEQ1BqcTN1MjB4cnJsTEw5QkxYS21qem1VR0J4dEZYcW9aVV9Pbw?oc=5"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "[FID설] 알래스카 LNG 프로젝트가 2026~2027년 최종투자결정을 거쳐 2031년 수출을 목표로 하고 있다. (EnergyNow)",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZVRIaVpPeVEzS0wtTmNOVGtCd19PQklCTGRkemtWVkpiT2NnRkVXQjlsQWFVV2JIYzJTUV9vYmVXbGJkSVFjaE1IYld1bkd5Q3lZSjhlWS0wcHIzZ0JBbjFSN1huZW9QbW1pMjJQZmYtVjY1ZV85TEVrMTRuX3BPcy1rakZJRU9LTWlVX3FwMktQY19IeUFZZ3NuV0QwOWkzdWNWSVZfRXJlNWZhWmwzYkMtQnNTbTlIZTJMLTI0cnhhVk56V2sxMmozODZzN3NjekI1Tl9QaV81dE0?oc=5"
     }
    ]
   },
