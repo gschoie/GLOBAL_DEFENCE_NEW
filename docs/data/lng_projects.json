@@ -2,7 +2,7 @@
  "meta": {
   "title": "LNG 수출·액화터미널 프로젝트 트래커 (pre-FID)",
   "created": "2026-09-20",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "source": "Listing_202609200444.xlsx — Future Liquefaction Terminals (STATUS = FEED / Proposed만 수록)",
   "howto": [
    "데일리 브리핑에서 LNG 수출/액화터미널 관련 보도가 나오면 이 파일에 쌓는다.",
@@ -13,82 +13,115 @@
   ],
   "columns_note": "fid_rumor=FID 설(목표/임박 보도) 시점, fid_date=FID 확정일, spa=장기공급계약, doe/ferc=미국 인허가(FLNG 심해항은 MARAD 관할), startup=완공(가동) 계획",
   "seen": [
-   "ec8648be285bea81",
-   "496c3bfbdfd732d1",
-   "36bb201d48a32b7a",
-   "566d323f9e4f485f",
-   "08780f60ab97b7b7",
-   "d6a5784d87d8989a",
-   "b7123935510bf87f",
-   "039033dbcdcffd33",
-   "575a0e4d490089b0",
-   "5b1ac13ea3443166",
-   "b89267a867a73cad",
-   "35d4e28377564b98",
-   "1b51a0a659f84c57",
-   "de1db3c3b38094e7",
-   "140867bfab1054ff",
-   "df82cd21d9d025cc",
-   "4a07a4d3d0a71f15",
-   "aba8a393e062ddf8",
-   "f20535ef15ae0895",
-   "74f594cb3d4a9681",
-   "f8ca4cae342b13af",
-   "9e95b34e30a4cc84",
-   "c2e8a1e244c4a52d",
-   "25a13e1b9c4074dd",
-   "2c20d33f6a070585",
-   "a05526aeaab501e7",
-   "1d61ffe1583343d8",
-   "f8d3f7a91be4934f",
-   "0b81a03e8e56839a",
-   "2077d5ddbbc3cd11",
-   "2f85d6a44dd50969",
    "7eb5e72a5af111c1",
-   "10801e48744653a7",
-   "43d4e95846be96e9",
-   "d84d4814bf90d21e",
-   "8d2df16caa7ca4a7",
-   "97a707b7831930ea",
-   "f1871b9200aff17a",
+   "08780f60ab97b7b7",
+   "f8ca4cae342b13af",
+   "b52754ec1ea858c9",
+   "78eb1dd4d3c45fa3",
+   "496c3bfbdfd732d1",
    "aa0cc5dd1243cfc4",
-   "b2279e312a3732ed",
-   "f90cc282649173c6",
-   "e561d87bc92ee876",
-   "ce774455f3c8fc22",
-   "9366d0efb905ce6d",
-   "43a66d1f4380a240",
-   "638b615fb6f85016",
+   "d9aacaba8e49c1fb",
+   "5efb5e6bc9bcac5f",
+   "b4f23ede90232291",
+   "9213850eb9d4cf22",
+   "7ea12f443e490905",
+   "1755d25039150343",
    "dbe696e2a3bcd100",
-   "3012ee700b91c474",
-   "792a536e706f0eec",
+   "2077d5ddbbc3cd11",
+   "25a9d0c6004fb5f5",
+   "832ef0073935b55c",
+   "b2279e312a3732ed",
+   "6b5cb4bfdba769df",
+   "35d4e28377564b98",
+   "8d2df16caa7ca4a7",
+   "039033dbcdcffd33",
+   "90fdb9d16037d15a",
+   "7255f830beb24a00",
+   "4287b5a77d705911",
+   "43d4e95846be96e9",
+   "97a707b7831930ea",
+   "39bf2cd6f2fa08c0",
+   "e561d87bc92ee876",
+   "5b1ac13ea3443166",
+   "c603d6075729d2dd",
+   "ce774455f3c8fc22",
+   "d84d4814bf90d21e",
+   "638b615fb6f85016",
+   "ca64fb8e9646e5f4",
+   "aba8a393e062ddf8",
+   "091c617a9a7d080f",
+   "ffc439b2a5c6f3ad",
    "cbe589c27eb62934",
-   "846520fa36503533",
+   "f8d3f7a91be4934f",
+   "566d323f9e4f485f",
+   "503301204d636094",
    "26dca5417a6cabd7",
    "1993388001729aea",
-   "0fe93a479be33495",
-   "90fdb9d16037d15a",
-   "e9534e91bd6bbc00",
-   "d10b441ff9fe034e",
-   "1cb2f395d4f81a6c",
-   "05570d2e85c220f9",
-   "798fe43443bb7712",
-   "9fd45faa57cff315",
-   "503301204d636094",
-   "9baa6ecdb6dfb0f0",
-   "a283f14d6e98e42c",
+   "750604a869914a46",
+   "9366d0efb905ce6d",
+   "f20535ef15ae0895",
    "c3918ce760135315",
-   "cc34fb221aa18419",
-   "0e1fde0a8033a998",
+   "56317aec500c1a84",
    "14d2ed9b0847a80d",
+   "0fe93a479be33495",
+   "fc46423aa3db2a29",
+   "0e1fde0a8033a998",
+   "792a536e706f0eec",
+   "b7123935510bf87f",
+   "22dbeb05c55ed5b9",
+   "05570d2e85c220f9",
+   "3012ee700b91c474",
+   "2c20d33f6a070585",
+   "798fe43443bb7712",
+   "a283f14d6e98e42c",
+   "08f47da475848752",
+   "43a66d1f4380a240",
+   "10801e48744653a7",
+   "de1db3c3b38094e7",
+   "4a07a4d3d0a71f15",
+   "575a0e4d490089b0",
+   "2b52bd50229c06fb",
+   "c2e8a1e244c4a52d",
+   "d10b441ff9fe034e",
+   "ff2527de40ced81c",
+   "5d6af0e6077ee337",
+   "61a25bf4314ee48f",
+   "d6a5784d87d8989a",
+   "b89267a867a73cad",
+   "36bb201d48a32b7a",
+   "384d0687104e6c34",
+   "74ccd9b7b7d38eec",
+   "25a13e1b9c4074dd",
+   "e9534e91bd6bbc00",
+   "f79fa02d6bb6e3e3",
+   "8b540c63cc5e4827",
+   "e04d9bc963885421",
+   "cc34fb221aa18419",
+   "1351ebf109860ccd",
+   "9fd45faa57cff315",
+   "3a75792cf32ccb53",
+   "a05526aeaab501e7",
+   "1cb2f395d4f81a6c",
+   "140867bfab1054ff",
+   "3311fe2bdd45f7e7",
+   "8ef5f5e4cb986210",
+   "ec8648be285bea81",
+   "99f800f5a2b2301e",
+   "df82cd21d9d025cc",
+   "2de55542e82224de",
+   "f90cc282649173c6",
+   "0b81a03e8e56839a",
+   "9e95b34e30a4cc84",
    "a212a452a581c985",
    "8be75d768e98e2af",
-   "78eb1dd4d3c45fa3",
-   "1351ebf109860ccd",
-   "d9aacaba8e49c1fb",
-   "7ea12f443e490905",
-   "3311fe2bdd45f7e7",
-   "c603d6075729d2dd"
+   "2f85d6a44dd50969",
+   "74f594cb3d4a9681",
+   "9baa6ecdb6dfb0f0",
+   "1d61ffe1583343d8",
+   "f1871b9200aff17a",
+   "1b51a0a659f84c57",
+   "e66159d23b4d8817",
+   "846520fa36503533"
   ]
  },
  "projects": [
@@ -323,7 +356,13 @@
    "doe": "",
    "ferc": "",
    "note": "ExxonMobil Area 4, ≈$30B, 모듈식 2트레인 18 MTPA, 스타트업 2031 목표",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-24",
+     "text": "[EPC/건설] 엑손모빌의 로부마 LNG가 육상 운송 서비스 계약업체를 물색하고 있다. (lngprime.com)",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNzJuWlpQT2ZLWW9VcmVuYXM1NkJ3ck4yS0djX0pMNjBrdi1MYmRkOXJSRmI5V1dnV2tRRnZDdW5Oczg5cXNSalpPZlhCYUFMTXNsTHhjd2NKOWxDZFFBZU5fZEZwcFpPczBVTl9KaERlcVNiY1NqMXU2RTByODlCbXJhWElUZkxIR0VfTW95ak5qQVZOaV9PZ3Q5NlJ1ZFgzNmJwOVVQQ0h4TmFI?oc=5"
+    }
+   ]
   },
   {
    "id": "lng-canada-phase-2",
@@ -463,6 +502,71 @@
      "date": "2026-09-23",
      "text": "[기타] 아부다비의 XRG가 쉘이 지원하는 LNG 캐나다 지분 인수를 추진 중이라는 소식입니다. (TradingView)",
      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZ3FFZTJod2JhaTdFRDc0ZDhQY1BhM2o2M051NWlOUUJzc0lLTTFmYkF6S0ZpZVBGV2pJYlVmQXlZN0FCUjNrQmdsSndZeDNlaXQ3SWNQaXpHaUliR3BWeTk4Q0dvR09IS09zMV9acGI2Z2s1b2kzOTVkMU5OWVR3aEYtRDZsV0Z3NUtaWlRwaTNvLV85QVF5SG80NFlDNVFJTmJwYTdtRzE4UnM0SEd0bFlIRW43eVcyZjJRWTlxZWp5XzJIb3dxN01RZVNaRDRWd3pmVEttelpWbG9BTFQ0Y1pR?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아부다비의 XRG가 LNG 캐나다 프로젝트 지분 인수를 추진 중이다. (Discovery Alert)",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pOUl3NG9nazZLMkZTYlJ2akJ2WkFybjU0WGppUVBXRmR4WFE3cVMtWG9LYVVPN0hKc0pkNnhQemZRT3dSMG9aS3dMZmFVcDhnY0NtYWd5WTlvZTN3SURHNkNiZzB3RGhlQzd0M2taTFJ3amNtbV9V?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[FID설] 쉘과 파트너사들이 LNG 캐나다 프로젝트의 2단계 확장을 승인할 임박한 상태이다. (Bloomberg)",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVmxxYnlyWl9XRzZCdzlNQ3JCY3RZRnUzVGlWTVFvd2h3bl84eHRKNmdXTGxmMDlxemgyX3o3aENXbVI0VDd0MEZId09MdWxQM3lCc19rTldLcE1zRm9OdE40Zkl0em1BQ3pKTVVBa0p0dW1kVlFHbW9jMHV4QjJyVFhZalpmelAzZ19OQ2pEVm9nNFFTNDQ4SEF5ODNjUXliYS0tTHFPM0lVNVE2T0dRdW91X3o?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[완공/가동] LNG 캐나다가 100번째 LNG 카고를 선적하며 글로벌 에너지 수출국으로서의 이정표를 세웠다. (energynow.ca)",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTFVHN1RQSEdzdWZtM251aU5FU1JGX0FJOHo3OTduRWxCZlhfTkFwRUlUUkQ2RGZYUFJhYXlLbS1vbnU0U1l5STN1bTk4Y2dUdUwxbDlxektZNnduazA4eUtsU1ZhZXRCenVsNHdaazkwV3FoSXVuU2xsVW1uNWJidUZVM0p0N1ZDTThqS2ZGSkNKQVFuekZRSlB0RkxqRkVRV0M1TTZLUXA4d3cydlFhTFhmb1BwVXc2b2UtOTFEdTBiME11dS1RN1hLdE9jY2xXNUlNZlVkN2VrTGdSQ0E?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[FID설] 쉘과 파트너사들이 LNG 캐나다 프로젝트의 확장 승인을 목전에 두고 있다. (Hart Energy)",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSHFtcEhvSC1SWkNzM2lXcTJMSlhuNkh1QzFHeEZ1dlRicXJtQzExVngzN1B3RVkzTk5rcWJybVJKOU0yV2RBOHNkTGFCQ0dfX3RCZzNKWXE5NDVLZXR3SjVMbVRFTl9PUlJHOFpOVjh2Yk1xU0RXUm9OX1ZqcklYREcxX0hxcGk5QktTMmxyUF9ma0d2OVFPZGVqTVFKT2NoWFEtdVlFNA?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아부다비 ADNOC의 자회사 XRG가 파트너사들의 확장 검토 속에서 LNG 캐나다 지분을 모색하고 있다. (World Oil)",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNGdIbG1uOXNoTUVRaGUwTWV3RHpsTkp5OW4tZ3pOR0hwRUQ3SFo0WkNlRDUtQWR0aElDcC1FMlJUaHlKcl9OVDBpRXBEUGVYTkJyYXE5ZGJhNFV2Vl9BREZIalFESE91ZlZvMW5lTGZabUhDX09EZlhvMjE5aVBwSEhqbTFIZkpoNTdXb0ZhdVRLT2xtM24xVUVsQ2RQTFJTQXkzRkhpdVB5Zw?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[FID설] 쉘과 파트너사들이 LNG 캐나다 프로젝트 용량 확대를 승인할 준비를 하고 있다. (TradingView)",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdzA3ZmJlQVpDR19yNE9pbUNuLWhDNzFYX1VWRjEya1RGUW9jWFp0SFdUNVRmV0xqOFo5LWNmTU1fcE1DWnFRemhBdDJ6Wi11SmdPSnd2QXZXbmVZZ1pZRXNkYXNCckhMQU9hY2lMZGtMUW9TVm5Na3pRb2hIVlVabFRXcDhNem9GaWFPRzFia3doNDdvajZWWnYtMHdfcTVSUmFDS1Y4bTZJejZqYUdTYlJkcU1iQ296cE1ZblZlOGc3WTFxUUdyTkNoZktJSjVQdnJUZHRpZVJWT3Rwei05WHRn?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] XRG가 쉘 주도의 LNG 캐나다 프로젝트 지분 인수를 검토하고 있다. (Oil & Gas Middle East)",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQ283THpMdFZodGNOS0VENnYwMnhfclFqdDNWZ19PMWRNRFZDSldnQVFTbk1iOXVyWGd3ekozVGYzaExiNHNXZUFaVGNaSms4N2k0MjJpTUVVRXJObWRzbF9HR1dDQ1hESzVmb3FYUDJJVDUxSFJidU1MemY1Z0ZaUEtWVnJmX2JzektQX1kzOTdLUmpKVGc?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아드녹의 자회사 XRG가 쉘이 주도하는 LNG 캐나다 합작법인의 지분을 타겟으로 하고 있다. (marketscreener.com)",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOckU5ZEVtUGxmRmNPQTF0Snp3OHFIN1hhLVczTXNhOEdQRGpJTjI1bXNpbVk4Q3BDS1NXR2dVUzQtT2YyNnU1OEk2VjZwN0YtSTBmdW5yU3ljdUlpemJyLTg0OHc0NWdxZzg1TmdqX1YzMVlfRGxHd1drdGRpcXpPQUVJTzMwMDNCX01ZMmF5VEJwaGxITUNCaXYxUVBocm1GdEFweXFDSmNDbVY3?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아부다비의 XRG가 LNG 캐나다 지분 인수를 추진하고 있다. (Briefs Finance)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbXRFWUZ4WEFCbHVuaXlfV2NjbDZaRk41U0F0S05qN3o1czlWMFFFd1BxWWxwT2NmcXVKVTF3cEphUGJZVlRIdzJtRlNQSnBUYm81RU9rcVVONkN3Yi1Zc0IzVVI3c0Fsb18xVS1Nc3cxbk5ONXg0U2t5bVpuc3RPZHBCRlFWWVk?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아부다비의 XRG가 쉘이 지원하는 LNG 캐나다의 지분을 주시하고 있는 것으로 알려졌다. (Hart Energy)",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeUN6d1BBTEJIQTExVGF0UExBNW5fLWZyVGNmS1VXc3ItS28yX0kzeXoybFpycnp1VU9PV0lmT3I1M0hFSHdPbUpkQnI3eXZsWWVVT0JfbTBtdzN0OWcwcWs2R21qRmg3dF84Y0ZSTVBKeHQ5ZzBNU1FTODgyblk1M041TlppOU8tNGx6MlIwZ0xuUQ?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] XRG가 잠재적인 지분 인수를 위해 페트로차이나 및 다른 LNG 캐나다 파트너들과 협상 중이다. (marketscreener.com)",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdkV4ZjNFQi1uUmVSa0xQc19RQmZfUU15LTZVbnNQSUpTRy1saDRiWTlleG9ZQk5rU1lrMldmV1JOZ1R4RVpaczNtQlFoQzZqRUdWM1psX05BSi1jbXVaN2tMcTFKekllSVZuUmtBbTlXdjJfd0w5QXdrYWlZYThMOE9ZajRiZzZwbGlhRmc4NlVHajRrbkU5eFl4TlR5aENUYl8zZWVRTmJwbjdCYVFhTm9iUUpjM2lfbHhoaG5KZ2piSF9qSjlha1R3UENkVGlsWjA2emNuMmx6YzV3Q1VWbnVHTEJXdVE?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] UAE 국영석유공사 ADNOC의 투자 팔인 XRG가 LNG 캐나다 지분 인수를 위한 협상을 진행 중이다. (TradingView)",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQa2x2YWtQVVNCdFc4dzNJZ0FpcTRoYy1rTHJscUZxdENSLWt5aF9wSlVtX2phNmNBRFNhWGtDa2twU1dkeEtOd01PUHpPYzM4eXhvM2JVSGlLa18wZnppLUh3eHZuY3RDZTJMRDk5cDdVTnp1cl9pTWtPX2hJV2lOMXk1OTRBRG5zQ0VWS2V1MDlfZDJDdWlPRmpQTjZBY1lDTDd2V1dtZldFN1JzRkNNLTJkNVcyczVaRkpSS0dXWlZlUW4yQXExaWZEQjhBdVVoTm5aa1JJWnE0VUhDNW1IQ1FxajdIMEZGdUxZRUZyVWg?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 아부다비가 쉘 주도의 LNG 캐나다 수출 프로젝트 지분 인수를 모색하고 있다. (TipRanks)",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd1JKMEtIeHdCaXdSclE4TWxSdnNqbzRHb1JZejItcjg4elNFdEVESmhXdWppTmktVHV0SmZsZkJlVGVPZENjM1BBNVdtZnlRLS0wOHM3RTFZbTVwbGRXV3pwZ2J6Zl90SWZodFJOVWxMR1lDaks5NFhUOXdFYVRCcWo2YUhMQllZUTJ3bktLc2pnazRSd3BZWnhOZWdLeGJJNVVnVEV5Q05FeXBPQi1NM3djeGVuQVdMQ2hKbUk4c2FmTGNPQmE0Nw?oc=5"
     }
    ]
   },
@@ -530,7 +634,13 @@
    "doe": "",
    "ferc": "",
    "note": "Vaca Muerta 셰일가스 기반, FLNG 6 MTPA×2척(12 MTPA), 수출 개시 2030~31",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 아르헨티나 LNG 프로젝트가 60억 달러 규모의 투자 계약을 확보할 예정이다. (GuruFocus)",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSlJLcGVCeFo0Y2VfX0tDQjBXRlMwRkhtNGppY2lNMmdYMkI3bGxyNy1lam1VRXl5Y0VIcFFFLXduQmI0Q0ZfUEctWGR5YXM2c2V0RWhmSmtmeFVLaTh5VVBza000N3hYd29pSDBwY2VPWVdtUVQ1cEZ0b0lBSjdpQVBSeEd1QmpmY1Rjd29NSlhmY3NrUVY5ZFMtNFZTSkhfRUhN?oc=5"
+    }
+   ]
   },
   {
    "id": "argentina-lng-phase-1-flng-2",
@@ -590,7 +700,13 @@
    "doe": "non-FTA 2016.11",
    "ferc": "2016.04 승인(T1-2와 동일 인허가)",
    "note": "Glenfarne 계열",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-24",
+     "text": "[FERC] 글렌파네의 매그놀리아 LNG가 FERC로부터 인허가 연장을 확보했다. (lngprime.com)",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc2xZcmZ2bE55TnlSNmVKR3BSRm93ZHpSc080dkJvZDBYeEVSTnRGQlYyNlNOVEo5b0hmMU92dWZjbFpTakgtc04zMUJVOVhONFlsSGJOT2FrWkdaV2ZUbXZ3d05nUExKUHY4MkxMd3l2RWJtbm12UWRaRXJ1UVd0bk9pY2U4NkR2RWJ6Sw?oc=5"
+    }
+   ]
   },
   {
    "id": "magnolia-lng-trains-1-2",
@@ -1627,7 +1743,33 @@
    "doe": "",
    "ferc": "",
    "note": "NLNG — T7(건설중) 후속 구상, 장기 표류 이력",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 토탈에너지스가 나이지리아 LNG 플랜트에 가스를 공급하기 위한 이마 가스 개발 프로젝트의 최종투자결정(FID)을 내렸다. (TotalEnergies.com)",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZjRCams5ZEVpQ3ZHTXRQQi1VSGl0YU5IMjlydUhtYkRoemVUaDRPUDF0WHlZVkxNQzFjenhZN0lTWGJSNU11ZnF1YW82TXhpT3YyM2dpZ19UMlQ3R2hBN0l6clBTVHZkQUs1MDJNN2g5ajZ5V29BMUdGUmV5TTBkNmxIbGF1TmFlRzhIVklpazBtSnZJRHJlQmRiQVFkU044VnpYMmE1eHdFdVBxTi1aZEMweFFrUjZRQlRCZ2FCTUN6Y3hDN3BKXzVndVN6Rl9LaEYtaTRzQQ?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 토탈에너지스와 암니가 나이지리아 LNG 공급을 위한 이마 가스 프로젝트의 최종투자결정(FID)을 단행했다. (lngprime.com)",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRUtqRmxQM1RSUlZ0cVBKZFFlbFRwekEzYWZnOU1KRXBUMzBtRm0xVk9MQnhseGpqLXRjRWxNLVNZeUxPaVYxZjhLdDBhRDFTQXdyeWRvMmVHNnNFRXRKNHhTSEV6eDVLb004OU5HejE3d2ptOE1ySlJ5ejc4b0x1SnVnV2VXWTBtd1pSNDZ3MnE2VkszRTF0Q1lrdjhZUFVkWi1XNzR5SQ?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 토탈에너지스가 나이지리아 LNG 공급을 위한 새로운 상류부 프로젝트의 최종투자결정을 승인했다. (Rigzone)",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU1ptam1yc3VrejFFakwtRS1iVmFXY2tlMGtrTldDZDY5Y0plSm5Vcnhxb296dnc2Unh4YlhWOUZHajViY0xxWkMwMVdvSGowR2t2anhnM1dueEpJRHdUOTdoc1pRSE8yVDhJVnZxekJYcVNTbURzQ05wWWhNVVo5VGNSS2VFcmlWNmNuQmVBOWlrUFZ1cXhLLXpaUVVuV1ZvVFhSY3Z0aG00QlZFSHJQUVMzUjlGaFk?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 토탈에너지스와 AMNI가 나이지리아 LNG 공급을 위한 이마 가스 프로젝트를 승인했다. (IndexBox)",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdXhURG5nWlZ2V2dTR2stQlpocmZhZG9ZWVJDSDJETExwUGh3WEJmU1dXMkI5TXE5MW5STWUwSkhDeV9ORDFfRE93ZlNwOHNkVE9nYVl2RVU0QVlJNEI3MWR6ckxBZmg5Wll5QzRhWnJuWTNRR0NYV0hMNl94R3djU0U2ZmFvbGYxYlFhV2ZVX1NJWU1uelNBX1VmUEJLMlhMRnc0?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "⚑ [FID확정] 토탈에너지스가 나이지리아 LNG 트레인 확장의 3분의 1을 공급할 가스 프로젝트를 승인했다. (offshore-energy.biz)",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR2E0VGlRbmktU2w0RjRMRHNkdDRvYkhqUmN2eDl5ZFN6bkpNMDZqMTBoemNCSXZNcS0tZURJeXFVb0VGbU0yNFpHMGxwQUVLVEFaMVJ5QXlySE1rZERXb2dVREc4TUJURlpNaEVvTkxtSnZfdmNLVUE3dmJlZTRoVXlKb1FBYm9LT1EwZXVac3I5aHZ4RTRnWHQ4QzBjczlRNVYtQVE4S3hBMWNmTWZqZENpNm8weDZxbXVr?oc=5"
+    }
+   ]
   },
   {
    "id": "commonwealth-lng-phase-2",
@@ -1657,6 +1799,11 @@
      "date": "2026-09-22",
      "text": "[EPC/건설] 카투루스가 루이지애나주의 커먼웰스 LNG 플랜트에서 연간 7.75백만톤 규모의 확장을 추진한다. (Inspenet)",
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX1VFRHVlRFphNUU4UGxHMUJvVWFGNVZwU3ZNVk5PUDFpVnRmcFlmWjFIYnVrU05meVBORmRTWGhGSXFYRTFkSkhDWHU2a0NCNjBzMklSWkw4SnU4UGRBdGgxUmVWRzhiQ3dVa0VZTlNMdTlwN3VDa0J1VEF0dVpJMDNaemlBSUtONjJ5a3RCMkE0aGVLWllla0RHaVpiaS1SMVlJZjRscXM?oc=5"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "[기타] 카메론 패리시가 커먼웰스 LNG 세금 면제 협상을 위해 재활성화된 이사회를 고려하고 있다. (KPLC 7 News)",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN29najB3VllQc09Dbi0zMmN3aUtuenVSUW1qcWhsWFhZMC1IeUR0NmFYT1ZIX2U0bEVSNVVTRjFWX0JaR0p1Y2VjSkRlc1VrTEl3Tk53T25wcU1yUjIyV1daemFJaFF1U3hCMy1aQmhWMGRldTYxem9sQ0R4U3pnTlBVcXpoMDllb1UwanIwaERNaW80Nm9ELWx5LWVTWjlwWjc2REtyQUUtZlZCTVZLaURTempWU1Rfbmg5OVdB?oc=5"
     }
    ]
   },
@@ -2604,7 +2751,13 @@
    "doe": "",
    "ferc": "",
    "note": "Cheniere 차기 대형 확장(24 MTPA) 구상 — 인허가 초기",
-   "log": []
+   "log": [
+    {
+     "date": "2026-09-24",
+     "text": "[FERC] 미 연방에너지규제위원회(FERC)가 체니에르의 코퍼스 크리스티 스테이지 4 프로젝트에 대한 초안 환경영향평가서(EIS)를 발행했다. (lngprime.com)",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdmEtUnU5RjVhQkljWlM0SmlZM2YzZ1NLMU50M0s4VzVNc0dfZ1RhYjNwYTR5OG1tcVpKQ0xKY3dBWWJhS0hDS2pfb1NfM1ppSU1ibWhVQ2RXdVBJSTZuNnZ5amZTTkY0SlA2akZxOEF3NXNFdWR1bnVnbzlsQWM0RXoxazdZdzI5NnZNWXRvNUZsSThKUTRjVk1Hcnl0THBZYmhLUUJjMA?oc=5"
+    }
+   ]
   },
   {
    "id": "arctic-lng-3",
