@@ -1,0 +1,115 @@
+{
+ "generated_at": "2026-10-12T09:16:27.369933+09:00",
+ "date_kst": "2026-10-12",
+ "window_hours": 36.0,
+ "macro_groups": [],
+ "sections": [
+  {
+   "key": "kr_company",
+   "title": "한국 기업 (HD현대·두산밥캣)",
+   "items": [
+    {
+     "title": "HD건설기계, 미국에 가스엔진 3879억원 공급 - 비건뉴스",
+     "translated_title": "HD건설기계, 미국에 가스엔진 3879억원 공급",
+     "summary_ko": "HD건설기계가 미국 시장에 3,879억 원 규모의 가스엔진을 공급하기로 했다. 관련 기사의 스니펫 정보가 제한적이므로 상세 내용은 추가 확인이 필요하다.",
+     "category": "수주/계약",
+     "source": "비건뉴스",
+     "published": "2026-10-12T03:24:40+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1uX1hXZGRtTExlSkUxVmV5NExXZ214azlUZkdFUU9wZ19BblZrWWZPMkdyT250N1E4NUllZ1h1djZsUjVLZHliOFlGUVRiVVQ2WmtpbmE0aVFaUDljMDNNR0h6dzVQZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "ko"
+    },
+    {
+     "title": "북미 입지 확대한 두산밥캣, AI·무인화로 다음 먹거리 찾는다 [기업 X-ray] - 쿠키뉴스",
+     "translated_title": "북미 입지 확대한 두산밥캣, AI무인화로 다음 먹거리 찾는다",
+     "summary_ko": "두산밥캣이 북미 시장에서의 입지를 바탕으로 AI 및 무인화 기술을 통한 미래 먹거리 확보에 나서고 있다. 상세한 실적이나 투자 규모에 대한 스니펫 정보는 제한적이다.",
+     "category": "신제품",
+     "source": "쿠키뉴스",
+     "published": "2026-10-11T06:04:27+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9LTlB3WmNJTjA4bFhic0dsUlNwSGNRVERuWHI3TERxd0xIM0x6b2NjQUhFaDV5RllaNmU3eTdQOFE1UXlLZTBnVDVrX0hrYVdWTHBYYXNSdkpObEJWMkRobzVvSQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
+    {
+     "title": "[주末머니]\"건설장비, 업사이클 진입\"…증권사 추천 종목은? - 아시아경제",
+     "translated_title": "주末머니 건설장비 업사이클 진입증권사 추천 종목은",
+     "summary_ko": "건설장비 산업이 업사이클에 진입했다는 분석과 함께 증권사의 관련 종목 추천이 다뤄졌다. 구체적인 시황 분석 스니펫 정보는 제한적이다.",
+     "category": "실적",
+     "source": "아시아경제",
+     "published": "2026-10-11T08:30:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tUGZXQmNyNHFBYXRSUUo3eG1HV0xLT1JPUnNmdDkzb3ZIVFRzZ3ZLTVdOM1dwQTVtbTYtamF3QTYzTFZuTzVxR1ZqMF9KS3ZfV2J4dFJxTWhZZnVXTE1icA?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
+     "lang": "ko"
+    }
+   ]
+  },
+  {
+   "key": "global_peer",
+   "title": "글로벌 피어",
+   "items": []
+  },
+  {
+   "key": "cn_company",
+   "title": "중국 업체",
+   "items": []
+  },
+  {
+   "key": "strategy",
+   "title": "신제품·딜러망·전략",
+   "items": []
+  },
+  {
+   "key": "us",
+   "title": "미국 — 주택·인프라",
+   "items": []
+  },
+  {
+   "key": "europe",
+   "title": "유럽 — 건설·인프라",
+   "items": []
+  },
+  {
+   "key": "china",
+   "title": "중국 — 굴착기·부동산·부양책",
+   "items": []
+  },
+  {
+   "key": "resource",
+   "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
+   "items": [
+    {
+     "title": "Mafia Tambang Lebih Profesional dari Polisi. Aktivitas PETI Gunakan dua Unit Alat Berat Excavator di desa sipogu kecamatan Batang Natal. - Kicaunews",
+     "translated_title": "Mafia Tambang Lebih Profesional dari Polisi. Aktivitas PETI Gunakan dua Unit Alat Berat Excavator di desa sipogu kecamatan Batang Natal.",
+     "summary_ko": "인도네시아 지역에서 불법 광산 활동에 굴착기 2대가 동원된 사례가 보도되었다. 현장 스니펫 정보 외의 구체적인 광산 투자 지표 등은 제한적이다.",
+     "category": "광산/자원",
+     "source": "Kicaunews",
+     "published": "2026-10-11T19:41:28+09:00",
+     "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPaXk0MnVXblZBdFppV2phWDZXVDRCNnBYTUN2NW96ekxhZVFfd19zQWdwQ0xSQU81MTlidGFLM2JFeUJBXzBtVkJHU19NUVYtdzhCUEV6cllVLWwyX0JTSjFTNmdKOXJTOFUyZVBqYjFWeXBoWUIzRHIwSDhzZXBBN2RqdnlpZHRBQlc4OXlaelpwYkxJWGtvbExsUXJHbnlWYzhvLXVma1VBdkJFb0JxYkZFM2N5WDk4UFJLN3A1X3pfMGp3bkhQVzB5ZUpQbUN3UU1SV2tIdGFmMGFCczdBRXFaOGJwODVHYXAzM2lEOTMxc09FRDFmaTZnWUg?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
+     "lang": "id"
+    }
+   ]
+  },
+  {
+   "key": "emerging",
+   "title": "신흥국 (인도·아세안·브라질)",
+   "items": []
+  },
+  {
+   "key": "policy",
+   "title": "정책·통상·금리",
+   "items": []
+  }
+ ],
+ "stats": {
+  "candidates": 560,
+  "new_scored": 7,
+  "dropped_low_relevance": 3,
+  "noise": 0,
+  "korean_media_excluded": 0,
+  "blocked_domain": 1,
+  "stale": 545,
+  "ai_active": true,
+  "quota_exhausted": false
+ }
+}
