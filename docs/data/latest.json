@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-20T09:09:50.249760+09:00",
- "date_kst": "2026-10-20",
+ "generated_at": "2026-10-21T08:40:17.239592+09:00",
+ "date_kst": "2026-10-21",
  "window_hours": 36.0,
  "macro_groups": [],
  "sections": [
@@ -8,6 +8,17 @@
    "key": "kr_company",
    "title": "한국 기업 (HD현대·두산밥캣)",
    "items": [
+    {
+     "title": "두산밥캣 ‘로그X3’, 레드닷 어워드 본상…전동·무인·모듈 설계 인정 - 팝콘뉴스",
+     "translated_title": "두산밥캣 '로그X3', 레드닷 어워드 본상 수상…전동·무인·모듈 설계 인정",
+     "summary_ko": "두산밥캣의 컨셉트 장비 '로그X3'가 레드닷 디자인 어워드 본상을 수상했습니다. 전동화와 무인화 및 모듈러 설계 기술력을 세계적으로 인정받았습니다.",
+     "category": "신제품",
+     "source": "팝콘뉴스",
+     "published": "2026-10-20T13:35:25+09:00",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5KNUJySVQzTlpMOGtOSVFNZnVvN2E2SElSUzBiWnRZXzFoRkdUQmZuMjY4b2JqTERnOG5rNFh3STd3MWFmeVFneTMtMFNWaGpYNW8zVXNjQk9IRFdrOHpZM0FpZV9jVjZSOUh4WC1LQXUzZ9IBckFVX3lxTE5KNUJySVQzTlpMOGtOSVFNZnVvN2E2SElSUzBiWnRZXzFoRkdUQmZuMjY4b2JqTERnOG5rNFh3STd3MWFmeVFneTMtMFNWaGpYNW8zVXNjQk9IRFdrOHpZM0FpZV9jVjZSOUh4WC1LQXUzZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
     {
      "title": "두산밥캣, 30일 국내 기관에 3분기 실적 설명 - 비건뉴스",
      "translated_title": "두산밥캣, 30일 국내 기관에 3분기 실적 설명",
@@ -31,6 +42,28 @@
      "lang": "ko"
     },
     {
+     "title": "두산밥캣 완전전동 무인로더 ‘로그X3’ 레드닷 어워드 본상 - 중앙뉴스",
+     "translated_title": "두산밥캣 완전전동 무인로더 '로그X3' 레드닷 어워드 본상",
+     "summary_ko": "두산밥캣의 친환경 무인 로더 콘셉트 '로그X3'가 레드닷 디자인 어워드에서 본상을 수상했습니다. 이번 수상은 회사의 차세대 건설기계 디자인 및 기술 역량을 보여줍니다.",
+     "category": "신제품",
+     "source": "중앙뉴스",
+     "published": "2026-10-19T11:33:09+09:00",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE10WHB1VEJyeVNTbmJpd1JTVkVlS3ZoQVVPc1lyUWMtWG9ZNWNGUVRkWV9MY2h3b0hBX3U4Mm4wbzdrR2Fhd1JuaGo4N1pvY3dvSDI3Q1lha0ZYLUF4VDNLWExtUFVXUG01V2hF0gFvQVVfeXFMTk5LaDdBLWg0amQxX1pSdWxIb0paRE5qNXhfVHd2TmdCTk5BbW5uTGpyd2U5UEdoMEN0LWJidWlnVUxITmVvd0QzTmRfWkFrLTRwU1NjQkFET29vQVYwWmpCZHlUQzVwLWkxRVlfU0NJ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
+    {
+     "title": "두산밥캣, 콘셉트 로더 '로그X3' 레드닷 어워드 본상 수상 - 부산파이낸셜뉴스",
+     "translated_title": "두산밥캣, 콘셉트 로더 '로그X3' 레드닷 어워드 본상 수상",
+     "summary_ko": "두산밥캣의 첨단 무인화 장비 콘셉트 모델인 '로그X3'가 세계적인 디자인 상인 레드닷 어워드를 수상했습니다. 미래지향적인 장비 디자인과 친환경 전동 기술의 접목을 입증했습니다.",
+     "category": "신제품",
+     "source": "부산파이낸셜뉴스",
+     "published": "2026-10-19T10:09:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE13M3pxNzhXQ1llVzRiaG5tSDVWZ0pSaDcySGhkYTlUcDdBV0w0SnhGNFN6RjVLV28zaVBLVWtsa1QxcVRJYnZ5U21BWWNjLUtOLTNRMmxrdl9SeXhB?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
+    {
      "title": "두산밥캣, 3Q 영업익 25% 뛴 1천700억 전망…비주택 수요 견인 | - 연합인포맥스",
      "translated_title": "두산밥캣, 3Q 영업익 25% 뛴 1천700억 전망…비주택 수요 견인",
      "summary_ko": "두산밥캣의 3분기 영업이익이 비주택 수요에 힘입어 전년 대비 증가한 1,700억 원 수준을 기록할 것으로 전망됩니다. 제공된 본문 스니펫이 제한적이어서 구체적인 실적 수치와 부문별 상세 요인은 확인되지 않습니다.",
@@ -38,6 +71,17 @@
      "source": "연합인포맥스",
      "published": "2026-10-19T09:49:04+09:00",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtc2R4SFFDRGhhWEgxTUp3U3d5R0dwaWk4Uk1EbHJ5N2xCbWpYUV96M1RlQ25yQ1Q5MGdjS0p1ZW1RNVFma1BaNDhGMXFoOXplMEhjejV3djRMMV82ZjQtWUdXdGJ6VUlLYlZCRndGQkhZOWQ3?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
+    {
+     "title": "두산밥캣, '로그X3' 레드닷 디자인 어워드 본상 수상 - 데일리한국",
+     "translated_title": "두산밥캣, '로그X3' 레드닷 디자인 어워드 본상 수상",
+     "summary_ko": "두산밥캣이 출품한 완전전동 무인 로더 '로그X3'가 레드닷 디자인 어워드에서 본상을 거머쥐었습니다. 건설기계 산업 내 전동화 및 자율작업 트렌드를 선도하는 디자인 역량을 과시했습니다.",
+     "category": "신제품",
+     "source": "데일리한국",
+     "published": "2026-10-19T09:20:50+09:00",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PMmhzWmE5R25GUi1VaEk1UVFqTHZXNHV1cmdMUjBqSGtYNmh6akJXNkxua3ExTkppNkZXY3Yxb3V1WFBHSTdoNjdSb1NfV1BTcW82aEpmY2l0WWtmeGZaNTRfM1ZaczNTQ0NscEstWdIBc0FVX3lxTE13TWlOZkRwQWxwRURmajFwTzViSU5JYkZqUzQzQUd0MUJmOS1MbTBsRkdHT3hhRlM5RGZZdERXLW02YkpmSExJZHVhVWZJN2h2OWRrYk00UlZVVlBvb2I0WDJ3Wm9xbVNmVE50UXhMR2Z5Nkk?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
      "lang": "ko"
     },
@@ -53,25 +97,14 @@
      "lang": "ko"
     },
     {
-     "title": "두산밥캣, 유럽 전력망·철도 투자 수혜…건설장비 수요 견조 - 핀포인트뉴스",
-     "translated_title": "두산밥캣, 유럽 전력망·철도 투자 수혜…건설장비 수요 견조",
-     "summary_ko": "두산밥캣이 유럽의 전력망 및 철도 부문 인프라 투자 확대에 힘입어 수혜를 입고 있습니다. 전반적인 지역 내 건설장비 수요가 견조한 흐름을 유지하고 있음을 보여줍니다.",
-     "category": "실적",
-     "source": "핀포인트뉴스",
-     "published": "2026-10-18T17:26:57+09:00",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBENmR0UDk5RlRISEhoNlo3OEZrc1lwbmJEd1BVZDhUcm1OZDU4YW9OeEJ2SEM2VHJleXViUXFMWlEwNFBlZE04Y2NzdllyZ3hZSXBSNkU2VWFkT0g5NVk0WXRIaGpUd3MwdnREVFhoRDlrVmUzdDJz0gF3QVVfeXFMUEQ2ZHRQOTlGVEhISGg2Wjc4RmtzWXBuYkR3UFVkOFRybU5kNThhb054QnZIQzZUcmV5dWJRcUxaUTA0UGVkTThjY3N2WXJneFlJcFI2RTZVYWRPSDk1WTRZdEhoalR3czB2dERUWGhEOWtWZTN0MnM?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "ko"
-    },
-    {
-     "title": "정기선 체제 HD현대 1년, 호황 넘어 성장 체질 바꾸기 시험대 - PRESS9",
-     "translated_title": "정기선 체제 HD현대 1년, 호황 넘어 성장 체질 바꾸기 시험대",
-     "summary_ko": "정기선 부회장 체제 출범 1년을 맞은 HD현대가 단순 호황을 넘어 근본적인 사업 체질 개선에 나서고 있습니다. 건설기계 및 조선 부문을 아우르는 그룹 전반의 전략적 변화가 주목받고 있습니다.",
-     "category": "M&A/투자",
-     "source": "PRESS9",
-     "published": "2026-10-17T12:00:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96X1pjSDVPSkVLQWxKSmQyT2VRdlBZb2FqaHJrVXg2cUZWeTA3VWs3RVRGX05wY0E5UWZVRzB0clFHQThmX3dRQ0RLTmlCOVNfUmNLMGstcXlCbHB3TUcxcUo0LVotQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
+     "title": "두산밥캣 로그X3, 레드닷 디자인상 수상…미래형 전동 로더 기술력 - 핸드메이커",
+     "translated_title": "두산밥캣 로그X3, 레드닷 디자인상 수상…미래형 전동 로더 기술력",
+     "summary_ko": "두산밥캣의 완전 전동 무인 로더 '로그X3'가 레드닷 어워드 디자인 콘셉트 부문에서 본상을 수상했다. 이는 회사의 미래형 건설기계 기술력을 입증하는 성과다.",
+     "category": "신제품",
+     "source": "핸드메이커",
+     "published": "2026-10-20T09:25:52+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Zdm81emhDNlJfbEZlY3VCZVZzenlkUGJKNDdoZ3dCVWtvZFpXNlI1WmdkLXdybHpTd3dpaUc4YldRdkE1bmJrNlE4X1VkUVZNWDJjQ0x3NS1wTGZrZGNEZl9tUTFFbVnSAWtBVV95cUxObVI0cmdUaUNsTEY2cXF5QWhWLS1yWkN3a0M1U1YyLXp4ak1ORHZ3Mkk5WVRRNmFrV3ZEM2RZT1hUbEFXWFFZT1dtR1JLYjZaRnlsNkw5UDlzdWNIZUI3ZldIQVRGUmpFQXlEbw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
      "lang": "ko"
     },
     {
@@ -119,57 +152,24 @@
      "lang": "ko"
     },
     {
-     "title": "두산밥캣, 전동·무인 로더 ‘로그X3’ 레드닷 디자인상 수상 - 이지경제",
-     "translated_title": "두산밥캣, 전동·무인 로더 ‘로그X3’ 레드닷 디자인상 수상",
-     "summary_ko": "두산밥캣의 전동 무인 로더 '로그X3'가 레드닷 디자인상을 수상했다. 혁신적인 전동화 및 모듈형 설계가 높이 평가받았다.",
+     "title": "“운전석이 사라졌다” 두산밥캣 미래형 건설 기계, 레드닷 어워드 본상 수상 - 서울경제",
+     "translated_title": "“운전석이 사라졌다” 두산밥캣 미래형 건설 기계, 레드닷 어워드 본상 수상",
+     "summary_ko": "두산밥캣의 무인 전동 로더 '로그X3'가 레드닷 어워드 디자인 콘셉트 부문 본상을 수상했다. 운전석을 없앤 혁신적인 디자인과 전동화 기술력이 국제적으로 인정받았다.",
      "category": "신제품",
-     "source": "이지경제",
-     "published": "2026-10-19T15:28:17+09:00",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BSDJwcTNlTHc0Mlg0V1NXUFNnSWhrekFYakpvaDk3b1IyN1dlN01zbmhrb1hUQnNfTUlqbDYxQnhLUjhiX25ialhDU2hlTWJDcDNvcVgxNFpaYUdoUXNWemJHY0JfUGE0NnFQVS1B?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "source": "서울경제",
+     "published": "2026-10-19T17:09:57+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1CMVBxZE83N3JyeTJ5cE1uSmZWdVhkX2ZWSTFtNmZUWWl2eWMxSW1fdVdVQWgzRFVIUTc1cUJEVnJ6VnphcXpxRmpxdi1RN2Y3bUHSAVNBVV95cUxOMGhVcEJUa3ZZcE5xMXdlSWNqcWRJakpnTEF6RzNDLWNPVVpzQUdWVFpOT18xdXB1bzRTTTR0c0pyOTZRdTY3VmxWSzBkTmxPdkM0RQ?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 7,
      "lang": "ko"
     },
     {
-     "title": "두산밥캣 완전전동 무인로더 ‘로그X3’ 레드닷 어워드 본상 - 중앙뉴스",
-     "translated_title": "두산밥캣 완전전동 무인로더 ‘로그X3’ 레드닷 어워드 본상",
-     "summary_ko": "두산밥캣의 완전 전동 무인 로더 모델이 레드닷 어워드 본상을 수상했다. 건설 현장의 탄소 규제와 인력난 대응 기술로 주목받고 있다.",
+     "title": "두산밥캣, 레드닷 석권으로 캐터필러·존디어에 ‘선전포고’ - https://spt.co.kr/",
+     "translated_title": "두산밥캣, 레드닷 석권으로 캐터필러·존디어에 ‘선전포고’",
+     "summary_ko": "두산밥캣이 레드닷 어워드에서 미래형 로더로 수상하며 글로벌 경쟁력을 과시했다. 이는 글로벌 대형 OEM들과의 기술 및 디자인 경쟁에서 우위를 점하려는 행보로 해석된다.",
      "category": "신제품",
-     "source": "중앙뉴스",
-     "published": "2026-10-19T15:15:53+09:00",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5OS2g3QS1oNGpkMV9aUnVsSG9KWkROajV4X1R3dk5nQk5OQW1ubkxqcndlOVBHaDBDdC1iYnVpZ1VMSE5lb3dEM05kX1pBay00cFNTY0JBRE9vb0FWMFpqQmR5VEM1cC1pMUVZX1NDSdIBb0FVX3lxTE5OS2g3QS1oNGpkMV9aUnVsSG9KWkROajV4X1R3dk5nQk5OQW1ubkxqcndlOVBHaDBDdC1iYnVpZ1VMSE5lb3dEM05kX1pBay00cFNTY0JBRE9vb0FWMFpqQmR5VEM1cC1pMUVZX1NDSQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "건설 인력난·탄소 규제 깬다…두산밥캣 ‘로그X3’, 레드닷 수상 - 매일일보",
-     "translated_title": "건설 인력난·탄소 규제 깬다…두산밥캣 ‘로그X3’, 레드닷 수상",
-     "summary_ko": "두산밥캣의 '로그X3'가 레드닷 디자인상을 수상하며 기술력을 입증했다. 해당 장비는 건설 현장의 인력난과 탄소 배출 규제에 대응하도록 설계됐다.",
-     "category": "신제품",
-     "source": "매일일보",
-     "published": "2026-10-19T15:12:49+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1UU0JRa3N6SG93RkV0dlppRnRkTTN1Wkc0dzVkSTVwRWxESFdPbXcyXzAzTnZnTVpWMl93U3NxOTI1OGhhTWhLUkpITVpVWU9GbUsxWS1sRFR2V3Z0R0xEb3BxLUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 전동·무인 로더 ‘로그X3’로 레드닷 디자인상 수상 - 브릿지경제",
-     "translated_title": "두산밥캣, 전동·무인 로더 ‘로그X3’로 레드닷 디자인상 수상",
-     "summary_ko": "두산밥캣의 전동 무인 로더 '로그X3'가 레드닷 디자인상을 수상했다. 모듈형 설계와 친환경 기술이 디자인 어워드에서 인정받았다.",
-     "category": "신제품",
-     "source": "브릿지경제",
-     "published": "2026-10-19T15:06:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqelFkRWdsUThQTVV1N1pVNzBDWWxpbGZjUHU4eHRISHhDNTFQdmtqSEd3cHFaeW9UWDNuenVFSnVYTFA2MmR6UDhseHJuOFJha0s2ZGpZTVdpZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 로그X3, 모듈형 장비 설계로 디자인상 받아 - 폴리뉴스 Polinews",
-     "translated_title": "두산밥캣 로그X3, 모듈형 장비 설계로 디자인상 받아",
-     "summary_ko": "두산밥캣이 출품한 전동 무인 로더 '로그X3'가 레드닷 디자인상을 받았다. 모듈형 장비 설계를 도입해 혁신성을 인정받았다.",
-     "category": "신제품",
-     "source": "폴리뉴스 Polinews",
-     "published": "2026-10-19T14:57:23+09:00",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1nT0xVNVREZWhJWjdfUEIySmp4T01pTUwxVElqTzNhNDhpZ25ZZktiZWtDenNlVEVrd01Ydl9WQ0swZnVBNHk1bnZjVjBSZGViMWhrT3JzNXNfTmxNRXc1WkdOTXA2UUdMc2wxRXF3?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "source": "https://spt.co.kr/",
+     "published": "2026-10-19T16:26:54+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE91S1J3LV9ubHA4RWUyVUxQcjlfcVpqX3BvY21UbDhCbEdYNkRUU3lOcVg4b0N4NDF4V3o3TEtubmJVdzNxemFGalRucFZYT0FLZjFYYzdxYmhRcURq?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 7,
      "lang": "ko"
     }
@@ -180,14 +180,14 @@
    "title": "글로벌 피어",
    "items": [
     {
-     "title": "JCB India opens dealership facility in Ranchi - Construction Week India",
-     "translated_title": "JCB 인디아, 란치에 신규 딜러 시설 오픈",
-     "summary_ko": "영국 건설기계 OEM인 JCB가 인도 란치 지역에 새로운 딜러 및 유통 시설을 열었습니다. 이는 인도 시장에서의 판매망 강화와 장비 보급 확대 전략을 보여줍니다.",
+     "title": "Liebherr Used Cranes experience significant growth - Cranes & Lifting",
+     "translated_title": "리바허 중고 크레인 사업 상당한 성장세 기록",
+     "summary_ko": "글로벌 건설기계 제조사인 리바허의 중고 크레인 부문이 두드러진 성장을 보였습니다. 제공된 본문 내용이 제한적이어서 구체적인 판매 대수나 실적 수치는 확인되지 않습니다.",
      "category": "딜러/유통",
-     "source": "Construction Week India",
-     "published": "2026-10-18T13:23:59+09:00",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbEhLdjRGYWxjcjZRWTJKNzZjMlY3dGZCd2djSEdmQTlGSkdjTVgyZE1zTkxwMS1QV0RDLUxnbGZFcTNzZ2dhZ0RTcm5EMDBMOEx6Y0Q4bVgxRllDcURJSHBzYS1zZFlBM3RIb2tERVRwbUE0LXh1YkRrOHBrdms4S0VmMkI4bUZIeHQ4LWp2VVRLM1B3b1Vv?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
+     "source": "Cranes & Lifting",
+     "published": "2026-10-20T14:28:51+09:00",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeDlaTTJsdm1leVktMEZDUGFWdzNVQ1ZTaGotampCSUdwWmlJNXg5MGtNMGpVQ0pBQUtvZHk3RTU1WVNaM0k4MmdXV3FOdC0ya2U4S01GTXdHQmZGMy1QdTk5cTZsZDNmaTl6ZGsweXdfSXdQQUVlX09ocmJMVlBUOXhJblJveWJwdjFRX2tLZjY?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
      "lang": "en"
     },
     {
@@ -238,7 +238,30 @@
   {
    "key": "us",
    "title": "미국 — 주택·인프라",
-   "items": []
+   "items": [
+    {
+     "title": "New Residential Construction Press Release - Census.gov",
+     "translated_title": "신규 주택 건설 보도자료 - Census.gov",
+     "summary_ko": "미국 인구조사국에서 신규 주택 건설 관련 통계를 발표했습니다. 제공된 본문 내용이 제한적이어서 구체적인 지표 수치는 확인하기 어렵습니다.",
+     "category": "부동산/주택",
+     "source": "Census.gov",
+     "published": "2026-10-21T03:38:11+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TX1QwbXR6RnJzb0w2bDRZWjV6T2ItX25qVDlhbm1LSVJHOWNQZGlGazJENzczemVjSmpPUEFNWXo3SDFCRHlfUWR6RW1teVR6X2l4VFY0YnlaRFdPWk1aQVNuUjBjU21rNkE?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
+     "lang": "en"
+    },
+    {
+     "title": "Builder Sentiment Falls on Rising Rates - National Association of Home Builders | NAHB",
+     "translated_title": "금리 상승으로 떨어지는 주택 건축업자 심리지수",
+     "summary_ko": "최근 금리 상승의 영향으로 주택 건축업자들의 체감 경기가 하락세를 보였다. 이는 향후 주택 건설 시장의 수요 위축 신호로 작용할 수 있다.",
+     "category": "부동산/주택",
+     "source": "National Association of Home Builders | NAHB",
+     "published": "2026-10-19T23:04:53+09:00",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNm5PUU9DaTJqenZVUC15TnZndmlVYWg3Y0ZhaHhPVll0UXBPQ04yOU42ZXVUUUt0eDc2cE5qOUdnVnpvXy1YVzdydnREbHUyQlUtNlVNa0pBMHBXZ2g2Nmk2YXB4VXFQVGZTeUhtYnRaSVNCbEpBaHl2YUZCcEgzM01RMHBQOF9wY0IyMmZ3YUdUZ3dIXzZFVFFUNUVqclB5TDFCeA?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 6,
+     "lang": "en"
+    }
+   ]
   },
   {
    "key": "europe",
@@ -255,14 +278,47 @@
    "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
    "items": [
     {
-     "title": "Polres Sukoharjo Bongkar Tambang Ilegal di Tawangsari, Tiga Excavator Diamankan - RRI.co.id",
-     "translated_title": "수카하르조 경찰, 타왕사리 불법 광산 단속 및 굴착기 3대 압수",
-     "summary_ko": "인도네시아 수카하르조 경찰이 타왕사리의 불법 광산을 급습하여 현장에서 굴착기 3대를 압수했습니다. 이번 단속은 지역 내 불법 자원 채굴 및 관련 장비 운용에 제동을 걸고 있습니다.",
+     "title": "China resumes sulphuric acid exports to copper king Chile after three-month halt - Mining Weekly",
+     "translated_title": "중국, 3개월 중단 끝에 '구리 왕국' 칠레로 황산 수출 재개",
+     "summary_ko": "중국이 3개월간의 중단 끝에 세계 최대 구리 생산업체인 칠레로의 황산 수출을 재개했습니다. 구리 광산 생산에 필수적인 자원 공급 재개는 글로벌 광산 자원 공급망에 긍정적인 영향을 미칠 것으로 보입니다.",
      "category": "광산/자원",
-     "source": "RRI.co.id",
-     "published": "2026-10-18T23:41:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMnJXbXFuaW9ESWR2eHQzR1lTbjhUT1BZeEVTUFhCRllDa1k3NVhWdEZwUW55ZGxkRzlHeFh6d01LT1ZOX1hQZUZDZTYwMnFqeXFESU9WdFlUSU5hRjNXTkt2TXFUd2o3LWdQS2xkUk5MRmNJc0RSOW5pLS0tbnRLNHJ6RmVHcUNLOE9lMjdqa3BxU0Y1ZzRCZ1VDLW5FYUMyeFZQY2laUEVYbFBVTG5xblZzdkE3NmV0WHZsem53S20?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "source": "Mining Weekly",
+     "published": "2026-10-20T16:14:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSEJHUmpYelg0ZmxKUUdPSExBRm5kMmRNaWJLYWE2enhNSVB4UzF2LUdNNVJPNERMYkRYSnlGLTNMOHNBa2o3b0htbS0wVndnYk4wVmI1dzFDcVVRZG1maXVGMVVqTE12NGVjLVBZQUw2YUVBNVhEZXJjTkNrX2JvblFfYUxHYzJBeWRXNkdIa3ZTQW93MVNGSEtnYnJTX053bkQyM2RpNHBWcGg2TWVkRkt4TUdMSEFXZTFNaEYwLU5oTGdWWXQ4?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 7,
+     "lang": "en"
+    },
+    {
+     "title": "Tambang Ilegal di Kecamatan Sekayam Sanggau Diduga Gunakan 3 Excavator - Redaksi Satu",
+     "translated_title": "상가우 세카얌 구역의 불법 광산, 굴착기 3대 동원 의혹",
+     "summary_ko": "인도네시아 상가우 지역의 불법 금광 채굴 현장에서 굴착기가 사용되고 있다는 의혹이 제기되었습니다. 제공된 본문 내용이 제한적이어서 자세한 현장 상황은 파악하기 어렵습니다.",
+     "category": "광산/자원",
+     "source": "Redaksi Satu",
+     "published": "2026-10-20T16:01:36+09:00",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5abTBLUUVadXlLTkg1Yjh4Mk5XZW1MdTNzU1hHVUhEZXpoRkdKVEUwYm52NlpnODlJMnNGZTFPbDM5M0R4N3JMNzlwWmk3SVFQQmhXd20xcklQMHNvUGotRHZ4bTIweGdld0FiNjNsZlhibE5sVlV2ZDZvUFU4TlU?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
+     "lang": "id"
+    },
+    {
+     "title": "Dugaan Tambang Emas Ilegal di Sangihe, Polisi Pantau Keberadaan Alat Berat - Media Indonesia",
+     "translated_title": "상기헤 지역 불법 금광 의혹, 경찰 중장비 현장 파악 나서",
+     "summary_ko": "인도네시아 상기헤 지역에서 불법 금광 채굴과 관련해 경찰이 현장에 투입된 중장비 파악에 나섰습니다. 제공된 본문 내용이 제한적이어서 세부적인 장비 규모는 확인하기 어렵습니다.",
+     "category": "광산/자원",
+     "source": "Media Indonesia",
+     "published": "2026-10-20T11:03:34+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZFZidk02dUtHcDdyQlBuNGpjcHZOdVdaeXdHRWxBNG5Kb0x4UGJVWmR1Q2xiSDZHQU1rRmRYenBwR1RscjVNRklhSEtKcXRPNVNZM1J4MTRUaFNKZ2VpTm1EYXZWYldUTGdjRVJWZ2dxRExlcE5KakhGcUZESlZBQTdWcWNIa25KR1M1NlhhNHRBRzhUdTFGQ1BiWUJhREFtVW8wNlBQajI3X19tazNCUlpiUlB3VGp1?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
+     "lang": "id"
+    },
+    {
+     "title": "Tiga Excavator Diamankan, Polres Sukoharjo Bongkar Tambang Ilegal di Tawangsari - Krjogja - Kr Jogja",
+     "translated_title": "굴착기 3대 압수, 수카하르조 경찰이 타왕사리에서 불법 광산 적발",
+     "summary_ko": "인도네시아 수카하르조 경찰이 타왕사리 지역에서 불법 광산을 적발하고 현장에서 굴착기 3대를 압수했다. 제공된 정보의 출처 내용이 제한적이므로 추가적인 산업 영향 분석은 한계가 있다.",
+     "category": "광산/자원",
+     "source": "Kr Jogja",
+     "published": "2026-10-19T17:30:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNm1UckNRM1VGU2RMZTdFdEVxWUk4Zk1yWHZXWTk5ZGhVTldXeE9PcWoxX2hsSkxJMG1NVmx0aGR4eEVrMFB1N3FucmlvSUJOcS1EbmdQWmdRZE9KTFBTMnVFV01GaUozMEhIQi1mdE82Y0ZwTVhEbDl6SWREWFFYS3JkcU5QbTd4dVEzb0E0YldLN2pPTy1CeTZpSUhnMUFqaXhTMVU5VkNiSTJUNG1CWEVXOUNIclBQcUZPddIBwgFBVV95cUxQRm1yRmJ4QTAydXkxeFUyWEFHZGg3ZFl0WGswQ0tNRTVZTW00ZjR5NnB3eWFld1V3Z2sxaDNTTm5mNEUwdlA4UnplSy1mVU9MWVU0aWhIeHdyWDE3akVpS2RlOWUtT3RCTTJHeVJOTEk5Z0tkM3VQaGNiM2NEOWxFOE5tcUdVd0g1ZFRTSjAtcjBqQzI0OGotd2VSRDAtaWtnOWRYMVBJY1ZRTUctM0M0Mk52aVZXbVl0TjE1T1VmWHpSUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
      "lang": "id"
     },
     {
@@ -301,13 +357,13 @@
   }
  ],
  "stats": {
-  "candidates": 602,
-  "new_scored": 51,
-  "dropped_low_relevance": 3,
+  "candidates": 638,
+  "new_scored": 23,
+  "dropped_low_relevance": 2,
   "noise": 1,
-  "korean_media_excluded": 0,
+  "korean_media_excluded": 1,
   "blocked_domain": 0,
-  "stale": 535,
+  "stale": 560,
   "ai_active": true,
   "quota_exhausted": false
  }
