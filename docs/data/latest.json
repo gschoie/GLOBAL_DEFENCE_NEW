@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-24T08:47:27.539099+09:00",
- "date_kst": "2026-10-24",
+ "generated_at": "2026-10-25T07:56:26.124035+09:00",
+ "date_kst": "2026-10-25",
  "window_hours": 36.0,
  "macro_groups": [],
  "sections": [
@@ -8,17 +8,6 @@
    "key": "kr_company",
    "title": "한국 기업 (HD현대·두산밥캣)",
    "items": [
-    {
-     "title": "‘데이터센터’에 건설기계社 웃는다…두산·HD현대 실적 기대감 - 아시아투데이",
-     "translated_title": "'데이터센터'에 건설기계社 웃는다…두산·HD현대 실적 기대감",
-     "summary_ko": "전 세계적인 데이터센터 건설 붐이 두산과 HD현대 등 국내 건설기계 업체의 실적 기대감을 높이고 있습니다. 인프라 투자 수요 확대가 장비 판매로 이어지는 핵심 동인임을 보여줍니다.",
-     "category": "실적",
-     "source": "아시아투데이",
-     "published": "2026-10-21T16:47:55+09:00",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3d0VjZW8talBkRjdQcE00SlVJN0hTd2MwRjRLdXp2NER4enBrbjhQNzBIeEdESktEenM1TGk4QU0tV2F0UVYtaTJrWXJ1ZVplZ2VEcDlwNTIzSG5hZGFUdWRCT1lhMHdsaW04RGFR?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
     {
      "title": "운전자 없이 땅 파고 위험 감지… AI 입은 굴착기의 진화 - 조선비즈 - Chosunbiz",
      "translated_title": "운전자 없이 땅 파고 위험 감지… AI 입은 굴착기의 진화",
@@ -42,47 +31,14 @@
      "lang": "ko"
     },
     {
-     "title": "두산밥캣, 콘셉트 로더 '로그X3'로 레드닷 어워드 본상 수상 - 전문건설신문",
-     "translated_title": "두산밥캣, 콘셉트 로더 '로그X3'로 레드닷 어워드 본상 수상",
-     "summary_ko": "두산밥캣의 무인·친환경 콘셉트 로더 '로그X3'가 세계적인 디자인 어워드에서 본상을 수상했습니다. 회사의 혁신적인 기술력과 디자인 역량을 글로벌 시장에 입증하는 계기가 되었습니다.",
-     "category": "신제품",
-     "source": "전문건설신문",
-     "published": "2026-10-21T12:20:59+09:00",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBwNXlUeGI2b1k4dXlkc1JwVGE3TjZNODF0bGpyX2NQVDJ6MDJvSmRGTGp5a3hhRzY0eEFacHlpcUdEaEMxYnJWX2h1M3RjZGg0RWd5SXJZRTNXN004NlhKWER2Nm9QbFg2Znhz?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 주가 900원 하락 후 장마감 - 아시아뉴스통신",
-     "translated_title": "두산밥캣 주가 900원 하락 후 장마감",
-     "summary_ko": "두산밥캣의 주가가 소폭 하락하며 장을 마감했습니다. 일일 주가 변동 뉴스이나 단기적인 시장 심리를 파악하는 데 참고할 수 있습니다.",
-     "category": "실적",
-     "source": "아시아뉴스통신",
-     "published": "2026-10-22T15:37:50+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE92cS1pcHozbDJ6UDQ4ZE5HSDRvSFI2eG5KVlZnSUZXU0FLX0hnX3BDTGJhQ0RxeDZvaUxkOVJNY3BZeVd3NUg5QTBOYk5sb0xqazZfaUQ2WjZ4eXAy?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 주가 상승 중 - 아시아뉴스통신",
-     "translated_title": "두산밥캣 주가 상승 중",
-     "summary_ko": "두산밥캣의 주가가 상승세를 보이고 있습니다. 단기적인 주가 등락 소식으로 글로벌 건설기계 시장의 흐름을 가늠하는 지표 중 하나입니다.",
-     "category": "실적",
-     "source": "아시아뉴스통신",
-     "published": "2026-10-22T09:31:48+09:00",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YTkhfRjFuemZOTU4taEpUbThaVGpsSnIyY3duMkwtTHZjZS1wcDg1QjA2OE9ydGFBTGZaMjhmd0lhWnpDWG9DV2FvTURVenZycWw4TVBjY1ZqV3pzU2RoV2MtUV9qck0xMGxsY2M5QVMzZXNM?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 주가 400원 상승 후 장마감 - 아시아뉴스통신",
-     "translated_title": "두산밥캣 주가 400원 상승 후 장마감",
-     "summary_ko": "두산밥캣의 주가가 소폭 상승하며 거래를 마쳤습니다. 시장 내 주가 흐름을 보여주는 일상적인 시세 정보입니다.",
-     "category": "실적",
-     "source": "아시아뉴스통신",
-     "published": "2026-10-21T15:42:37+09:00",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1PeEljaWRxbmdlRUpEMnlqbUpyZFRqdGVtUnBxb1RMbmdmY3JZSW5kNHZNTzdDMVdGYUZCRDg5a3kydTY0VG4wQ05EQ1FjbmZKQmVDME43Q2s3TzdBdWo3YV9fcGE5SlpQc0haTU1TWWEzNklr?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
+     "title": "“삼성·LG뿐인 줄 알았더니”…美 데이터센터서 3,900억 잭팟 터진 ‘이 회사’ - 더위드카",
+     "translated_title": "삼성·LG뿐인 줄 알았더니…미국 데이터센터서 3900억 잭팟 터진 ‘이 회사’",
+     "summary_ko": "국내 한 기업이 미국의 대규모 데이터센터 인프라 관련 프로젝트에서 3900억 원 규모의 계약을 수주하는 성과를 거두었습니다. 제공된 스니펫이 제한적이므로 건설장비나 중공업 부문과의 직접적인 연관성은 추가 확인이 필요합니다.",
+     "category": "수주/계약",
+     "source": "더위드카",
+     "published": "2026-10-24T15:30:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UNkhIU3Z5UXZqdjJXdm9BeXR5VDlqOFU2ZHN5WlpiQXVjRTFkVnZ2U0JpYnI5cWVzcUpjWG84eGV2bWVGalF3dFNtQ1JGdU5XTmtpcTEwUG95Yy10aWFETEhMd1ltZUlI0gFwQVVfeXFMT1Q4UHhRV05JSFlMS3FHb3EzdUdfTGdRVmtSSUZsRGdQaGRvTHQybmNyNGdqR2JfUGR4Q093WHY0YWp5SmIxbjNPTjVQUHk2SGdDRkoycGlEb1Z0YlNxUVpRMTVuMklLQnRqV0RsaXh6aw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
      "lang": "ko"
     }
    ]
@@ -99,6 +55,28 @@
      "source": "Construction Equipment",
      "published": "2026-10-23T22:39:30+09:00",
      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQamJUakFlcE56c3ZfblpFT3hNc19RZzBCWUpkTmFDNk1CTGRWajEyM0NOV240dUdkb3JEc3RSZDlrcHEyY3J2U28wbmdtTzRwcmVNMkxzSC1xVlpGWjJHTUFkQ0JmSFNNd21NOXZXbURQelRvVmdQVmlDR3lvU1JpdWl1OEZjQzVxbkNwRlRYdWYzVlNSeGR5WkxyNUFjd2I3a1dOOFJDUm8?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Komatsu and K-Tec Combine to Give You Another Mass Earthmoving Option - https://megaproject.com/",
+     "translated_title": "고마쓰와 K-Tec, 대규모 토공 작업을 위한 새로운 장비 솔루션 결합 선보여",
+     "summary_ko": "고마쓰와 K-Tec이 협력하여 대규모 토공 및 대지 조성 작업을 위한 새로운 장비 운용 옵션을 제공합니다. 양사의 협업은 대형 건설 및 광산 현장에서 장비 효율성과 생산성을 높이는 데 기여할 것으로 보입니다.",
+     "category": "신제품",
+     "source": "https://megaproject.com/",
+     "published": "2026-10-23T16:00:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObElqYjBqQl9ZTmJLUko4cDItQ0VjeExCYm9nd3hXSi1KZHB3S0I3UVV0MGFjdFpZUnVNd0duZWdPSEdlVGRaWXJlczZpZFp2NlVha3RiS1ZBSVZBak5raWpwbjBrMGVGVGtyTUZSdzNETllyTWxwRzV2R3dwOFlhekhpc19FeUJQX2Q4dDJUV3B6TzF3cmJuUTNfSDUzVWNVbEJjZmt2RXFseDBM?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Manitou and Gehl Join Cat, Deere, and the Rest on the Mini Track Loader Bandwagon - https://megaproject.com/",
+     "translated_title": "마니투와 겔, 캐터필러 및 디어 등과 함께 미니 트랙 로더 시장에 합류",
+     "summary_ko": "마니투와 겔이 기존 주요 업체들에 이어 미니 트랙 로더 시장에 진출하며 경쟁에 가세했습니다. 제공된 본문 내용이 제한적이어서 구체적인 세부 사항은 파악하기 어렵습니다.",
+     "category": "신제품",
+     "source": "https://megaproject.com/",
+     "published": "2026-10-23T15:49:49+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeHZxSE5XM2lqSWgyaGZROG1USGh1SW80RFNOdlhTRV9UbjM4QktLQ0RXX04ydWVyU0I0eE9xNDJDYUlxU0lMSndWVkNvdjhYME9qS2hTX3E1b1lvRUtQdlNibDB3ZjJRaVRZbVo3Y3dUOEhseVgtWjVDTW83d0wxSDJPcm9tY2cxcFVzcjNSckJiOFBRUmxJbjhNQ0pkR1E0aHVNc0JPN1p2akExaDA1VnBXMlpPTGVrR1E?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
      "lang": "en"
     },
@@ -125,28 +103,6 @@
      "lang": "en"
     },
     {
-     "title": "Manitou and Gehl Join Cat, Deere, and the Rest on the Mini Track Loader Bandwagon - Construction Equipment",
-     "translated_title": "마니토우와 게일, 캐터필러 및 디어 등과 함께 미니 트랙 로더 시장에 진입",
-     "summary_ko": "마니토우와 게일이 미니 트랙 로더 라인업을 새롭게 출시하며 기존 메이저 업체들과의 경쟁에 합류했습니다. 관련 글로벌 건설기계 시장에서 소형 장비 부문의 경쟁이 더욱 심화될 것으로 보입니다.",
-     "category": "신제품",
-     "source": "Construction Equipment",
-     "published": "2026-10-23T02:07:09+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd1lqY200a1F0RnA3UUpvN3FxcUFlN2lFV3JjWVQ1TmJXRDZLLXhxSklFdnZ1UG92TTdtTG9CTFA3N3Fpa0lJQUhwUEZmZTRrbFJnYWdRSFpBWkdWODhqRnBXamo5N3hHVWZVREhtZlpnRi1jaFJrUmppNjl5YV81eHBmekhBeExxcExpZ1FTZml6WUtVdWVGeExvSnh0R2UwdGhTaGFMV2tLZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "en"
-    },
-    {
-     "title": "Manitou, Gehl Launch New SRT Stand-On Track Loaders - Construction Equipment Guide",
-     "translated_title": "마니토우와 게일, 새로운 SRT 스탠드온 트랙 로더 출시",
-     "summary_ko": "마니토우와 게일이 소형 장비 시장 공략을 위해 새로운 SRT 스탠드온 트랙 로더 제품군을 선보였습니다. 글로벌 건설기계 제조사들의 신제품 출시 경쟁이 활발해지고 있음을 보여줍니다.",
-     "category": "신제품",
-     "source": "Construction Equipment Guide",
-     "published": "2026-10-22T13:00:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVzZLNVp2UFYtWTc2UnRLdmlKWXpuUmxmTHY0VHAwMkV3MUg2eVg0SXB4Tkw5MWZvMjVfcVBIQWZ5ME5EeVBZVnlOeHdqWnUxMk5ZX2tMcVFpSl9BaFFYTlhMS1JVOWdhMzNFYmtHRUVWc00wNTBMRklxYUppNlRGbG9kclV2bDhKcUtzQVluYWNpX3JJUFgzaUN0Sk12ZjA?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "en"
-    },
-    {
      "title": "State Street Industrial Select Sector SPDR (XLI) Adds Caterpillar and GE on Oct. 21 - Yahoo Finance",
      "translated_title": "스테이트 스트리트 산업재 SPDR(XLI), 10월 21일 캐터필러 및 GE 편입",
      "summary_ko": "스테이트 스트리트의 산업재 선택 섹터 SPDR(XLI) ETF에 캐터필러와 GE가 새롭게 편입되었습니다. 주요 지수 편입은 해당 건설기계 OEM 기업의 주가 및 투자 심리에 영향을 미칩니다.",
@@ -154,17 +110,6 @@
      "source": "Yahoo Finance",
      "published": "2026-10-23T20:05:00+09:00",
      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ0VQQlQtZzdYM3hrclRhM3MzeDVsdlBOTFhXNVRfb1VsNXk0V1dCNDBQYUo3V0VERGxWY1ZzeWlIckR4LUh5U0hGbUJ5dDdSdXZ1ajZrbUx3SGxCNGVsWEl0VF8yaG0yektjWDhUMUI0TmtRQmRHVVRiYkV1dTcyandjV2lJbU9vbHBBZHBKa0c2MGIwT2JyMnByd2cycDNMY0pIZQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
-     "lang": "en"
-    },
-    {
-     "title": "IronSight AI and Fast Iron Partner to Bring AI-Powered - GlobeNewswire",
-     "translated_title": "아이언사이트 AI와 패스트 아이언, AI 기반 솔루션 제공 위해 파트너십 체결",
-     "summary_ko": "건설 및 장비 분야에 인공지능 기술을 접목하기 위한 두 업체의 협력이 발표되었습니다. 장비 운영 효율성을 높이는 소프트웨어 생태계의 변화를 보여줍니다.",
-     "category": "기타",
-     "source": "GlobeNewswire",
-     "published": "2026-10-22T02:50:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNMkR2dDh2T3Y4NDExMDh0bXJET3ZJSXgwRm1pYjE2cU9ZSGk3eE5xaGViaVdmQlFnQVdIWFZzOEpKYmNHdVJVNlp5Rkg1cGZpVnRmektOMWZMYVFfSjhsSC1NNjRtNG5fREtPQXpZbWt6dHhvNGRkTkh6QS1BRnF5QWFMcG1ZQjFLQkhHRnJsUXFrRThocHczVDFCSDEyOEo5UU1xcmh6bnRPWkp0c0hmc3I0d0pXVzFFdExGblBKNUhUTDBjSjk3bGRHVlkzN0dBdWVMOXFjS2lqNlJHZmlQVjJtckZxVEQ3ZVJ2cmxDeWM0b2dPN1RycGJITHlHYWhFdUhqWGJlb1Y5SFBBVmdMa2JpRjFGa0xlNVpsa2g0cVo?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 6,
      "lang": "en"
     },
@@ -201,6 +146,39 @@
    "key": "strategy",
    "title": "신제품·딜러망·전략",
    "items": [
+    {
+     "title": "Kobelco targets 8-10% growth on infrastructure demand; launches 3 excavator variants - DT Next",
+     "translated_title": "고벨코, 인프라 수요 힘입어 8~10% 성장을 목표로 굴착기 신제품 3종 출시",
+     "summary_ko": "고벨코가 견조한 인프라 건설 수요를 바탕으로 연간 8~10%의 성장을 달성하겠다는 목표를 제시하며 신형 굴착기를 선보였습니다. 이는 아시아 신흥국 시장에서의 장비 수요 증가세와 맞물려 긍정적인 실적 동력이 될 것으로 기대됩니다.",
+     "category": "시장지표",
+     "source": "DT Next",
+     "published": "2026-10-24T11:16:27+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUDQ2TnBsTGlNOVVYMEFTSHdEOWY4R0RBdDU5Tnh4RWpqUUVoeVB3cDQ5SHBGMlpMd3l4REthV0ZObXAyOGRNRkU3bVhTQVlIOGo0QWNmUkc3MHoyZmRyU2hKb1hSZEV6SEZoNzFGZzlrSDFVV1lVVXNJYUdYUmdBUE5TRGNFQWw5aFd1WW5QVktxejIzZ0pFbXlMWGdmb192Y2ZkM3ZqX1VueVlKd0JhZWxMSGI3V2o0UmfSAccBQVVfeXFMTmMzcHRmTEZFdVZTRXRKQ2FSLWx6WTZ4Z1B6MWJvb194YWozRDhxXzAwbkE3WDdfQTJHbDA1X2YwWnBiLVNYempKaWllOW1CcXJ1YTl4TmtMZ3dPS1NqS0Y5UFhzZDRNOTZNWHo3Tl80azA2Yk5ld3E5Qkg4OWhjX1RPTzEtVS02SU5jSVMwOVVTTldScXRlV1JUZXIxeExEX0E3NmpwUGlmVGZfWmVFMUFrNWdMdWZmNGhHWGdJMHltaHZwMmlzTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "en"
+    },
+    {
+     "title": "Kobelco India Launches Three New Excavator Variants to Boost Infrastructure Projects - LiveChennai",
+     "translated_title": "고벨코 인디아, 인프라 프로젝트 촉진 위해 신형 굴착기 3개 모델 출시",
+     "summary_ko": "고벨코 인디아가 인도 시장의 인프라 수요 성장에 발맞추어 새로운 굴착기 제품군 3종을 공식 출시했습니다. 이번 신제품 출시는 인도 내 인프라 건설 현장의 생산성 향상과 시장 점유율 확대를 목표로 하고 있습니다.",
+     "category": "신제품",
+     "source": "LiveChennai",
+     "published": "2026-10-24T15:53:16+09:00",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92NVpCYXJSU29zRmotV2RhNk9HYmJsemd5d25LN0k4RzRNTk0tWEkta0lYWWY2dFJ3MV8ycVBoMzhfMmNmallfUVRhbFk5TzJxSVNwWWJEaGFJWWl1UExvUlA5OEhGSDBNdTEyQ0lITQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Kobelco Construction Equipment India Unveils Three Variants in the 19.1 - 24 Tonne Category Excavators, Reinforcing Its ‘Value Excavation’ Philosophy - India Education Diary",
+     "translated_title": "고벨코 건설기계 인도, '가치 굴착' 철학 강화하며 19.1~24톤급 굴착기 3종 공개",
+     "summary_ko": "고벨코 건설기계 인도가 19.1톤에서 24톤 체급에 이르는 신형 굴착기 3개 모델을 선보이며 현지 시장 공략을 강화합니다. 이번 라인업 확장은 가성비와 효율성을 중시하는 인도 인프라 시장의 니즈를 충족하기 위한 전략입니다.",
+     "category": "신제품",
+     "source": "India Education Diary",
+     "published": "2026-10-24T15:22:11+09:00",
+     "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOQXEtVkR6bEJVRmYzMkk2eXBVOHpqNTJaZzRSbTI1Z0VMRm9xVEdtcXhlMTM4b0plUmUzbzl1LUI3S0pfY2dfc3RZcHRFS0Q3VEZnYkhXMS04MTA0VHRTQUtKS0ZWWG9id1h5ZVo4MENZZ2czejJrOHRsWWV2ZnNIUlB2WUc4c0RCcF9NV1JrY2xTQVlrVlUtQmVqOXUwV25mTDRpVDBlZGNWWF9DakhfMEdxa1V0ckRaMmlxVFdaYjJQVVhjQk5ncW9SbkNtalVfeG5kWWQxNHdDUTNnTjBUYjlfTm9OQl91S3ZabWRMMW5ON085Um5aN3JLdGtXejU0WDhNSzFwYw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
     {
      "title": "Kobelco Construction Equipment India Unveils Three Variants in the 19.1 - 24 Tonne Category Excavators, Reinforcing Its ‘Value Excavation’ Philosophy - Business News This Week",
      "translated_title": "고베스코 건설기계 인도, 19.1~24톤급 굴착기 신제품 3종 출시로 '가치 굴착' 철학 강화",
@@ -241,17 +219,6 @@
      "source": "Mining.com",
      "published": "2026-10-24T02:31:38+09:00",
      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jTkxGQUcxTGoyMDFybWdVQVJnVExXZUxHMkNxdlFidVlUSnZsZ0s3cGZpdkxTT0hhcDRWenN4ZzltcWdoUFoxWldJZUJtam1TcG1wbHo0VFdMZWpoamdGLXEwRm53cWxDT1pTenA1alNkV1VRWUU1YmNVeVk?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "en"
-    },
-    {
-     "title": "Mitsubishi Approves Arizona Copper World Project, Adds $423-Million Equity - News and Statistics - IndexBox",
-     "translated_title": "미쓰비시, 애리조나 코퍼 월드 프로젝트 승인 및 4억 2,300만 달러 지분 투자 단행",
-     "summary_ko": "미쓰비시가 대규모 구리 광산 개발 프로젝트를 승인하고 대규모 지분 투자를 집행했습니다. 이는 광산 자원 개발 확대로 이어져 대형 광산용 건설기계 수요에 긍정적인 신호입니다.",
-     "category": "광산/자원",
-     "source": "IndexBox",
-     "published": "2026-10-21T22:00:36+09:00",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY0hlUGEwTlhEdDJGS20xOUJteXlKaVJyOTZ3WkxNT2QwZGUyb1E1MElNTV9za24xOURyT3ZMY2hvNWFHRHRVSS1qX2dQTTVvalFhZTdiT29ITFd2Rk52OUZBZk5xSjFHaGNNY2g5OHpMWHYtVzRvcWlNRkcyS3VWV0dKX0NBUDZEM2c3MGFQTkl6bDNtUTZwcVZpQ2l4U2VidW9paVdFMldqZkhqX3pScjN3UWppUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
      "lang": "en"
     },
@@ -302,13 +269,13 @@
   }
  ],
  "stats": {
-  "candidates": 587,
-  "new_scored": 15,
-  "dropped_low_relevance": 2,
+  "candidates": 568,
+  "new_scored": 12,
+  "dropped_low_relevance": 6,
   "noise": 0,
   "korean_media_excluded": 0,
-  "blocked_domain": 0,
-  "stale": 559,
+  "blocked_domain": 1,
+  "stale": 537,
   "ai_active": true,
   "quota_exhausted": false
  }
