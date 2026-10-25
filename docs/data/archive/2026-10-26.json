@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-10-26T08:03:29.471843+09:00",
+ "date_kst": "2026-10-26",
+ "window_hours": 36.0,
+ "macro_groups": [],
+ "sections": [
+  {
+   "key": "kr_company",
+   "title": "한국 기업 (HD현대·두산밥캣)",
+   "items": [
+    {
+     "title": "HD현대사이트솔루션, 가상현장서 무인굴착기 개발 속도낸다 - 포쓰저널",
+     "translated_title": "HD현대사이트솔루션, 가상현장서 무인굴착기 개발 속도낸다",
+     "summary_ko": "HD현대사이트솔루션이 가상 현장을 활용해 무인 굴착기 기술 개발에 박차를 가하고 있다. 관련 본문 스니펫이 제한적이어서 자세한 기술 세부 사항은 확인이 어렵다.",
+     "category": "신제품",
+     "source": "포쓰저널",
+     "published": "2026-10-25T10:55:27+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE14LVlpYXdsZXVUZDRaeWZwNXJHNDJpMjFDcWdwVklIOWx5Q2tRYktGSlROUmlmdjVWQkhscFJkS3RqLVpDazREZ3QwQjNfMzFGeHVrbWh1SXR0Vzhld3hTLW14Snk?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "ko"
+    },
+    {
+     "title": "“삼성·LG뿐인 줄 알았더니”…美 데이터센터서 3,900억 잭팟 터진 ‘이 회사’ - 더위드카",
+     "translated_title": "삼성·LG뿐인 줄 알았더니…미국 데이터센터서 3900억 잭팟 터진 ‘이 회사’",
+     "summary_ko": "국내 한 기업이 미국의 대규모 데이터센터 인프라 관련 프로젝트에서 3900억 원 규모의 계약을 수주하는 성과를 거두었습니다. 제공된 스니펫이 제한적이므로 건설장비나 중공업 부문과의 직접적인 연관성은 추가 확인이 필요합니다.",
+     "category": "수주/계약",
+     "source": "더위드카",
+     "published": "2026-10-24T15:30:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UNkhIU3Z5UXZqdjJXdm9BeXR5VDlqOFU2ZHN5WlpiQXVjRTFkVnZ2U0JpYnI5cWVzcUpjWG84eGV2bWVGalF3dFNtQ1JGdU5XTmtpcTEwUG95Yy10aWFETEhMd1ltZUlI0gFwQVVfeXFMT1Q4UHhRV05JSFlMS3FHb3EzdUdfTGdRVmtSSUZsRGdQaGRvTHQybmNyNGdqR2JfUGR4Q093WHY0YWp5SmIxbjNPTjVQUHk2SGdDRkoycGlEb1Z0YlNxUVpRMTVuMklLQnRqV0RsaXh6aw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
+     "lang": "ko"
+    }
+   ]
+  },
+  {
+   "key": "global_peer",
+   "title": "글로벌 피어",
+   "items": [
+    {
+     "title": "Komatsu and K-Tec Combine to Give You Another Mass Earthmoving Option - https://megaproject.com/",
+     "translated_title": "고마쓰와 K-Tec, 대규모 토공 작업을 위한 새로운 장비 솔루션 결합 선보여",
+     "summary_ko": "고마쓰와 K-Tec이 협력하여 대규모 토공 및 대지 조성 작업을 위한 새로운 장비 운용 옵션을 제공합니다. 양사의 협업은 대형 건설 및 광산 현장에서 장비 효율성과 생산성을 높이는 데 기여할 것으로 보입니다.",
+     "category": "신제품",
+     "source": "https://megaproject.com/",
+     "published": "2026-10-23T16:00:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObElqYjBqQl9ZTmJLUko4cDItQ0VjeExCYm9nd3hXSi1KZHB3S0I3UVV0MGFjdFpZUnVNd0duZWdPSEdlVGRaWXJlczZpZFp2NlVha3RiS1ZBSVZBak5raWpwbjBrMGVGVGtyTUZSdzNETllyTWxwRzV2R3dwOFlhekhpc19FeUJQX2Q4dDJUV3B6TzF3cmJuUTNfSDUzVWNVbEJjZmt2RXFseDBM?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Manitou and Gehl Join Cat, Deere, and the Rest on the Mini Track Loader Bandwagon - https://megaproject.com/",
+     "translated_title": "마니투와 겔, 캐터필러 및 디어 등과 함께 미니 트랙 로더 시장에 합류",
+     "summary_ko": "마니투와 겔이 기존 주요 업체들에 이어 미니 트랙 로더 시장에 진출하며 경쟁에 가세했습니다. 제공된 본문 내용이 제한적이어서 구체적인 세부 사항은 파악하기 어렵습니다.",
+     "category": "신제품",
+     "source": "https://megaproject.com/",
+     "published": "2026-10-23T15:49:49+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeHZxSE5XM2lqSWgyaGZROG1USGh1SW80RFNOdlhTRV9UbjM4QktLQ0RXX04ydWVyU0I0eE9xNDJDYUlxU0lMSndWVkNvdjhYME9qS2hTX3E1b1lvRUtQdlNibDB3ZjJRaVRZbVo3Y3dUOEhseVgtWjVDTW83d0wxSDJPcm9tY2cxcFVzcjNSckJiOFBRUmxJbjhNQ0pkR1E0aHVNc0JPN1p2akExaDA1VnBXMlpPTGVrR1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    }
+   ]
+  },
+  {
+   "key": "cn_company",
+   "title": "중국 업체",
+   "items": []
+  },
+  {
+   "key": "strategy",
+   "title": "신제품·딜러망·전략",
+   "items": [
+    {
+     "title": "Kobelco targets 8-10% growth on infrastructure demand; launches 3 excavator variants - DT Next",
+     "translated_title": "고벨코, 인프라 수요 힘입어 8~10% 성장을 목표로 굴착기 신제품 3종 출시",
+     "summary_ko": "고벨코가 견조한 인프라 건설 수요를 바탕으로 연간 8~10%의 성장을 달성하겠다는 목표를 제시하며 신형 굴착기를 선보였습니다. 이는 아시아 신흥국 시장에서의 장비 수요 증가세와 맞물려 긍정적인 실적 동력이 될 것으로 기대됩니다.",
+     "category": "시장지표",
+     "source": "DT Next",
+     "published": "2026-10-24T11:16:27+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUDQ2TnBsTGlNOVVYMEFTSHdEOWY4R0RBdDU5Tnh4RWpqUUVoeVB3cDQ5SHBGMlpMd3l4REthV0ZObXAyOGRNRkU3bVhTQVlIOGo0QWNmUkc3MHoyZmRyU2hKb1hSZEV6SEZoNzFGZzlrSDFVV1lVVXNJYUdYUmdBUE5TRGNFQWw5aFd1WW5QVktxejIzZ0pFbXlMWGdmb192Y2ZkM3ZqX1VueVlKd0JhZWxMSGI3V2o0UmfSAccBQVVfeXFMTmMzcHRmTEZFdVZTRXRKQ2FSLWx6WTZ4Z1B6MWJvb194YWozRDhxXzAwbkE3WDdfQTJHbDA1X2YwWnBiLVNYempKaWllOW1CcXJ1YTl4TmtMZ3dPS1NqS0Y5UFhzZDRNOTZNWHo3Tl80azA2Yk5ld3E5Qkg4OWhjX1RPTzEtVS02SU5jSVMwOVVTTldScXRlV1JUZXIxeExEX0E3NmpwUGlmVGZfWmVFMUFrNWdMdWZmNGhHWGdJMHltaHZwMmlzTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "en"
+    },
+    {
+     "title": "Kobelco India Launches Three New Excavator Variants to Boost Infrastructure Projects - LiveChennai",
+     "translated_title": "고벨코 인디아, 인프라 프로젝트 촉진 위해 신형 굴착기 3개 모델 출시",
+     "summary_ko": "고벨코 인디아가 인도 시장의 인프라 수요 성장에 발맞추어 새로운 굴착기 제품군 3종을 공식 출시했습니다. 이번 신제품 출시는 인도 내 인프라 건설 현장의 생산성 향상과 시장 점유율 확대를 목표로 하고 있습니다.",
+     "category": "신제품",
+     "source": "LiveChennai",
+     "published": "2026-10-24T15:53:16+09:00",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92NVpCYXJSU29zRmotV2RhNk9HYmJsemd5d25LN0k4RzRNTk0tWEkta0lYWWY2dFJ3MV8ycVBoMzhfMmNmallfUVRhbFk5TzJxSVNwWWJEaGFJWWl1UExvUlA5OEhGSDBNdTEyQ0lITQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Kobelco Construction Equipment India Unveils Three Variants in the 19.1 - 24 Tonne Category Excavators, Reinforcing Its ‘Value Excavation’ Philosophy - India Education Diary",
+     "translated_title": "고벨코 건설기계 인도, '가치 굴착' 철학 강화하며 19.1~24톤급 굴착기 3종 공개",
+     "summary_ko": "고벨코 건설기계 인도가 19.1톤에서 24톤 체급에 이르는 신형 굴착기 3개 모델을 선보이며 현지 시장 공략을 강화합니다. 이번 라인업 확장은 가성비와 효율성을 중시하는 인도 인프라 시장의 니즈를 충족하기 위한 전략입니다.",
+     "category": "신제품",
+     "source": "India Education Diary",
+     "published": "2026-10-24T15:22:11+09:00",
+     "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOQXEtVkR6bEJVRmYzMkk2eXBVOHpqNTJaZzRSbTI1Z0VMRm9xVEdtcXhlMTM4b0plUmUzbzl1LUI3S0pfY2dfc3RZcHRFS0Q3VEZnYkhXMS04MTA0VHRTQUtKS0ZWWG9id1h5ZVo4MENZZ2czejJrOHRsWWV2ZnNIUlB2WUc4c0RCcF9NV1JrY2xTQVlrVlUtQmVqOXUwV25mTDRpVDBlZGNWWF9DakhfMEdxa1V0ckRaMmlxVFdaYjJQVVhjQk5ncW9SbkNtalVfeG5kWWQxNHdDUTNnTjBUYjlfTm9OQl91S3ZabWRMMW5ON085Um5aN3JLdGtXejU0WDhNSzFwYw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    }
+   ]
+  },
+  {
+   "key": "us",
+   "title": "미국 — 주택·인프라",
+   "items": []
+  },
+  {
+   "key": "europe",
+   "title": "유럽 — 건설·인프라",
+   "items": []
+  },
+  {
+   "key": "china",
+   "title": "중국 — 굴착기·부동산·부양책",
+   "items": []
+  },
+  {
+   "key": "resource",
+   "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
+   "items": []
+  },
+  {
+   "key": "emerging",
+   "title": "신흥국 (인도·아세안·브라질)",
+   "items": []
+  },
+  {
+   "key": "policy",
+   "title": "정책·통상·금리",
+   "items": []
+  }
+ ],
+ "stats": {
+  "candidates": 553,
+  "new_scored": 2,
+  "dropped_low_relevance": 1,
+  "noise": 0,
+  "korean_media_excluded": 0,
+  "blocked_domain": 2,
+  "stale": 531,
+  "ai_active": true,
+  "quota_exhausted": false
+ }
+}
