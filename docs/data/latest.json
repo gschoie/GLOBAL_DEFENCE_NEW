@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-01T08:59:22.170775+09:00",
- "date_kst": "2026-11-01",
+ "generated_at": "2026-11-02T09:16:08.985521+09:00",
+ "date_kst": "2026-11-02",
  "window_hours": 36.0,
  "macro_groups": [],
  "sections": [
@@ -8,17 +8,6 @@
    "key": "kr_company",
    "title": "한국 기업 (HD현대·두산밥캣)",
    "items": [
-    {
-     "title": "'북미 건설활동 호조 수혜'…두산밥캣, 3Q 영업익 25%↑(종합) - 연합인포맥스",
-     "translated_title": "'북미 건설활동 호조 수혜'…두산밥캣, 3Q 영업익 25%↑(종합)",
-     "summary_ko": "두산밥캣이 북미 건설 활동 호조에 힘입어 3분기 영업이익이 25% 증가했습니다. 제공된 본문 스니펫이 제한적이어서 구체적인 실적 수치는 생략합니다.",
-     "category": "실적",
-     "source": "연합인포맥스",
-     "published": "2026-10-29T17:50:16+09:00",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqdHBwZWJPSmc2WmlhbFlIX2RQRlZmeU04TUgweXIzc0lqMFlRcE5oRnhkU1VCWnRwV1lrRDEwamVCTFo0MVhicDRzdkJYcllaS2FNSUZYMkMteEFhN1RjRjlUVzB0eC1BYzRwa0lId3U?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 10,
-     "lang": "ko"
-    },
     {
      "title": "HD건설기계, 인도서 올해 최대 8000대 판매 자신…내년 굴착기 수요 확대 기대 - 더구루",
      "translated_title": "HD건설기계, 인도서 올해 최대 8000대 판매 자신…내년 굴착기 수요 확대 기대",
@@ -42,113 +31,14 @@
      "lang": "ko"
     },
     {
-     "title": "두산밥캣, 3Q 연결 영업이익 1674억...전년비 25%↑ - 데이터투자",
-     "translated_title": "두산밥캣, 3분기 연결 영업이익 1674억 원... 전년 대비 25% 증가",
-     "summary_ko": "두산밥캣의 3분기 연결 기준 영업이익이 1,674억 원을 기록하여 전년 동기 대비 25% 증가했습니다. 견조한 실적 흐름을 통해 글로벌 건설기계 시장에서의 수익성 개선세를 보여주었습니다.",
-     "category": "실적",
-     "source": "데이터투자",
-     "published": "2026-10-30T22:40:25+09:00",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yc2FSM0E3WVpCNUtzWW5qWl9VZmctbHUyWGtVcUxWdVZwSThEcnpnT2FoYlZOZ1NLSnhHZWs4QVBZdkVUYWlVNzY3OHBzYVFXdGV4SGdJamhwcUIxVDJLbmZFNUlnbi1jQU50UVZ2c1ZNM2M?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 3분기 영업익 1674억 전년비 25%↑ - 중소기업신문",
-     "translated_title": "두산밥캣 3분기 영업익 1674억 전년비 25%↑",
-     "summary_ko": "두산밥캣은 3분기 영업이익이 1674억 원을 기록해 전년 동기 대비 25% 증가했다고 밝혔습니다. 북미 시장을 중심으로 한 소형 장비 수요가 실적 성장을 견인했습니다.",
-     "category": "실적",
-     "source": "중소기업신문",
-     "published": "2026-10-30T11:03:05+09:00",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4yVFJoZnZLYVZ2cFJXRTZBbFBCZDJnUC1VRW5EcTdVSHdrMERCVVpBU0pkeU16M0ZyWFVSdUJ0NHBSWTNFYjl0T2otWjdORDBEOFdUOUt4ZVR1UWRMak5SLUo5U2t4M2RWN002U0Z3?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 북미 수요에 실적 성장…주택시장·관세는 변수 - 비즈트리뷴",
-     "translated_title": "두산밥캣, 북미 수요에 실적 성장…주택시장·관세는 변수",
-     "summary_ko": "두산밥캣이 북미 지역의 견조한 수요에 힘입어 양호한 3분기 실적을 거뒀습니다. 다만 향후 북미 주택시장 동향과 관세 정책 변화 등이 주요 변수로 꼽힙니다.",
-     "category": "실적",
-     "source": "비즈트리뷴",
-     "published": "2026-10-30T10:28:33+09:00",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9VcVAwZHFCMUZDVUlzQl9fLU5XWW9OaFYxaUFHanJaX01QbTZ3NF85MUx4OGxZbkVtWVdMVDlmQ1djRDAzTzl2TU5rWTVYVG12MDFFeUJ2YWQ0OHJRT1NoVHE0LXN1ZUF6Q01wWVViSUo?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "[산업 Pick] 대한전선·두산밥캣·한화솔루션, 북미·글로벌 시장 호조에 3분기 실적 선방 - 라이센스뉴스",
-     "translated_title": "[산업 Pick] 대한전선·두산밥캣·한화솔루션, 북미·글로벌 시장 호조에 3분기 실적 선방",
-     "summary_ko": "두산밥캣을 비롯한 주요 기업들이 북미와 글로벌 시장의 호조세 덕분에 3분기에 양호한 실적을 거두었습니다. 해외 시장에서의 견고한 수요가 실적 방어의 주요 요인으로 작용했습니다.",
-     "category": "실적",
-     "source": "라이센스뉴스",
-     "published": "2026-10-30T10:00:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZcEFaYU9oOVBkTGRfcmJiMlUxU2YtWkdkcjExNlNPYldpTElwWG9xWTc5NDZDTG5wMjFyN3d6MFlfOHJaRGFoZzVoNUprTmF4MVRsLXdnc0dnT1MzMDBzRTFTdlVyeEtJeDVB?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 북미·소형장비 호조에 3분기 영업익 1674억원···전년比 25.3%↑ - 뉴스웨이",
-     "translated_title": "두산밥캣, 북미·소형장비 호조에 3분기 영업익 1674억원···전년比 25.3%↑",
-     "summary_ko": "두산밥캣이 북미 시장과 소형 장비 부문의 판매 호조에 힘입어 전년 동기 대비 25.3% 증가한 1674억 원의 영업이익을 기록했습니다. 이는 글로벌 건설기계 시장 내 탄탄한 수요를 방증합니다.",
-     "category": "실적",
-     "source": "뉴스웨이",
-     "published": "2026-10-30T09:38:45+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NQXU1cmdmZEJENFJVRzlwRFFZMlA3ZkFoX2ZzcElZNGlzOXFNZmJ0ZHZkNWdnSVBCSEI1aHlYUHlfQ3hYb1BCWTZuUkJRanJnaEg4V1VUelhFbGNNcWk0a2FnNHd2WlJKZ0E?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 3분기 영업익 1674억원···美건설장비 수요 회복에 실적 개선 - 이뉴스투데이",
-     "translated_title": "두산밥캣, 3분기 영업익 1674억원···美건설장비 수요 회복에 실적 개선",
-     "summary_ko": "두산밥캣이 북미 건설장비 수요 회복에 힘입어 3분기 영업이익이 전년 동기 대비 증가했습니다. 주요 OEM의 실적과 북미 건설 시장 동향을 보여주는 중요 지표입니다.",
-     "category": "실적",
+     "title": "[에너지전환2050] 공장엔 히트펌프, 장비엔 배터리···두산밥캣 ‘두 갈래 전략’ - 이뉴스투데이",
+     "translated_title": "[에너지전환2050] 공장엔 히트펌프, 장비엔 배터리···두산밥캣 ‘두 갈래 전략’",
+     "summary_ko": "두산밥캣이 공장 에너지 효율화와 건설장비 전동화를 동시에 추진하는 이원화 전략을 본격화하고 있습니다. 글로벌 장비 시장의 친환경 및 전동화 트렌드를 보여주는 내용입니다.",
+     "category": "신제품",
      "source": "이뉴스투데이",
-     "published": "2026-10-29T19:50:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tOEVWWmxPcFltVHhtWk5uWG1Iakw0YzVSQmdFdktCTzEyRTc0bGp2Q01CWHlITW0ydzcwNER4aWptU0VlRnB5ZnFyOWRMblE4VXBOaDVfZ3ozVkttVDV0SzVzWnh4OHRLVy1TanRmdVjSAXRBVV95cUxNNmJpMDNXcEtOYm5YSUl5ejhOQ0FJbzhkN3lkQjRvMmZ6VkNBc2NCWndSSmFJNmtBQU4wMHNCQ0FnX3Z4ZjR4UHRFVFdDenEwMzY1QmF6QVNfcmM4YTA4a09WMnlIM3c4RU5TLXZVUXhUTFBsSQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 3분기 영업이익 1674억원…전년 대비 25.3% ↑ - 더팩트",
-     "translated_title": "두산밥캣, 3분기 영업이익 1674억원…전년 대비 25.3% ↑",
-     "summary_ko": "두산밥캣이 3분기 양호한 실적을 거두며 전년 동기 대비 25.3% 증가한 영업이익을 기록했습니다. 북미 시장을 중심으로 한 장비 수요가 실적 성장을 견인했습니다.",
-     "category": "실적",
-     "source": "더팩트",
-     "published": "2026-10-29T17:01:45+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rdTVmNzc3bC1IXy1wZTFQNnpKVVk1dU8xVkZrNWZVVTQ2eU84ZDd6LTlLcWM1U3RpUmtfS0I4M09UNm4ydS10OHdfUHhtRjRpMWpZMi1kVEowd9IBVEFVX3lxTE5QY1UxMkdhN3ZOM1R0ZFVJcW5EcUxtT2NmRzhUd29PbzR3TUVIcGV5bVQ1aExuTy12b2JiUkNsemdIRTF0S0xZRGJIeDBsQ3R1YXotSQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 3분기 영업이익 25％↑…전 지역·제품군 매출 성장(종합) - 매일경제 마켓",
-     "translated_title": "두산밥캣 3분기 영업이익 25％↑…전 지역·제품군 매출 성장(종합)",
-     "summary_ko": "두산밥캣은 전 지역과 제품군에서 고른 매출 성장을 기록하며 3분기 호실적을 달성했습니다. 글로벌 건설장비 시장 전반의 온기를 가늠할 수 있는 내용입니다.",
-     "category": "실적",
-     "source": "매일경제 마켓",
-     "published": "2026-10-29T16:52:28+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yaW5PeUNBMWlueHp5dFpFMXN3RXNmUnJkN2pJVmJ6bkR0U2pyMm45ZGdIWlhQLUUzaDZyUmJkb3FDQ055UjgzY2dzd19sZTJPSmc?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣, 3분기 영업익 1674억…전년비 25.3%↑ - 뉴스토마토",
-     "translated_title": "두산밥캣, 3분기 영업익 1674억…전년비 25.3%↑",
-     "summary_ko": "두산밥캣이 견조한 3분기 실적을 발표하며 수익성 개선을 입증했습니다. 북미 건설장비 시장의 수요 회복세가 실적에 직접적으로 반영되었습니다.",
-     "category": "실적",
-     "source": "뉴스토마토",
-     "published": "2026-10-29T16:46:20+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1vVTJSd0xMMXduQXp0OXplTmpVeUZOVWo5emdTLUYwSG9VSFItUV9lNUMzSkVjX0pyel8wbTlMZjRvYjczNG81bkdqTGdhR0xuV0MwQ3otdWhNV0VLWGFYaA?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 3분기 영업이익 1천674억원…작년 동기 대비 25.3%↑ - 연합뉴스",
-     "translated_title": "두산밥캣 3분기 영업이익 1천674억원…작년 동기 대비 25.3%↑",
-     "summary_ko": "두산밥캣의 3분기 영업이익이 전년 대비 증가하며 시장 예상에 부합하는 실적을 냈습니다. 북미 건설 및 소형장비 수요가 호조를 보인 결과입니다.",
-     "category": "실적",
-     "source": "연합뉴스",
-     "published": "2026-10-29T16:35:55+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vb1lFZjc4MW12X0NZSVRrLXFBU01kMVRLZjJyTjlBRmotZldnd3o4M01qZXRxNUxGekdyMDgzaHZha1BncnMtMGk1UWZ5cnBpa3B0amFKckdTTknSAWBBVV95cUxQd3ZzVmZtTzJjeEtkWC11Mk8yMHdCOEdKUjMwMWtZbHZBdzZfWUVzc05oYzZ6WC1TUUFfSklSc0JTcnZyXzB6RWwwQThwUlFNeTY4aUtzVDFwUV9kb3p3d0M?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
+     "published": "2026-11-01T15:07:05+09:00",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OWmQ4Z1Y4c2QtWUlRZlY0SHVkWVBfRTY5aDY3a2tsd0hKSVUwREJaM2p5clVPWm1UOEN1OENuaURlRVlxUUJoUkZwaTF5dmRaMFdoeVRuZXVQYkt3bnRVSkh3RTVuN1I1QTEyUGxZbXfSAXRBVV95cUxOYl8wZ3J4ZE5qaEVHUDNjQmZEaHdxd25ZbnJOeTdDX19MOVVjOHZZelJsTHpScEFwTlhHZ2JQTzVfaVJlOFVNVTJRMjVranllYzB1d2ZvQ3FiVUpjVTBYTHN0Y0VSSjdmRGNqb0x5aVNfTkpRdw?oc=5&hl=en-CA&gl=CA&ceid=CA:en",
+     "relevance": 8,
      "lang": "ko"
     },
     {
@@ -163,14 +53,36 @@
      "lang": "ko"
     },
     {
-     "title": "두산밥캣, 독일 법인 매각한 이유 - 지디넷코리아",
-     "translated_title": "두산밥캣, 독일 법인을 매각한 이유",
-     "summary_ko": "두산밥캣이 유럽 지역 자회사 및 독일 법인 관련 사업 정리를 추진하고 있습니다. 이를 통해 자산 효율성을 높이고 핵심 역량에 집중하려는 전략적 행보로 풀이됩니다.",
-     "category": "M&A/투자",
-     "source": "지디넷코리아",
-     "published": "2026-10-30T17:10:14+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53ekNDMEVqN1dfMGxhdDBGWmZlMFFEUWpJMlNybnlMcE5iSjRGR1NOT3hFejB4V1JOYkZYY1ZvVV9TeXc2ZGRHYUo1SG9BMHR1WVF3aU13?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "title": "두산밥캣 3분기 영업익 1674억 전년비 25%↑ - 중소기업신문",
+     "translated_title": "두산밥캣 3분기 영업익 1674억 전년비 25%↑ - 중소기업신문",
+     "summary_ko": "두산밥캣의 올해 3분기 영업이익이 1674억 원으로 전년 동기 대비 25% 증가했다. 본문 스니펫의 한계로 인해 추가적인 실적 세부 지표는 확인이 제한된다.",
+     "category": "실적",
+     "source": "중소기업신문",
+     "published": "2026-10-30T11:03:05+09:00",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFcGRTS001dEtlME92dk9xMG9nbUhUbmREZ1hUQzdSYXBaUXlnSHhoajZjbTUwdVZxQ2ZnSjFITnVFajdSYTFrUWpFRTV0VXdqWWptZ3JRSk5uSzVZanFzVnpYRDN5TnMzXy0tWQ?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
+     "lang": "ko"
+    },
+    {
+     "title": "두산에너빌리티, 3Q 영업익 전년比 91%↑…수주 10조원 눈앞 - 쿠키뉴스",
+     "translated_title": "두산에너빌리티, 3Q 영업익 전년비 91% 급증…수주 10조원 눈앞",
+     "summary_ko": "두산에너빌리티가 우수한 3분기 실적을 거두며 대규모 수주 달성을 목전에 두고 있습니다. 중공업 및 인프라 관련 기업의 실적 지표를 보여줍니다.",
+     "category": "실적",
+     "source": "쿠키뉴스",
+     "published": "2026-11-01T00:26:54+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5RYlNJYUJpZE1CWVE3azczNlFqUVZvZ0k3bzFHSHVXdV81ZC15Y2RwU1A1dFlEU0tDS0lqV2Q1VXZpUnVJTlp3amM5NkdNbE44OGxqU2E5Z1ZwS2VMUWJQNHk0Zw?oc=5&hl=en-CA&gl=CA&ceid=CA:en",
+     "relevance": 7,
+     "lang": "ko"
+    },
+    {
+     "title": "“체코 리스크에 숨 고르기 들어간 수주…두산에너빌리티, 그럼에도 흔들리지 않는 실적 체력” - 뉴스퀘스트",
+     "translated_title": "“체코 리스크에 숨 고르기 들어간 수주…두산에너빌리티, 그럼에도 흔들리지 않는 실적 체력”",
+     "summary_ko": "체코 원전 관련 리스크로 두산에너빌리티의 신규 수주 모멘텀이 다소 숨 고르기에 들어갔습니다. 그럼에도 불구하고 탄탄한 실적 체력을 바탕으로 안정적인 펀더멘털을 유지하고 있습니다.",
+     "category": "실적",
+     "source": "뉴스퀘스트",
+     "published": "2026-10-30T19:01:21+09:00",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDQUZmbldXUHNRbFJiMjlBWHF5UFhnR3dNeXp0YTN3ZDJYYWtrTWhDZ1RWZGVMbFQtTnE1MUNwMHA2cWFMSzNQYXZKcVpBaVF1QXBVVThwSUdQOVdfS0pDeGZ4UTE3X1BQWkZFZE05QQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 5,
      "lang": "ko"
     }
    ]
@@ -180,17 +92,6 @@
    "title": "글로벌 피어",
    "items": [
     {
-     "title": "Caterpillar Drops 7% as Moderate Sales Outlook Overshadows Beat; Deere Sits Out the Selloff, PACCAR Dips - 24/7 Wall St.",
-     "translated_title": "캐터필러, 예상을 웃돈 실적에도 온건한 매출 전망에 주가 7% 하락",
-     "summary_ko": "캐터필러가 시장 예상치를 상회하는 실적을 발표했음에도 불구하고 보수적인 향후 매출 전망을 제시하면서 주가가 7% 하락했습니다. 글로벌 건설기계 수요 둔화 우려가 투자 심리에 영향을 미쳤습니다.",
-     "category": "실적",
-     "source": "24/7 Wall St.",
-     "published": "2026-10-30T00:58:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPN0pjTlNTaGtyc2RQbnl5Q2FiV21DUzRyR1pfUFNzQ2RUSTM5djVCcG5JSFljYUYwMDI0N1NqRjJFSXMwcWJkUUNWbjZmLU9OTTVSdjFnX01HS01JMnQ3bHd0TVJJa2M2a3lKdHJXNTYzc0FpRlFXRzg5Qm9mcnppQ1dSQ1VrSUhZWVpWcFVKbkFaR2VqajhPekRaWTBCMGdKMWRNRHpwZ1ZjeVFYeEVsakJpdGhRdTV5NVBRM1JHSldLQ0VVcWl2Rm1BUTBmNEtVcjVXNWlmOVdTMEhuM0E?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "en"
-    },
-    {
      "title": "North American Growth Lifts Komatsu and HCM’s Fair Values, but HCM Offers Greater Upside - Morningstar",
      "translated_title": "북미 성장세에 힘입은 고마쓰와 히타치건기 가치 상승, 단 히타치건기가 더 높은 상승 여력 제공",
      "summary_ko": "모닝스타 분석에 따르면 북미 시장의 성장이 고마쓰와 히타치건기의 기업 가치를 끌어올리고 있습니다. 특히 히타치건기가 투자 관점에서 상대적으로 더 큰 상승 여력을 지닌 것으로 평가받았습니다.",
@@ -198,17 +99,6 @@
      "source": "Morningstar",
      "published": "2026-10-30T19:52:20+09:00",
      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcFhUYVczaFVfdFJUd0thTEdaM3FqeWJsWTV3alFSNzl2T2YyekpFSjV2MGJZU0VkQzk2VzN2ampUMjUtX3p0ZW95SjJQYjMyVmhVa0F1QWFBaUxNR0ZXSXpTMUFCVGhaU0JkeUgtZTR6VEE0SFVxRkRxQXRVM3ktNWJpbk9HM3J5TDgtM3hrbU1VR3RMbWlmTW1RNWxNTGpKdmhiWmtjRml2ajZ1YnFyc3Q2TzZzd0xSMFpFMS1XX21TN3kxeVYxNDVKRVdnaE5zUlVPRVVDcXRWdU43SDNCUkh5OU05M19SMUhwbE9B?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "en"
-    },
-    {
-     "title": "JCB Lifts Investment After Hydrogen Engine Milestone - Rural News Group",
-     "translated_title": "JCB, 수소 엔진 개발 성과에 힘입어 투자 확대",
-     "summary_ko": "영국 건설기계 장비 업체 JCB가 수소 엔진 개발의 중요한 이정표를 달성한 후 관련 투자를 늘리기로 했습니다. 친환경 동력원 전환을 위한 기술 개발에 속도를 내는 모습입니다.",
-     "category": "M&A/투자",
-     "source": "Rural News Group",
-     "published": "2026-10-30T07:55:55+09:00",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQ0R5dFlDZE0ySmxYdVZDMDI4YmhaWGFBNGdzTHNCNU45S1cwVXZFdFd4QTRQbFdGeHVkMDBLd2k2MzhvWEpXRnlqbXRBc0VSeWw0cWtzYlk2N0NqU3VRNk1rRHI1LVZpN1FlNzhJNzFoRURzY21qWFJvZm0teXNJaEoxU1ZSeHRIU3h1MlRWVmxvaHRCdEdubVFUck1Dd1NMYkpManFWc2EteUo0VVZ1cDhxa1ZOX21DVlZUcUVqOFVILWhoLWR4UkZvdlVMRjlaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
      "lang": "en"
     },
@@ -224,68 +114,13 @@
      "lang": "en"
     },
     {
-     "title": "Komatsu’s Established Americas Franchise Supports Steady Growth Over the Long Term - Morningstar",
-     "translated_title": "고마츠의 탄탄한 미주 프랜차이즈, 장기적인 안정적 성장 뒷받침",
-     "summary_ko": "고마츠가 미주 지역에 구축한 강력한 사업 기반이 장기적인 성장을 지지하고 있다는 분석이 나왔습니다. 북미 건설 및 광산 장비 시장에서의 견고한 입지가 지속적인 실적 안정성에 기여하고 있습니다.",
-     "category": "시장지표",
-     "source": "Morningstar",
-     "published": "2026-10-30T22:22:51+09:00",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeXNRTXRJY0xqMVdXQjNLRG5CUzFrWV91RE83eWh2a1RhckxhdGRFSFVLcHdURTBHMFQ0SnlOWllORzRhQVFfMk9RQmdBNFVjRGw0c05Eb3ozek5nQzVuODdsR3lOWVliSkFxZ2tkeUhsdE5JWnd2dGlpSEVseFJQR2hIYm9GNGMyYVRQanpIbVNLckZQMDV0R3RWT3I5b2FVMUV3UmxNcUJ3ZUdIVThnZDFwMmtWUlNyY2ZfQ1lsX01Kby1lal9zNkZDUlIxdw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "en"
-    },
-    {
-     "title": "Zacks Industry Outlook Highlights Deere & Co., Kubota and CNH Industrial - TradingView",
-     "translated_title": "잭스 산업 전망, 디어·구보타·CNH 인더스트리얼 조명",
-     "summary_ko": "최근 산업 전망 보고서에서 디어, 구보타, CNH 인더스트리얼 등 주요 농기계 및 건설기계 관련 기업들의 동향이 조명되었습니다. 글로벌 거대 장비 제조사들의 시장 내 위치와 전망을 가늠할 수 있는 내용입니다.",
-     "category": "시장지표",
-     "source": "TradingView",
-     "published": "2026-10-30T19:36:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaUJZZGlYSHVPU0VxSmtQM1huem1NSFE2UlJGck1wc0RrUl9pR3hEeFhObGJOVGJ5RFNBX1lTZW5MZnpGR2NKVEVmek1JaWpSZFk5YjNZd0hhUjEyb2gtNHk1bFlfZW1zQlM5OXhkWTRBOTFRQjNIMVNkUkQweFExaUZMdEdDTkI5YWhhRUZiRWo5YXhnaWJ3Q2FwTFE3eVJQNk0zSmpKVmFmaHFQSUgwUDVqMl91Wm04c3FRak1fMEdXQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "en"
-    },
-    {
-     "title": "Manitou and Gehl enter the stand-on track loader market - Equipment Journal",
-     "translated_title": "마니투와 겔, 스탠드온 트랙 로더 시장 진출",
-     "summary_ko": "장비 제조업체인 마니투와 겔이 새롭게 스탠드온 트랙 로더 시장에 진출하며 제품군을 확장했습니다. 컴팩트 장비 세그먼트에서의 경쟁이 더욱 치열해질 것으로 예상됩니다.",
-     "category": "신제품",
-     "source": "Equipment Journal",
-     "published": "2026-10-30T17:40:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd2pZS2hHNzdpdXNIZEhnTXgxTGVmY2xqOXJHVXRYRjR3SzcwTjZrdThQLUJZRXJfdXFVaTJzZnR4Q09ldEliVDJ6OXlybDRoQXV2TWZUbUFPSG4yX0UzZFp6SjVlTlY3dE5BSkRBX0Q4OWVhMU4wb2NwNExmbkRCNHlhSTVLOTVtaFRlTXV6Znp0WklZZWJMeU51QlgwMWJiZV8tUTluM3N0UW9NM3kzck130gG3AUFVX3lxTE5hRnN3VndvRGdrcTJPN3doMllzV25YYlVYSEsydTdBQTNTWjN6SWl6djZQSWlwbjBZU0V5TzR1d1FwNURTWHVWS3hqQW52X1dJZG5yZk9ta1pFa1NFMzVTWUJCaXcyTnNtVWJtS0ZIZDlOcU5EeHhQVVlubml1NXROcWc1R1hueE1ER1ZiSV9jdWY5cm92SHN0MWZfTS10Qjg3X2R4b2RHSWltRHVUaU5ycVp5b2lwSQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "en"
-    },
-    {
-     "title": "Why Did Caterpillar Stock Fall? - Trefis",
-     "translated_title": "캐터필러 주가 하락의 배경은?",
-     "summary_ko": "제공된 스니펫이 제한되어 캐터필러 주가 변동의 세부 원인을 파악하기 어렵습니다. 다만 글로벌 대형 OEM의 주가 및 시장 반응에 대한 지속적인 모니터링이 필요합니다.",
+     "title": "I/OPT: Caterpillar & HD Hyundai bulldozer allegedly used to demolish houses in West Bank, displacing dozens of Palestinians, incl. cos. non-response - Business and Human Rights Centre",
+     "translated_title": "캐터필러와 HD현대 불도저가 서안 지구 주택 철거에 사용되어 팔레스타인인들을 이주하게 만들었다는 보도와 관련해 기업들이 무응답으로 일관함",
+     "summary_ko": "캐터필러와 HD현대 장비가 팔레스타인 주택 철거에 동원되었다는 인권 단체의 지적과 관련된 내용입니다. 구체적인 기업 응답 및 시황 영향에 대한 가용 스니펫은 제한적입니다.",
      "category": "기타",
-     "source": "Trefis",
-     "published": "2026-10-30T19:56:52+09:00",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONEtyT0QzX3VqVV9PVFB6UU5iZDY5UWZzd2MybElDekxrT1ExOEg0MFBfS3ZYNHpNRlhaYXh5dG9pcEd2S18xUktWX1RMZDcyWlEteXNpcGRhNG5PdmtjdnlDOTBJeVJWVkdsbHA5SVZ1SFBDNGpBd0tlOGxsV1AtNXBuUzk4Q01FV1Z4SzIyeEZETmZF?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
-     "lang": "en"
-    },
-    {
-     "title": "JCB to bring contactless tap-to-ride to Vietnam's Hanoi metro railway in early 2027 - TNGlobal",
-     "translated_title": "JCB, 2027년 초 베트남 하노이 지하철에 비접촉식 결제 도입 예정",
-     "summary_ko": "영국 건설기계 제조사 JCB가 2027년 초 베트남 하노이 메트로에 비접촉식 교통카드 결제 시스템을 도입할 계획입니다. 관련 내용에 대한 세부 추진 방안이 마련되고 있습니다.",
-     "category": "기타",
-     "source": "TNGlobal",
-     "published": "2026-10-30T12:51:17+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVXpBTEc0Y19DcWFIOWxtX2hqRm5Sbk5oQWhhU2lQX25HQnBRdjduTlRuVnd6dHVNaml2QW9aTFBNTE81U0EwLTNoOHVWSDZPVTJfczRNUUlDd2JlVUM1NnY0a1BieFl0a1AzdWhBSVRmX01sNldrVzZVNDRWNHlKOTRQTk92Mk1CM21zcWxOb3dsdGppaDFZNXFLdTc4ZHdTYXVpTEgtanowVENUNEk4Y1NFT1ZJcDZ2S3c?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "en"
-    },
-    {
-     "title": "JCB and Hanoi Metro sign MOU for contactless fare gate payments - Asian Banking & Finance",
-     "translated_title": "JCB와 하노이 메트로, 비접촉식 개집표기 결제를 위한 MOU 체결",
-     "summary_ko": "JCB가 하노이 메트로와 협력하여 대중교통 개집표기용 비접촉식 결제 서비스를 제공하기로 업무협약을 맺었습니다. 양측은 원활한 시스템 구축을 위해 협력할 방침입니다.",
-     "category": "기타",
-     "source": "Asian Banking & Finance",
-     "published": "2026-10-30T11:34:33+09:00",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSWhlajh5dVVQZUM4cEx1MjJNUVBidlRRWXNDY05tTWw3dGZ3OTFENWtLUG9rdTRONy1SN1JwckloeUJkVkk4NllhWTNOTlQxZ0lyUjNvalB2UUdSSG5abEZuVmhCc3lzS2t1Tnl0djNLOTJ2ak10MUFNOFM5MkhjN1pMYmktZzMxbDVSUmpxcUFKaUJXRmJTSnJqcHk2VC1VUXBpY2kyQjNqUUFhVUZ3ZDhQREk?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "source": "Business and Human Rights Centre",
+     "published": "2026-11-02T05:48:33+09:00",
+     "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQLS1SNENmSU83MVNmYm1sS1RHcXBJTENRZGM4VFhJdmR5eGhiS3RKaGhId0QwRDg2eTJlWmx0OV9zbUJRcGxsYU5oMHp5R0lSVHlNV3NoMXRpeV83Wk8zd2w5c3J5eExvejBjMktwZm9nUUNvQ1pFdTI4VkMtT3kwNEtwMWJfd29nZm1BaHVBZVM4Rlg2RXZZNnc5OVJSTU1TdHVlR2lCR0dFN0taTTZtNWNKdVE5NXc0bElIM3VjejBVSXg0ZDVLWktud2psTlp4SmhHdENUcG9rbnNZT2JJc1FDdndvYUJfdnVmSUR2bUx0Z2hBNWR2LWVlaTFqS08zVUhwWmxZdGM5azE1VnlZRmZvdFlKMi1WREdBOHdR?oc=5&hl=en-CA&gl=CA&ceid=CA:en",
      "relevance": 4,
      "lang": "en"
     }
@@ -294,19 +129,7 @@
   {
    "key": "cn_company",
    "title": "중국 업체",
-   "items": [
-    {
-     "title": "Komatsu D175AX-10 intelligent dozer debuts with 3D-MG control kit - News and Statistics - IndexBox",
-     "translated_title": "고마츠, 3D-MG 제어 키트를 탑재한 신형 지능형 도저 D175AX-10 공개",
-     "summary_ko": "고마츠가 3D 머신 가이던스 제어 키트가 장착된 지능형 불도저 신모델 D175AX-10을 새롭게 선보였습니다. 해당 신제품은 첨단 제어 기술을 통해 작업 효율성과 정밀도를 향상시킬 것으로 기대됩니다.",
-     "category": "신제품",
-     "source": "IndexBox",
-     "published": "2026-10-30T23:01:02+09:00",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMHRDWlZUYXVsbUVnS3ZTZktTWlk5RkpMdmVlaVJsLUIzNUJsdV9RVnk0TV9tX09feG1JMVdsUHJ4ZnRMQVdkWV9oT0hvS3oyV2FZNG50VXRjYXpSa0QteXdGT0JVTFhmVkpZY1E3UjJ6NUpYc0hOU1lYYXBPNHpxazJ6emdYRlZfRng5dWpwbUlWaFpvUVoxUWdQS2x5VmFfNXVGZDJCNmktM0hDUEg3b2JtUDFhUDJoY3Rxd193?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "en"
-    }
-   ]
+   "items": []
   },
   {
    "key": "strategy",
@@ -332,17 +155,6 @@
    "key": "resource",
    "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
    "items": [
-    {
-     "title": "Freeport-McMoRan Q3 earnings jump 74% despite c... - Pluang",
-     "translated_title": "프리포트맥모란, 구리 호조 힘입어 3분기 순이익 74% 급증",
-     "summary_ko": "글로벌 광산 기업 프리포트맥모란의 3분기 실적이 크게 개선되었습니다. 광산 개발 및 자원 수요 분석에 유용한 정보입니다.",
-     "category": "광산/자원",
-     "source": "Pluang",
-     "published": "2026-10-29T20:16:30+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2VGRXlBUXZOQk1KdW5ieVpZd1F2NzJJeFVUd2E1NUN3ZHhTYjFoek80U3FVekFnNmVaZWFmMU9kcG1UVC05YjNUTUlRbUw2Vlh2Ym5oQ3piLVJaMmYxbndOYTZJZDNzTUlrSkZ4UWhRMzZjak5fNVpveDlkaWxjN3A2SHU3MVMxNjAzNndya0ViN29VdjBRWUpJanRScXhfVnR1WWgwVEFLUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "en"
-    },
     {
      "title": "Dini Hari Digerebek, Polisi Sita Ekskavator dan Tangkap Operator Alat Berat Tambang Ilegal di Pasaman - VIVA.co.id",
      "translated_title": "경찰, 파사산 불법 광산서 야간 급습해 굴착기 압수 및 장비 운전자 체포",
@@ -390,13 +202,13 @@
   }
  ],
  "stats": {
-  "candidates": 528,
-  "new_scored": 12,
-  "dropped_low_relevance": 2,
+  "candidates": 444,
+  "new_scored": 10,
+  "dropped_low_relevance": 7,
   "noise": 0,
   "korean_media_excluded": 0,
   "blocked_domain": 0,
-  "stale": 492,
+  "stale": 415,
   "ai_active": true,
   "quota_exhausted": false
  }
