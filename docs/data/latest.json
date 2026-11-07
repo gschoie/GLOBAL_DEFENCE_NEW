@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T10:25:11.965454+09:00",
- "date_kst": "2026-11-06",
+ "generated_at": "2026-11-07T09:40:08.556562+09:00",
+ "date_kst": "2026-11-07",
  "window_hours": 36.0,
  "macro_groups": [],
  "sections": [
@@ -8,6 +8,28 @@
    "key": "kr_company",
    "title": "한국 기업 (HD현대·두산밥캣)",
    "items": [
+    {
+     "title": "[크레딧캐치]HD건설기계, 합병 효과 본격화···신용도까지 '상승' - 현대경제신문",
+     "translated_title": "[크레딧캐치] HD건설기계, 합병 효과 본격화…신용도까지 '상승'",
+     "summary_ko": "HD현대 건설기계 부문의 합병 시너지가 본격화되면서 신용등급이 상승했습니다. 국내 주요 OEM의 구조 개편 및 재무 건전성 개선을 보여주는 중요 지표입니다.",
+     "category": "실적",
+     "source": "현대경제신문",
+     "published": "2026-11-06T17:39:26+09:00",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OX1R3dk80RjlFVS1tTEJaWVJ0UVBrXzJ0d3VPeXZsNnhTaW5CZm4tNTZzTktkVzZlNGZ4OTNKTklzVzNCRVo1cU1BdGlWM05UV0d4QnBLVFRuY2ZrWVJDMTd0MUtfZW50WjRv0gFrQVVfeXFMT05fVHd2TzRGOUVVLW1MQlpZUnRRUGtfMnR3dU95dmw2eFNpbkJmbi01NnNOS2RXNmU0Zng5M0pOSXNXM0JFWjVxTUF0aVYzTlRXR3hCcEtUVG5jZmtZUkMxN3QxS19lbnRaNG8?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "ko"
+    },
+    {
+     "title": "[증권言言] 다올투자증권 \"두산밥캣, 미국 경기 견조…주택시장 회복이 주가 변수\" - 마일드경제",
+     "translated_title": "[증권言言] 다올투자증권 \"두산밥캣, 미국 경기 견조…주택시장 회복이 주가 변수\"",
+     "summary_ko": "두산밥캣의 실적과 주가는 견조한 미국 경기와 주택시장 회복세에 연동되어 있습니다. 북경 주택 및 건설 경기가 주요 수요 변수임을 시사합니다.",
+     "category": "부동산/주택",
+     "source": "마일드경제",
+     "published": "2026-11-06T16:32:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91d3lMLTdNTWhCS1lIMzZBc0poTGpUaTRuRTFyLTYzeUdGcC1VNFc2NGZ2RWxVWHI2VVdQazdnLUlXQ2ozWlZWR3FHRW52V2JibWpGYV9xUXhxMEJxWE5HMlBEdHE4R2dtMzZJ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "ko"
+    },
     {
      "title": "HD건설기계 신용등급 ‘A+’ 상향∙∙∙엔진 부문이 침체 방어 - 한국신용신문",
      "translated_title": "HD건설기계 신용등급 'A+' 상향…엔진 부문이 침체 방어",
@@ -53,25 +75,25 @@
      "lang": "ko"
     },
     {
-     "title": "HD현대건설기계, 네덜란드 판매망 재건…현지 딜러 2곳과 수입 계약 - 한국신용신문",
-     "translated_title": "HD현대건설기계, 네덜란드 판매망 재건…현지 딜러 2곳과 수입 계약",
-     "summary_ko": "HD현대건설기계가 현지 딜러 2곳과 수입 계약을 맺으며 네덜란드 판매망을 재구축했습니다. 유럽 시장 내 유통망 강화와 영업력 확대에 기여할 것으로 보입니다.",
-     "category": "딜러/유통",
-     "source": "한국신용신문",
-     "published": "2026-11-05T05:20:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDSndQelRtaVNYYkFWdkQyOWZfWDZsYzByVHhpQlZCN0NKZUNYWXViakUzUW0zck9JNGtuc0dJcVdWQ2pTbDV6cFhPWEZhNjdpMEk2OHR4OXUzQ3JKQU9aNS1XbkxtZF92TTdz?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
+     "title": "HD건설기계, 엔진·정비가 이익 절반…재무 버팀목 - IB토마토",
+     "translated_title": "HD건설기계, 엔진·정비가 이익 절반…재무 버팀목",
+     "summary_ko": "HD현대 건설기계 부문에서 엔진과 정비 사업이 전체 이익의 절반을 차지하며 주요 재무적 버팀목 역할을 하고 있습니다. 해당 부문은 안정적인 수익 구조를 바탕으로 실적 방어에 기여하고 있습니다.",
+     "category": "실적",
+     "source": "IB토마토",
+     "published": "2026-11-06T15:06:09+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XZG5QT203N05qSGdCSkZQa1dSemdOUEI1NWFXYTVRWXJMdXVTWlN6QUVxZlZuSmJXRUlPVzBIUXdMaEdrZ3BqUUkxS2xxekV4QnBsUHhkek8zbWRZLUxGb0hvaHlDQkRqbmc?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
      "lang": "ko"
     },
     {
-     "title": "굴착기 美 수출 3년만에 반등…AI 열기에 K-건설기계 북미 시장 확대 재시동 [비즈360] - 헤럴드경제",
-     "translated_title": "굴착기 美 수출 3년만에 반등…AI 열기에 K-건설기계 북미 시장 확대 재시동 [비즈360]",
-     "summary_ko": "한국산 굴착기의 대미 수출이 3년 만에 반등하며 북미 시장에서 반등의 기회를 맞고 있다. AI 인프라 투자 열풍과 맞물려 국내 건설기계 업계의 북미 수요 회복 신호를 보여준다.",
-     "category": "시장지표",
-     "source": "헤럴드경제",
-     "published": "2026-11-03T12:00:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zUkVCdlprM0d1SGpnN0VJYnVMQWhHZmpWYVRBOWJqWk52WGhaYk1kTlE5YUtEWm8zLWtKd0hBVElyMHdkT0k0WktfVlQ2MUVaMUhXVml3?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
+     "title": "[HD현대 인사 줌인] 건설기계 통합 중용 키워드 ‘엔진·글로벌’ - 블로터",
+     "translated_title": "[HD현대 인사 줌인] 건설기계 통합 중용 키워드 ‘엔진·글로벌’",
+     "summary_ko": "HD현대의 건설기계 부문 인사에서 엔진과 글로벌 역량이 핵심 키워드로 부각되었습니다. 이는 향후 통합 시너지 창출과 해외 시장 공략을 강화하기 위한 전략으로 풀이됩니다.",
+     "category": "기타",
+     "source": "블로터",
+     "published": "2026-11-06T14:01:13+09:00",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuRkZ0V3k0SUpOcERJNDh3NVFTS09BVnYzSjR0bGwySDFVNnlUZzhXYWk3VWJ2ZF9pYnFMQ0xBWWpYTk9tTzZEM0JLaUN1eU9aS3AyNFc2SnBfakhoMHVlbUYzQks1ZXZqM0plZ9IBbEFVX3lxTFBuRkZ0V3k0SUpOcERJNDh3NVFTS09BVnYzSjR0bGwySDFVNnlUZzhXYWk3VWJ2ZF9pYnFMQ0xBWWpYTk9tTzZEM0JLaUN1eU9aS3AyNFc2SnBfakhoMHVlbUYzQks1ZXZqM0plZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
      "lang": "ko"
     },
     {
@@ -86,17 +108,6 @@
      "lang": "ko"
     },
     {
-     "title": "[메가이슈] ＂어제의 동지가 오늘의 적?＂…HD현대 핵심 CEO 두산행에 ′발칵′ - 메가경제",
-     "translated_title": "[메가이슈] \"어제의 동지가 오늘의 적?\"…HD현대 핵심 CEO 두산행에 '발칵'",
-     "summary_ko": "HD현대의 핵심 최고경영자가 경쟁사인 두산으로 이동하면서 업계에 큰 파장이 일었다. 국내 주요 건설기계 OEM 간의 인재 이동과 경쟁 구도 변화를 보여준다.",
-     "category": "M&A/투자",
-     "source": "메가경제",
-     "published": "2026-11-03T15:32:37+09:00",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JdDRZeU5Kak1GSmJMZ0M2ZHNyNTdHRjYxaV9VcTE1b0V4N1NxNWRhYm8yWERxUmVjeVBnOUMzSS05RF9OanBsYzFoYnZhbWd2VVpoUzJlSlZBYUV6SmpmREo5NEhHU3A5QWoyWlhoOFoyZ9IBckFVX3lxTE1JdDRZeU5Kak1GSmJMZ0M2ZHNyNTdHRjYxaV9VcTE1b0V4N1NxNWRhYm8yWERxUmVjeVBnOUMzSS05RF9OanBsYzFoYnZhbWd2VVpoUzJlSlZBYUV6SmpmREo5NEhHU3A5QWoyWlhoOFoyZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "ko"
-    },
-    {
      "title": "두산밥캣 주가 하락 중 - 아시아뉴스통신",
      "translated_title": "두산밥캣 주가 하락 중",
      "summary_ko": "두산밥캣의 주가가 하락세를 보이고 있다. 제공된 본문 스니펫이 제한적이어서 자세한 원인 파악은 어렵다.",
@@ -104,17 +115,6 @@
      "source": "아시아뉴스통신",
      "published": "2026-11-06T09:33:18+09:00",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE11ekprN0ZSMjNVeWZrMWw3RFY2Yk4wUTYxWmU5NkJORlAwMi1GbHZrOVVyRlE5SHVfaWNqTnNVZXNhWk5mZ2gzeWVlUUxEZWg4cTM1UHk2ZEhsSGtE?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "정기선 HD현대그룹 회장, 넥스트 스텝 겨냥 '계열사 재편, 글로벌 확장' - 네이버 프리미엄콘텐츠",
-     "translated_title": "정기선 HD현대그룹 회장, 넥스트 스텝 겨냥 '계열사 재편, 글로벌 확장'",
-     "summary_ko": "정기선 HD현대그룹 회장이 계열사 재편과 글로벌 확장을 통해 미래 준비에 나섭니다. 건설기계 부문을 포함한 그룹 전반의 전략적 변화에 영향을 미칠 전망입니다.",
-     "category": "M&A/투자",
-     "source": "네이버 프리미엄콘텐츠",
-     "published": "2026-11-05T07:05:04+09:00",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc1VpNHd6N0JzRnE3SzNVZzJ2aklJSVBGYldoTE5pR2llSDBQczVSdUVMTi1rMk1CeVNRUXdEeTNEUU93YlBiTERIZTN1NVJFYko4TVJnRmExN0M2SjRLb0h3cTE0YjBJRUZhYVFTYkNHLXVneDI0TEdDZ3pFQmdrTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 7,
      "lang": "ko"
     },
@@ -156,17 +156,6 @@
      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMUJTRThwQm5WTzNHb2tfR2Y3VUVqRGEzZUF2ZEl3ZWVFTVB6VzdCVGluQll6UGdvSkducHBJdFNhenhXVHpHSnR0SUVmaHlVS1V1aGIzVndLUkRTNjlQNGhxU0FqVWNRX0gxeWtIS2I4cWhKOTBxbVhOaFhHbEJoZHdnTFFfcnFoX0U1Vkw2QS1heWc?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
      "lang": "en"
-    },
-    {
-     "title": "First: Volvo CE Electric equipment does the work, without disturbing the wildlife - Electrek",
-     "translated_title": "최초 소식: 야생을 방해하지 않고 작업을 수행하는 볼보 CE의 전기 장비",
-     "summary_ko": "볼보 CE의 전기 건설 장비가 야생에 방해를 주지 않고 현장 작업을 수행하는 모습이 소개되었습니다. 친환경 전동화 장비의 실제 현장 적용 사례를 보여줍니다.",
-     "category": "신제품",
-     "source": "Electrek",
-     "published": "2026-11-05T08:23:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONm84MUZCaWpzZE5JT2hudXJNUGpWNEM4cFM3UWhXcDZHZ3J3NlNFdXV2LTV2V3RpZDE1djlwdlZ4ZENzZXVsTGl1bGh2cnE4b21adDl5WXRydk50NmVfWVNlVkhQTDZJeEtJX0FmbTREQ2JDTm1KcWkxNnFvYzBYV0JLVERTR1Y4Wkw0Qm52N0tKcTg5d2UtcUhuMUlfY3lDdFUyOUNuLWZFSzFvcVNaRg?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
-     "lang": "en"
     }
    ]
   },
@@ -178,7 +167,30 @@
   {
    "key": "strategy",
    "title": "신제품·딜러망·전략",
-   "items": []
+   "items": [
+    {
+     "title": "Liebherr unveils electric 250-ton R 9300 G8-E excavator — Electrek - UA.NEWS",
+     "translated_title": "리베르, 250톤급 전기 굴착기 R 9300 G8-E 공개",
+     "summary_ko": "리베르가 대형 광산용 전동화 장비인 250톤급 전기 굴착기 R 9300 G8-E를 새롭게 선보였습니다. 이는 글로벌 완성차 업체의 친환경 대형 장비 개발 및 전동화 트렌드를 보여줍니다.",
+     "category": "신제품",
+     "source": "UA.NEWS",
+     "published": "2026-11-06T22:13:50+09:00",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRVIxRE0wdHBfRk16d1hhWUVTZlk3WGVQZEdGbkoyZWVrUXpnaWlETmtEV2FTbkU2endrMlpITnE1THBJclZjZGhCMU1YUVhFdGJNUXdsWnBKajYzTjVLTG5zRE5DLVJuaGt0OUFvNUxsZFQwQTdZSXhIVHowbW5IMzAyOHFnS2c4ZFlIaUR5U01WMDNyeUxfSDA5OWJNZGEtX3p2NnYwbFpyb2c5R1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "en"
+    },
+    {
+     "title": "Liebherr Unveils R 9300 G8-E Electric Excavator - E & MJ",
+     "translated_title": "리베르, R 9300 G8-E 전기 굴착기 공개",
+     "summary_ko": "리베르가 대규모 광산 현장을 겨냥한 신형 전기 굴착기 모델을 발표했습니다. 대형 건설 및 광산 장비의 전동화 전환 가속화를 나타냅니다.",
+     "category": "신제품",
+     "source": "E & MJ",
+     "published": "2026-11-06T17:19:47+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNnBIUllaQXVEd1VuY1JScEZLd0Z0S3l4TkxjTTFWZGV4U0Rhb2J6NzBkdVNDZGMwcDlOd3paZXg2ZlBxOXpmZVYxclp0TV9VR0hlaW40c3B2bWJYR2JJVkdKcnZoSGJybGpic05PeXptZmc5U1hBTGxwa2hhLXBVTmZEcW8wY3B3YlM4?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "en"
+    }
+   ]
   },
   {
    "key": "us",
@@ -200,17 +212,6 @@
    "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
    "items": [
     {
-     "title": "Freeport’s $4.5bn Bagdad copper expansion: capex, costs and schedule for mine planners - Geomechanics.io",
-     "translated_title": "프리포트의 45억 달러 규모 바그다드 구리 광산 확장: 채굴 계획자를 위한 자본적 지출(capex), 비용 및 일정",
-     "summary_ko": "프리포트가 45억 달러를 투입해 바그다드 구리 광산 확장을 추진하며 관련 자본적 지출과 일정이 공개되었습니다. 이는 대형 광산 개발에 따른 장비 수요 증가 신호로 해석될 수 있습니다.",
-     "category": "광산/자원",
-     "source": "Geomechanics.io",
-     "published": "2026-11-05T09:01:48+09:00",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY3dRQ1J4ZENDU1VFOG5iVVlMNjNZLUg1MWo0ZFZGaDZiSUV5YVRTNkt4bGQ2dzBjNVNCUUpwYmRSVlN0MEFaNU1vTDU5Tm9hWmY4emY2czhsTFExQ2xjb0xvUTJVaEhmNXB6d1pFOHAwN3NlTXA0LXR1bThGRkUxdzQyaVJ6bnEyOTExenZMRjExaTdlQXRJR1U2NUMyV1RiQUZYTEtRMkJlMlN3MjBORnA1RGtwQXRaUDRqQjNVaw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "en"
-    },
-    {
      "title": "LiuGong Sebut Alat Berat Listrik Hemat Energi hingga 70%, Infrastruktur Tambang Jadi Tantangan - Ecobiz Asia",
      "translated_title": "류공, 전동식 건설기계가 에너지 70% 절감한다고 밝혀… 광산 인프라는 과제",
      "summary_ko": "중국 류공은 전동식 장비가 에너지 효율을 최대 70%까지 절감할 수 있다고 발표했다. 다만 광산 현장에서의 충전 및 인프라 구축은 여전히 해결해야 할 과제로 지목된다.",
@@ -219,6 +220,28 @@
      "published": "2026-11-05T12:31:00+09:00",
      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWjhQekxpcUQ2eGxqNGVyc2NDRTNDWkZNR19xWXhVSVlQYVI4Q0c4U0wzNXlZQkc4bHJwQTlERURXcllMQ1dreU1oaWR6ZTd6elVnNWlyM0hfS29NNnBOakY1RzdFZzNob1lZb0J5d1pCUXRHYUlBc3BZWTZwY295SjktcHBTMEpLbnA3Ym5rMUFkWFQ2R3NlTWZ0S3RCQ0c0WFBQUm5abFMzZVViS3JoRi1vaw?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 8,
+     "lang": "id"
+    },
+    {
+     "title": "DLH Lampung Tutup Tambang Batu Diduga Ilegal di Bunut Seberang Pesawaran - Kupas Tuntas",
+     "translated_title": "인도네시아 람풍 환경산림국, 페사바란분웃세베랑의 불법 석산 폐쇄",
+     "summary_ko": "인도네시아 지역 정부가 불법으로 운영되던 석산 채굴장을 폐쇄 조치했습니다. 현지 자원 개발 및 규제 환경을 보여주는 소폭의 단신입니다.",
+     "category": "광산/자원",
+     "source": "Kupas Tuntas",
+     "published": "2026-11-06T20:01:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPalZFczdmdGV1dlQ3YTlIbDJjZVFFWkRUWERhNFhlVmF1TTBPTW1XQzB3T2l5REJrUWdod3Y4UWFaUXY2ekltWXJlbGVQX00waExvSm1nSS10MllxVkNUZ3pkVUFGT0xxdTZydXdmRjBPcnJVTTlQcHZTdTRRWDB1S1dxM2pXam9qOTMxcHRNbFVzMHZ5dlBZZ21XVEh2NmtoTjhiOS1pZ3BmQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
+     "lang": "id"
+    },
+    {
+     "title": "Kepsek SDN 393 tangilang diduga kelola tambang emas ilegal pakai alat berat excavator - Kicaunews",
+     "translated_title": "Kepsek SDN 393 tangilang diduga kelola tambang emas ilegal pakai alat berat excavator",
+     "summary_ko": "인도네시아의 한 학교장이 굴착기를 동원해 불법 금광을 운영했다는 의혹이 제기되었습니다. 제공된 정보 외에 글로벌 건설기계 수요에 미치는 영향에 대한 추가 스니펫은 제한적입니다.",
+     "category": "광산/자원",
+     "source": "Kicaunews",
+     "published": "2026-11-06T11:07:37+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDJKUGN1M0Z5QzJIUzI4OGlpUjZueVllUmlxdmhRdk5WRVJXQllNWDg0NXpOeU9BTmhacC1EWUM1bEQtZy0ySURjSExReEwxbnNyanBCOTExWkxhbHhYRm4tV2lIN3VnMDNuMll1ZlZiVS12UmZMSmR0d2FMX1lBam1MTUdtZ2dlSzNRZEJrQjA3bXdVbzZ4U0pTckZBQy1NMGVuOXFEWUFYX1JIWGpybnBNYjRSRDVMV21v?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 4,
      "lang": "id"
     }
    ]
@@ -231,13 +254,25 @@
   {
    "key": "policy",
    "title": "정책·통상·금리",
-   "items": []
+   "items": [
+    {
+     "title": "China Heavy Construction Equipment Market Size, Share,Trends, Growth Analysis Report, 2031 - MarketsandMarkets",
+     "translated_title": "중국 중장비 시장 규모, 점유율, 트렌드 및 성장 분석 보고서 (2031년)",
+     "summary_ko": "중국 중장비 시장의 향후 전망과 성장 추세를 다룬 시장조사 보고서입니다. 중국 지역의 건설기계 수요 및 시장 동향 분석에 활용됩니다.",
+     "category": "시장지표",
+     "source": "MarketsandMarkets",
+     "published": "2026-11-06T20:21:49+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDNoYVk4YXE3b2V0SVdFM001YUF3QmhPaGZHVHlDTVl4TUhLamp1MjFjZmdQSlRqQjJnNVRkV1dzZU1OX1ZfNmJxRW40SnItbVRTVFR1WnlvTmNLUU1oT2tBX2JsODhudGRXNzhVank3anBpclB0NUlneVBzUTBiNm1TRl9uLTJqSjU2Z05nYTB2R09vazQwR29pWWFqVmdfYjJV?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
+     "lang": "en"
+    }
+   ]
   }
  ],
  "stats": {
-  "candidates": 267,
-  "new_scored": 12,
-  "dropped_low_relevance": 2,
+  "candidates": 274,
+  "new_scored": 17,
+  "dropped_low_relevance": 8,
   "noise": 0,
   "korean_media_excluded": 0,
   "blocked_domain": 0,
