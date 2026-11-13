@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12T11:09:35.121920+09:00",
- "date_kst": "2026-11-12",
+ "generated_at": "2026-11-13T10:43:12.393637+09:00",
+ "date_kst": "2026-11-13",
  "window_hours": 36.0,
  "macro_groups": [],
  "sections": [
@@ -8,6 +8,17 @@
    "key": "kr_company",
    "title": "한국 기업 (HD현대·두산밥캣)",
    "items": [
+    {
+     "title": "씽크풀 : [실적속보]두산밥캣, 올해 3Q 영업이익 급감 430억원... 전년동기比 -72%↓ (연결) - ThinkPool",
+     "translated_title": "두산밥캣, 올해 3분기 영업이익 430억 원으로 급감... 전년 동기 대비 72% 감소",
+     "summary_ko": "두산밥캣의 올해 3분기 연결기준 영업이익이 430억 원을 기록하며 전년 동기 대비 크게 줄었습니다. 가용 스니펫 정보가 제한적이므로 상세한 실적 부진 배경은 추가 확인이 필요합니다.",
+     "category": "실적",
+     "source": "ThinkPool",
+     "published": "2026-11-12T17:33:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1rWm9IaTBRenBRWnNST250a2sweUVsR09CY3lRZXR3bGxfYS1wel84X3hMbmFQUXZuZ1o1T3RSR1I2dllONG9RMXMtQ3FRWm5XbEMwQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 9,
+     "lang": "ko"
+    },
     {
      "title": "HD건설기계, 합병 효과에 '엔진' 성장 가속…신용도 'A+' 안착 - 톱데일리",
      "translated_title": "HD건설기계, 합병 효과로 엔진 성장 가속 및 A+ 신용등급 안착",
@@ -31,25 +42,14 @@
      "lang": "ko"
     },
     {
-     "title": "HD건설기계, 1655억1280만원 규모 가스 발전용 엔진 롱블럭 공급계약 체결 - 디지털투데이",
-     "translated_title": "HD건설기계, 1655억1280만원 규모 가스 발전용 엔진 롱블럭 공급계약 체결",
-     "summary_ko": "HD현대건설기계(또는 관련 계열사)가 대규모 가스 발전용 엔진 롱블럭 공급 계약을 체결했습니다. 핵심 장비 및 엔진 부문의 수주 성과를 보여주는 중요한 지표입니다.",
-     "category": "수주/계약",
-     "source": "디지털투데이",
-     "published": "2026-11-10T11:02:01+09:00",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5PZHB2WXBPY0JZMHI4emNZQUNCeUxDSHBxY3NCSTI0elRnYnBJbmN1S2ZYRHhjRzh0ak53MlFJSF9sel9OMk0xQnVzZWJ1VUJqbXZSSkdlTWpweEZ6S082RTJRNzJfXzhoSXhIbnFzVmpUSm5tRUtfbldScw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
-     "lang": "ko"
-    },
-    {
-     "title": "HD건설기계, 1조6,551억원 규모 가스발전용 엔진 롱블럭 공급 계약 - 톱스타뉴스",
-     "translated_title": "HD건설기계, 1조6,551억원 규모 가스발전용 엔진 롱블럭 공급 계약",
-     "summary_ko": "HD건설기계가 대규모 가스발전용 엔진 롱블럭 공급 계약을 체결했습니다. 본 계약은 회사의 실적과 수주 잔고 확충에 기여할 것으로 기대됩니다.",
-     "category": "수주/계약",
-     "source": "톱스타뉴스",
-     "published": "2026-11-10T10:55:12+09:00",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PaGZOdnpSS25rV3BTUVo4OElPcEtoWXJfRGRnZENGdG04M29adjI2SmhpcW5jQWRVQW1aMzhnaGxyVHgxYVpxN0FrdVdfdXdmbmxaQlI3MlpmVWdhVHRBakVWbHNLMkRKZTMtdWdFZm9NQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 9,
+     "title": "HD건설기계, 합병 효과에 '엔진' 성장 가속…신용도 'A+' 안착 - 톱데일리",
+     "translated_title": "HD건설기계, 합병 효과로 '엔진' 성장 가속... 신용도 'A+' 안착",
+     "summary_ko": "HD건설기계가 합병 시너지를 바탕으로 엔진 사업의 성장을 가속화하며 A+ 신용등급에 안착했습니다. 관련 기업의 구조적 성장과 신용도 변화를 보여주는 건설기계 업계 소식입니다.",
+     "category": "실적",
+     "source": "톱데일리",
+     "published": "2026-11-11T15:58:00+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5uN0ZiUmNTWGRYRVNrLV8yTExpSG1HLWdyRC1EMTRyUmR1WllES0Q2LXpfQk03a21kaTBzb3REaXp2MjdkX1doVmVsVFpvUzlW?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
      "lang": "ko"
     },
     {
@@ -66,111 +66,12 @@
     {
      "title": "두산밥캣 주가 상승 중 - 아시아뉴스통신",
      "translated_title": "두산밥캣 주가 상승 중",
-     "summary_ko": "두산밥캣의 주가가 상승세를 보이고 있습니다. 관련 스니펫 내용이 제한되어 구체적인 배경은 추가 확인이 필요합니다.",
+     "summary_ko": "두산밥캣의 주가가 상승세를 보이고 있다는 소식입니다. 제공된 본문 내용이 제한적이어서 구체적인 실적이나 배경 정보는 확인할 수 없습니다.",
      "category": "실적",
      "source": "아시아뉴스통신",
-     "published": "2026-11-10T09:30:53+09:00",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5BX25XTFpwN253R25QTGJETkRjS3RhQ1pIMUJaZTJYbXRFVHRKWVF5VklISUFyYURzcG5MVTVZZFhDVVpaVWVvb3pBbFFYSHU3UTA0Zk1USzAxVUd0d0VBZ0hFd3VpcHlmQUtzSzRQWm5mbFd0?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "published": "2026-11-13T09:24:18+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB4UjZTbTI3MjI4ZzdTWFdTdFNlNzB1YzRQOHg4TzREalBFcFRkQ0RmZC1mV2FNVlFteThsRERpUXEwR1FtZTJKMmFMSzZ4Wk5jOXVadFZDOFB5SUsz?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "두산밥캣 투자분석 2026. 11. 09 - 주달",
-     "translated_title": "두산밥캣 투자분석 2026. 11. 09",
-     "summary_ko": "두산밥캣에 대한 최근 투자 분석 내용이 게재되었습니다. 제공된 스니펫이 제한되어 구체적인 분석 내용은 본문을 참고해야 합니다.",
-     "category": "실적",
-     "source": "주달",
-     "published": "2026-11-09T16:33:38+09:00",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE10VXdxQUFxQVJQalh4dV9XRjdUeEswTzVMcE9SeGQxYmJ0NDUxRGs0Ni1WZmtGei1MVzdadmtkX1Q4WlJhSERUWWJKRFhPX2ZCUkhDSkpKb2FuQ0NkVUZXSy1oenVUbGZ2b2RuUmU1VGhEem8?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 7,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 3분기 영업익 98.4% 급증…전자BG 매출 '역대 최대' - 뉴스저널리즘",
-     "translated_title": "두산, 3분기 영업익 98.4% 급증…전자BG 매출 '역대 최대'",
-     "summary_ko": "두산의 3분기 영업이익이 전년 대비 대폭 증가하며 호실적을 기록했습니다. 특히 전자BG 부문에서 역대 최대 매출을 달성했습니다.",
-     "category": "실적",
-     "source": "뉴스저널리즘",
-     "published": "2026-11-10T07:14:49+09:00",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9MamlfM3RIekFoMzNocVV5cFNoS3RNUkl4dm92ZWplMnZWY2JqUnlsbmotYjZEUVlObmo5UDFXZ1B5LVhxNG43RzlDdFVrSmZ6M0padTZseDFaYTdicEFQY2RhR1l4dVBvZFln?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 5,
-     "lang": "ko"
-    },
-    {
-     "title": "[CEO워치] 권영민 두산로보틱스 사장, 북미 솔루션에 ‘흑자 엔진’ 단다 - CEO스코어데일리",
-     "translated_title": "[CEO워치] 권영민 두산로보틱스 사장, 북미 솔루션에 ‘흑자 엔진’ 단다",
-     "summary_ko": "두산로보틱스가 북미 시장을 중심으로 로봇 솔루션 사업을 확대하며 흑자 전환을 추진하고 있습니다. 제공된 스니펫의 정보가 제한적이므로 상세 내용은 한계가 있습니다.",
-     "category": "실적",
-     "source": "CEO스코어데일리",
-     "published": "2026-11-11T07:00:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zaXNGQW8zWS0wZ3k2Zk1sTmc3SzFFMThfRDcyQjNWU1hSR3dGM2dGeGZRV1FMaHFXdEVyMmx4LU9oLTlaTGtmc2c2aEktS1JjQjdkNXM3anBBT2p4UjNaTWJmd1Q2d0JS?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 전자소재 앞세워 체질 개선…반도체 확장 속도 - 마이데일리",
-     "translated_title": "두산, 전자소재 앞세워 체질 개선…반도체 확장 속도",
-     "summary_ko": "두산이 전자소재 사업을 중심으로 체질 개선과 반도체 부문 확장을 추진하고 있습니다. 그룹 전반의 사업 포트폴리오 변화를 보여줍니다.",
-     "category": "M&A/투자",
-     "source": "마이데일리",
-     "published": "2026-11-10T09:14:18+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WMkt0WW1Da25FRWZlSFU0T04yTGNLTFVPUlJHQXhlN3pSYjFxQkpkOE1Uek5hZDcza1l2VnU3OXhlZEN0el9wZndsaDcwV1pWTGNHVUtFYVA3cHROcFRHRw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "대신증권 \"두산, 증설전까지 판가·제품 구성에 의존…목표가↓\" - 연합뉴스",
-     "translated_title": "대신증권 \"두산, 증설전까지 판가·제품 구성에 의존…목표가↓\"",
-     "summary_ko": "대신증권은 두산에 대해 본격적인 증설 전까지 판가와 제품 구성에 의존할 것이라 분석하며 목표주가를 하향 조정했습니다. 관련 실적 변동 요인을 주시할 필요가 있습니다.",
-     "category": "실적",
-     "source": "연합뉴스",
-     "published": "2026-11-10T08:48:15+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QREpUNmRGamtPZjMzWlZUOXBMdzlxeDRNS05SbXNvbTVpSU9zM2ZaNkpMSHJDVThoZ1M0WVZrWjBaNHJYTThCSTBWaW5JQ1JaeE1nM0ZBcHRqcXBFaTY1c9IBYEFVX3lxTE1QREpUNmRGamtPZjMzWlZUOXBMdzlxeDRNS05SbXNvbTVpSU9zM2ZaNkpMSHJDVThoZ1M0WVZrWjBaNHJYTThCSTBWaW5JQ1JaeE1nM0ZBcHRqcXBFaTY1cw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 전자BG 사상 최대 분기매출에 수익성 '쑥' : 네이버 블로그 - Naver Blog",
-     "translated_title": "두산, 전자BG 사상 최대 분기매출에 수익성이 쑥",
-     "summary_ko": "두산이 전자BG의 사상 최대 분기 매출에 힘입어 우수한 수익성을 기록했습니다. 그룹 전반의 실적 개선 흐름을 나타냅니다.",
-     "category": "실적",
-     "source": "Naver Blog",
-     "published": "2026-11-09T17:37:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaFh4MVNQaVBOaU1Qb0tlZFozMmNfWDI5d1NjT0wxbzYyWHpaTjF1YkQ4WGRTOVphanBXT0VFU1JEWmRkNlVaalRFRHNFLWJ5MlY0VDJiYVBJazNGeXpfNlZSX2I0TzBzeVFUSUdFR1NsVkJESTJ0SkZHdVNFdGxmaWxmVjh1aVphQWoyWG5Ncw?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 3분기 영업익 4595억…전년比 98.4% 증가 - 데일리안",
-     "translated_title": "두산, 3분기 영업익 4595억…전년比 98.4% 증가",
-     "summary_ko": "두산의 3분기 영업이익이 작년 동기 대비 약 98.4% 증가한 4595억원을 기록했습니다. 주력 사업의 실적 성장세가 두드러졌습니다.",
-     "category": "실적",
-     "source": "데일리안",
-     "published": "2026-11-09T16:40:00+09:00",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9CcFVBejhMeEdFOV9xVG0zWUJBN3U0Z0JuSl9rdU1JNmVpR3NKbVNtSk94Wmlfb2pQeHNoVUZQeTJYazdiY040ZF9GT3AzTEw0c1cyMQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 3분기 영업익 4594억원…전년比 98.4% ↑ - 한국아이닷컴",
-     "translated_title": "두산, 3분기 영업익 4594억원…전년比 98.4% ↑",
-     "summary_ko": "두산의 3분기 영업이익이 전년 대비 대폭 상승하여 4594억원을 기록했습니다. 주요 계열사 및 사업부의 실적 개선이 이뤄졌습니다.",
-     "category": "실적",
-     "source": "한국아이닷컴",
-     "published": "2026-11-09T16:30:05+09:00",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE03VDhJUW1LS2ZQdVk3ZEZla2M0NmI5OE9QcUFhRWdtZmVLYzJiZFdwZl9qTS0zQkFrU3ozSmE5Nk5pT0dQRVNmQUNILVBSYUR3UDk2TTJud0VxdDByWk5Ha0h2WHp3VTZhdi1n0gFvQVVfeXFMTkVXYi1DdFhzRm9lMl9wVDVuYVQxYy1pX1FHMWNHZUlqVlRmWE9GWWYtZ0ZoM1duOFBhNVFzMUwya2VBY2V5UVlJeW9Oc1ZHTFFVVzBOTUlJb2oyNzNDS0xBejZsdnduWGprbi0wZXVZ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
-     "lang": "ko"
-    },
-    {
-     "title": "두산, 3분기 영업이익 4594억원…AI 수요에 전년比 두 배 가까이 늘어 - The PR 더피알",
-     "translated_title": "두산, 3분기 영업이익 4594억원…AI 수요에 전년比 두 배 가까이 늘어",
-     "summary_ko": "두산은 AI 수요 확대 등에 힘입어 3분기 영업이익이 전년 동기 대비 두 배 가까이 증가한 4,594억원을 기록했습니다. 전자BG 등의 실적 호조가 전사 수익성 개선을 이끈 것으로 나타났습니다.",
-     "category": "실적",
-     "source": "The PR 더피알",
-     "published": "2026-11-09T16:28:05+09:00",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rOGtzTnpzdkxmbWxQcGdqamtpcnBHQWJoYU1JOGhsS3RnVzNpdmVhSXB4STF4TkhsZUlENW9EY0M3d1AxWDdzcGFBdHp4dFpkRXdpdGs2dTlrSkpLN3hETEMyMkNRZGZWaDFwcS1B0gFuQVVfeXFMTWs4a3NOenN2TGZtbFBwZ2pqa2lycEdBYmhhTUk4aGxLdGdXM2l2ZWFJcHhJMXhOSGxlSUQ1b0RjQzd3UDFYN3NwYUF0enh0WmRFd2l0azZ1OWtKSks3eERMQzIyQ1FkZlZoMXBxLUE?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 4,
      "lang": "ko"
     }
    ]
@@ -179,6 +80,39 @@
    "key": "global_peer",
    "title": "글로벌 피어",
    "items": [
+    {
+     "title": "Caterpillar Shares Down 35.1% as Backlog Hits $78 Billion — Microsoft Down - شبكة تواصل الإخبارية",
+     "translated_title": "캐터필러 주가 35.1% 하락 및 수주잔고 780억 달러 기록",
+     "summary_ko": "글로벌 건설기계 선도기업 캐터필러의 주가가 하락한 가운데 수주잔고가 780억 달러를 기록했습니다. 본문의 제공된 스니펫이 제한되어 있어 세부적인 시장 분석은 한계가 있습니다.",
+     "category": "실적",
+     "source": "شبكة تواصل الإخبارية",
+     "published": "2026-11-13T03:48:51+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEMzI1bFNrTHh4LWJOb3BQa3lJSHlrcTAwam5LRHEzUjlpMHdIQVVCMlZmR3k3MEtSVlNSdVpKdE1MV3pYOEVFaGZFMXF3dzBuVlhR?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Volvo CE marks partnership with new dealer Laothani Tractor in Laos - International Mining",
+     "translated_title": "볼보CE, 라오스 새 딜러사인 라오타니 트랙터와 파트너십 체결",
+     "summary_ko": "볼보건설기계(Volvo CE)가 라오스 시장 확대를 위해 라오타니 트랙터와 새로운 딜러십 파트너십을 체결했습니다. 아시아 지역 유통망 강화와 현지 장비 공급에 영향을 미치는 내용입니다.",
+     "category": "딜러/유통",
+     "source": "International Mining",
+     "published": "2026-11-13T01:25:56+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU0ZZVUhpc1dJRFh4MVpLQ0syc1Zqd0FEbU1DZ05uYUhzeDh3WTBaMTdDSEY2eGFGSTlqdkVrdUhnbnd3dFNMRG5paWh1aVJ6VkhLOXllQjdoLXBUTHRKUHE2dU5pR0szajlyNWpONnBGeTB1MVNKVnkyV3pRZEMweklieWhOTXVteEQxUG5CZkVSMHNrWEN2dG9lTWdQanEzQnZv?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
+    {
+     "title": "Volvo CE Partners with Laothani Tractor to Expand in Laos - Construction World",
+     "translated_title": "볼보CE, 라오스 시장 확대를 위해 라오타니 트랙터와 파트너십 체결",
+     "summary_ko": "볼보건설기계가 라오타니 트랙터와의 협력을 통해 라오스 내 입지를 강화합니다. 신흥 시장에서의 유통망 확장 전략을 보여줍니다.",
+     "category": "딜러/유통",
+     "source": "Construction World",
+     "published": "2026-11-12T19:17:29+09:00",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSC1JS09TZXJtdElPck4tMUNFSXphNzlMYXF3VXNuaDFPVkNDeFVvdV9LUjdiekFRTElObVRWTFdGWjluRFlvUjJYR2cxN3JVNS1FRk1TTm10MDJHZlNPUXFfRmFGX3otNkRxVmRISGg5Y1J3R2RfSlR1RlZYbEFBYS1keDNvTEp0NzZla0djQXpBcHBkY3d2QWYzSFBFcWY4NmVzMlNfY3hVWXlmN3NaTGYxZkFPMENqZzlpNDlIX05UelY1?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 8,
+     "lang": "en"
+    },
     {
      "title": "CNH Industrial and Kobelco form joint venture to power construction equipment business - astig.ph",
      "translated_title": "CNH 인더스트리얼과 고벨코, 건설기계 사업 강화를 위한 합작법인 설립",
@@ -202,25 +136,25 @@
      "lang": "en"
     },
     {
-     "title": "Luck Stone builds on autonomous hauling success with Caterpillar - Robotics & Automation News",
-     "translated_title": "Luck Stone builds on autonomous hauling success with Caterpillar",
-     "summary_ko": "럭 스톤이 캐터필러와의 협력을 바탕으로 자율주행 채굴 트럭 운영의 성공 사례를 확대하고 있습니다. 광산 및 건설 장비 분야의 무인화 기술 도입 흐름을 보여줍니다.",
-     "category": "신제품",
-     "source": "Robotics & Automation News",
-     "published": "2026-11-10T20:38:21+09:00",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSkd2NU1ONFBEQjN3blc3bEF2OHRvSW9OMTlQTXlKdVRQWHM4dmZaeEhaY2tzM1dOOXB1U2hiOUR2YmkzWkhLeWlzem5mTUpOTFZFbzFFQXYxNHFLbnNjSGo5REk4a1lIeGMtSEwycG43LTh0MTFLNFhTbEk5cDRjcnd2Wm5tdVNHazZ3aU9GSWtpUTRjWGFuN1FqWkFYY1hOSThtb25tY3ZOcjZlekQ1R3ZHZnoyQ2puMXIzRG5R?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
+     "title": "Caterpillar falls 26.8% as Harvey C. Jones tests $820 recovery - شبكة تواصل الإخبارية",
+     "translated_title": "하비 C. 존스가 820달러 회복을 테스트하는 가운데 캐터필러 26.8% 하락",
+     "summary_ko": "캐터필러의 주가가 하락세를 보이며 기술적 가격 테스트를 거치고 있습니다. 관련 스니펫 내용이 부족하여 상세한 기업 분석에는 한계가 있습니다.",
+     "category": "실적",
+     "source": "شبكة تواصل الإخبارية",
+     "published": "2026-11-12T23:14:52+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBieW13Vk9hME1hMXBkWl9OdTdkWGMtSkhsa2pGQ2lHVEhVMkhtcmZValZzdDFZem9xNE11RFFpSzNKcHJZWFZsMXhRUU40YUJoTnRZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
      "lang": "en"
     },
     {
-     "title": "Hayes, Manitou, and Reynolds Restructure European Distribution as Longstanding Partnerships Come to an End - TodoMountainBike",
-     "translated_title": "Hayes, Manitou, and Reynolds Restructure European Distribution as Longstanding Partnerships Come to an End",
-     "summary_ko": "헤이스, 마니토, 레이놀즈가 오랜 파트너십을 종료하고 유럽 내 유통망을 재편합니다. 글로벌 장비 및 부품 업계의 유통 채널 변화를 보여주는 사례입니다.",
-     "category": "딜러/유통",
-     "source": "TodoMountainBike",
-     "published": "2026-11-11T04:15:08+09:00",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNEVULS05OEcwdnE4em9sRXNscVhCc016UGpaNjhKX0NQeW5ZQnFwSUdZbmhtT0pVM2Q1QUVNYXR6WkNLanpSelZwODBka28zd2F2YmNzUFAtU2tmZmtERTg5ajdNOGp5UHZfaDc3OGEtWXJJMkx0Wm9UQXdjdnJqODNFSkRzRjZkN2JMTGVpWQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 6,
+     "title": "JCB Hydromax engine wins double at PMW Awards - Ricardo PLC",
+     "translated_title": "JCB 하이드로맥스 엔진, PMW 어워드서 2관왕 달성",
+     "summary_ko": "JCB의 하이드로맥스 엔진이 최근 어워드에서 두 개의 상을 수상하며 기술력을 입증했습니다. 장비 제조사의 친환경 및 고효율 파워트레인 개발 동향을 보여줍니다.",
+     "category": "신제품",
+     "source": "Ricardo PLC",
+     "published": "2026-11-12T22:50:12+09:00",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNnk0MHJBLVRQbXhNUnNPOTR5cDRZMU1nSUVkWE1iV1JjNnRHV2taV211NkFXcWs4SHhYV1hSa3BhUk5iTnhHdUVPVkd0eFJxTHpqWmFvMF9JRWM0aGZ3UDR1cDlqTm5NZTFsbWdvYjJEZjUxZzdnSWhfSWU2U3RTQmp5S1lXaGlKdnV2YkYzLWNhUk9ILW9yVWRjR2J5NjNmQlc3VG0zQVd3SVU?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 7,
      "lang": "en"
     },
     {
@@ -266,15 +200,26 @@
    "title": "자원국·광산 (남미·중동·아프리카·인니·몽골)",
    "items": [
     {
-     "title": "Barrick's third-quarter adjusted profit rises 41% on $4,243 gold, but its cost per ounce climbs 24% - MLQ.ai",
-     "translated_title": "배릭, 온스당 비용 24% 상승에도 3분기 금 가격 상승으로 조정 이익 41% 증가",
-     "summary_ko": "배릭의 3분기 조정 이익이 금 가격 상승에 힘입어 증가했으나 온스당 생산 비용도 함께 상승했습니다. 광산 및 자원 부문의 원가 압박 요인을 보여줍니다.",
+     "title": "Barrick Pins Its Capital-Return Story on an IPO Whose Terms Are Still Blank - ad-hoc-news.de",
+     "translated_title": "배릭, 조건이 아직 불확실한 IPO를 바탕으로 자본 환원 전략 추진",
+     "summary_ko": "광산 기업 배릭이 구체적인 조건이 정해지지 않은 기업공개(IPO)를 통해 자본 환원에 나서고 있습니다. 광산 자원 개발 및 장비 수요와 관련이 있으나 제공된 스니펫은 제한적입니다.",
      "category": "광산/자원",
-     "source": "MLQ.ai",
-     "published": "2026-11-10T03:06:45+09:00",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaFhweE5BY2hsY0E1MGFfWjV0MGxUYURLLURkbUd2b0JHUERZVzA2ODAyeXVKalNsSW5zOHVERkNSc3l0S2daZTlEdkZFLVFyMWhjLXNJYTdLYlY1dHdKVTNkRTM0aWV2SDVRS3cwNHBDRjRIdF95UW1QaFJ6d0ZVbWVmT2hsWUszSjBYVFB4bjNkN216MDZodUlPc2JXbHN6NTNSZEtnOTlZem1NWDc4eGpTN3M?oc=5&hl=en-US&gl=US&ceid=US:en",
-     "relevance": 8,
+     "source": "ad-hoc-news.de",
+     "published": "2026-11-13T01:42:25+09:00",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSUR2YzZBUE5wNnF0cFVFdWhVUE9uZnZGc3VsOFBxd1hfYkxRR1RER1JNUmVpQTBJOEl3TUZGZGpIa2RXQXp1SERVUV9hSU8yeUNkM3NLV3BiMW05YTFpQ2xxTTU2ckFzU2NjaHNQMDhvVEtqdDg5RjNBdWJYVjRyeksyNlVfaU9VYnFqZTBzbzdLYWVKeF8tb2JjTUQtZ2o5Y2hZcWhGUTN4QkhkNlg5RmJ6aWJZSUR4Tjc3SHlUMHh6UGRRVWk4STE1eUhQakNxTkdtQmVTbFJFdUNKUDdOSA?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 6,
      "lang": "en"
+    },
+    {
+     "title": "Ini Trik SEM Bikin Biaya Operasional Excavator Tambang Efisien - Dunia Energi",
+     "translated_title": "SEM, 광산용 굴착기 운영 비용 효율화 비법 공개",
+     "summary_ko": "장비 브랜드 SEM이 광산 현장에서 굴착기의 운영 비용을 절감하는 방안을 소개했습니다. 장비 효율성과 유지보수 측면에서 업계 참고용 자료입니다.",
+     "category": "기타",
+     "source": "Dunia Energi",
+     "published": "2026-11-12T21:26:22+09:00",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZFo3MUJuVlp5cnpZTnBlM1A1djZPTkFHNFpqVE1KUTZpLVQ5dzg1cnNhVnI0b0dhZjZYX0ctSDhtTk1XRWt0SG5qdFJDRklqRTA5YU5uYXdsWjduMTl0SWJ4RWFIem9mTWJRWHpjRTdBd2hrVVVhc0EwRllldmswU2laMElObVNmeTRZUkpCNzF3LWtrOXVr?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "relevance": 6,
+     "lang": "id"
     },
     {
      "title": "Brimob Jambi Musnahkan Ekskavator Diduga untuk Tambang Emas Ilegal di Kawasan TNKS - JakartaTerkini.id - JakartaTerkini.id",
@@ -288,13 +233,13 @@
      "lang": "id"
     },
     {
-     "title": "Tambang Emas Ilegal di Kalbar Terbongkar! 41 Orang Jadi Tersangka, Polisi Sita Uang Rp424 Juta dan Ekskavator - Aksaraloka",
-     "translated_title": "Tambang Emas Ilegal di Kalbar Terbongkar! 41 Orang Jadi Tersangka, Polisi Sita Uang Rp424 Juta dan Ekskavator",
-     "summary_ko": "인도네시아 칼리만탄바랏에서 불법 금광 채굴이 적발되어 경찰이 현장 조치 및 장비를 압수했습니다. 불법 자원 채굴 과정에서 연루된 장비 관련 단속 소식입니다.",
+     "title": "Tambang Ilegal Boalemo ‘Kebal Hukum’? 29 Alat Berat Masih Beroperasi - Harian Post",
+     "translated_title": "보알레모 불법 광산 여전히 법망 피해 운영 중, 29대 중장비 가동",
+     "summary_ko": "인도네시아 보알레모 지역의 불법 광산에서 여전히 다수의 중장비가 가동되고 있습니다. 광산 현장의 장비 운용 실태를 보여주나 정보가 제한적입니다.",
      "category": "광산/자원",
-     "source": "Aksaraloka",
-     "published": "2026-11-10T18:26:47+09:00",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObWVpVDVNLUI1eEVTbDV6WWpMUEZRZlV5YXdsTS1INVNOLThDMngwMGJTdHlRa3Z6T1lRSXo5ZTQ2ckNaMnVVRE5XV0ROLTlQY1ZyTktiQVFVeHNPZmRZblRuU3h5SzY5MC1Yc2x2RS1HTkZyb1pwZlhTRk5WbUZsQU9PT3h2RGlycWFXTjNLenVPeDVzTVA2WHJCblozaXdNNGpzNDRhakVuYmgwWWVyMkRheFhPZ1hjVkl4SFdpeVNFa2VVOUJSRjZ1SVFxdWo3Y185Z0xMbzJLQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+     "source": "Harian Post",
+     "published": "2026-11-12T22:27:39+09:00",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMzdmMkU2TTh5QS1iaVBzekZZdzhlaDBNU0ItMmpfbWhZZlJNZVVwRDl5XzZObTI0WUl3U1pRTV9QcWZtTG5iNGFIYXI1cE44Um9xYUIxLVJRTC1wa2lxVWhtbzQzaUM0VEc0YjVZRFlncko1bUs4a0U0aXBYaGdTYUxFRDZ6T0ZVQnlJTFItSVcwUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
      "relevance": 5,
      "lang": "id"
     },
@@ -323,13 +268,13 @@
   }
  ],
  "stats": {
-  "candidates": 264,
-  "new_scored": 12,
-  "dropped_low_relevance": 4,
+  "candidates": 257,
+  "new_scored": 13,
+  "dropped_low_relevance": 2,
   "noise": 0,
   "korean_media_excluded": 1,
   "blocked_domain": 0,
-  "stale": 237,
+  "stale": 232,
   "ai_active": true,
   "quota_exhausted": false
  }
